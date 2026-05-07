@@ -234,7 +234,7 @@ NDbutterflies_project_event_Humboldt <- data.frame(eventID = "NDbutterflies_flow
                                           totalAreaSampledValue = NA,
                                           totalAreaSampledUnit = NA,
                                           geospatialScopeAreaValue = 178694, #full geographic extent of ND
-                                          geospatialScopeAreaUnit = "km²",
+                                          geospatialScopeAreaUnit = "km2",
                                           isVegetationCoverReported = NA,
                                           eventDurationValue = NA,
                                           eventDurationUnit = NA,
@@ -260,9 +260,9 @@ NDbutterflies_project_event_Humboldt <- data.frame(eventID = "NDbutterflies_flow
                                           isTaxonomicScopeFullyReported = "true",
                                           taxonCompletenessReported = "notReported",
                                           taxonCompletenessProtocols = NA,
-                                          hasNonTargetTaxa = "false",
-                                          areNonTargetTaxaFullyReported = NA,
-                                          nonTargetTaxa = NA,
+                                          hasNonTargetTaxa = "true",
+                                          areNonTargetTaxaFullyReported = "false",
+                                          nonTargetTaxa = "non-flowering plants",
                                           targetLifeStageScope = "adult",
                                           excludedLifeStageScope = "egg | larva | pupa",
                                           isLifeStageScopeFullyReported = "true",
@@ -388,9 +388,9 @@ added_county_data_humboldt <- data.frame(eventID = county_list,
                                           isTaxonomicScopeFullyReported = "true",
                                           taxonCompletenessReported = "notReported",
                                           taxonCompletenessProtocols = NA,
-                                          hasNonTargetTaxa = "false",
-                                          areNonTargetTaxaFullyReported = NA,
-                                          nonTargetTaxa = NA,
+                                          hasNonTargetTaxa = "true",
+                                          areNonTargetTaxaFullyReported = "false",
+                                          nonTargetTaxa = "non-flowering plants",
                                           targetLifeStageScope = "adult",
                                           excludedLifeStageScope = "egg | larva | pupa",
                                           isLifeStageScopeFullyReported = "true",
@@ -505,9 +505,9 @@ added_site_data_humboldt <- data.frame(eventID = site_list,
                                         isTaxonomicScopeFullyReported = "true",
                                         taxonCompletenessReported = "notReported",
                                         taxonCompletenessProtocols = NA,
-                                        hasNonTargetTaxa = "false",
-                                        areNonTargetTaxaFullyReported = NA,
-                                        nonTargetTaxa = NA,
+                                        hasNonTargetTaxa = "true",
+                                        areNonTargetTaxaFullyReported = "false",
+                                        nonTargetTaxa = "non-flowering plants",
                                         targetLifeStageScope = "adult",
                                         excludedLifeStageScope = "egg | larva | pupa",
                                         isLifeStageScopeFullyReported = "true",
@@ -670,9 +670,9 @@ added_site_visit_data_humboldt <- data.frame(eventID = site_visit_list$eventID,
                                             isTaxonomicScopeFullyReported = "true",
                                             taxonCompletenessReported = "notReported",
                                             taxonCompletenessProtocols = NA,
-                                            hasNonTargetTaxa = "false",
-                                            areNonTargetTaxaFullyReported = NA,
-                                            nonTargetTaxa = NA,
+                                            hasNonTargetTaxa = "true",
+                                            areNonTargetTaxaFullyReported = "false",
+                                            nonTargetTaxa = "non-flowering plants",
                                             targetLifeStageScope = "adult",
                                             excludedLifeStageScope = "egg | larva | pupa",
                                             isLifeStageScopeFullyReported = "true",
@@ -705,6 +705,8 @@ survey_list <- dplyr::bind_rows(
   butterfly_data %>% dplyr::distinct(Code, Site, Date, Year, Observer, Time, Temperature, Wind.Speed, Humidity, Cloud.Cover),
   flower_data %>% dplyr::distinct(Code, Site, Date, Year, Observer)
 ) %>% dplyr::distinct(Code, .keep_all = TRUE)
+
+
 ```
 
 Mapping Event core fields for the survey event level:
@@ -755,6 +757,9 @@ added_survey_data_core <- data.frame(eventID = survey_list$Code,
                                           eventRemarks = NA,
                                           identifiedBy = survey_list$Observer
                                         )
+
+added_survey_data_core <- added_survey_data_core %>%
+  dplyr::arrange(parentEventID)
 ```
 
 Mapping Humboldt extension fields for the survey event level:
@@ -837,9 +842,9 @@ added_survey_data_humboldt <- data.frame(eventID = survey_list$Code,
                                             isTaxonomicScopeFullyReported = "true",
                                             taxonCompletenessReported = "notReported",
                                             taxonCompletenessProtocols = NA,
-                                            hasNonTargetTaxa = "false",
-                                            areNonTargetTaxaFullyReported = NA,
-                                            nonTargetTaxa = NA,
+                                            hasNonTargetTaxa = "true",
+                                            areNonTargetTaxaFullyReported = "false",
+                                            nonTargetTaxa = "non-flowering plants",
                                             targetLifeStageScope = "adult",
                                             excludedLifeStageScope = "egg | larva | pupa",
                                             isLifeStageScopeFullyReported = "true",
@@ -907,6 +912,7 @@ butterfly_data$vernacularName <- species_codes_data$Common.Name[
 added_butterfly_occurrence_data <- data.frame(eventID = butterfly_data$Code,
                                               occurrenceID = butterfly_data$occurrenceID,
                                               basisOfRecord = "HumanObservation",
+                                              kingdom = "Animalia",
                                               scientificName = butterfly_data$scientificName,
                                               vernacularName = butterfly_data$vernacularName,
                                               taxonRank = ifelse(
@@ -1008,6 +1014,7 @@ plants_to_add %<>% mutate(occurrenceID = paste(vdigest (paste(Code, Site, Date, 
 added_plant_occurrence_data <- data.frame(eventID = plants_to_add$Code,
                                               occurrenceID = plants_to_add$occurrenceID,
                                               basisOfRecord = "HumanObservation",
+                                              kingdom = "Plantae",
                                               scientificName = plants_to_add$scientificName,
                                               vernacularName = plants_to_add$vernacularName,
                                               taxonRank = ifelse(
@@ -1018,7 +1025,8 @@ added_plant_occurrence_data <- data.frame(eventID = plants_to_add$Code,
                                               occurrenceStatus = "present",
                                               recordedBy = plants_to_add$Observer,
                                               vitality = "alive",
-                                              identifiedBy = plants_to_add$Observer
+                                              identifiedBy = plants_to_add$Observer,
+                                              occurrenceRemarks = "Plant added as an associated occurrence noted during butterfly surveys"
                                             )
 
 ```
@@ -1045,6 +1053,7 @@ flower_data <- flower_data %>%
 added_flower_occurrence_data <- data.frame(eventID = flower_data$Code,
                                             occurrenceID = flower_data$occurrenceID,
                                             basisOfRecord = "HumanObservation",
+                                            kingdom = "Plantae",
                                             scientificName = flower_data$scientificName,
                                             vernacularName = flower_data$vernacularName,
                                             taxonRank = ifelse(
@@ -1235,3 +1244,260 @@ write.csv(occurrence_data, "outputs/occurrence.csv", row.names = FALSE)
 write.csv(resource_relationship_data, "outputs/resourceRelationship.csv", row.names = FALSE)
 write.csv(emof_data, "outputs/extendedMeasurementOrFact.csv", row.names = FALSE)
 ```
+
+
+# Some fun plots because why not
+
+## Butterfly/Flower Species Richness
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(maps)
+library(patchwork)
+
+## Butterfly richness
+
+butterfly_richness <- occurrence_data %>%
+  filter(
+    kingdom == "Animalia",
+    occurrenceStatus == "present",
+    taxonRank == "species"
+  ) %>%
+  left_join(
+    event_data_core %>%
+      select(eventID, county),
+    by = "eventID"
+  ) %>%
+  group_by(county) %>%
+  summarise(species_richness = n_distinct(scientificName))
+
+butterfly_richness$county <- dplyr::recode(
+  butterfly_richness$county,
+  "LaMoure" = "La Moure",
+  "McHenry" = "Mchenry",
+  "McIntosh" = "Mcintosh",
+  "McKenzie" = "Mckenzie",
+  "McLean" = "Mclean"
+)
+
+## Flower richness
+
+flower_richness <- occurrence_data %>%
+  filter(
+    kingdom == "Plantae",
+    is.na(individualCount),
+    occurrenceStatus == "present",
+    taxonRank == "species"
+  ) %>%
+  left_join(
+    event_data_core %>%
+      select(eventID, county),
+    by = "eventID"
+  ) %>%
+  group_by(county) %>%
+  summarise(species_richness = n_distinct(scientificName))
+
+flower_richness$county <- dplyr::recode(
+  flower_richness$county,
+  "LaMoure" = "La Moure",
+  "McHenry" = "Mchenry",
+  "McIntosh" = "Mcintosh",
+  "McKenzie" = "Mckenzie",
+  "McLean" = "Mclean"
+)
+
+## Map base
+
+nd_map <- map_data("county", region = "north dakota")
+nd_map$county <- tools::toTitleCase(gsub("north dakota,", "", nd_map$subregion))
+
+## Join data
+
+butterfly_map <- left_join(nd_map, butterfly_richness, by = "county")
+flower_map <- left_join(nd_map, flower_richness, by = "county")
+
+## Butterfly plot
+
+p1 <- ggplot(butterfly_map, aes(long, lat, group = group, fill = species_richness)) +
+  geom_polygon(color = "black", linewidth = 0.2) +
+  coord_fixed(1.3) +
+  scale_fill_gradient(
+    low = "lightyellow",
+    high = "darkred",
+    name = "Butterfly\nRichness",
+    na.value = "white"
+  ) +
+  theme_minimal() +
+  labs(
+    title = "Butterfly Species Richness"
+  )
+
+## Flower plot
+
+p2 <- ggplot(flower_map, aes(long, lat, group = group, fill = species_richness)) +
+  geom_polygon(color = "black", linewidth = 0.2) +
+  coord_fixed(1.3) +
+  scale_fill_gradient(
+    low = "lightyellow",
+    high = "darkred",
+    name = "Flower\nRichness",
+    na.value = "white"
+  ) +
+  theme_minimal() +
+  labs(
+    title = "Flower Species Richness"
+  )
+
+p1 + p2
+```
+
+## Scatterplot butterfly v flower richness
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+butterfly_richness <- occurrence_data %>%
+  filter(
+    kingdom == "Animalia",
+    occurrenceStatus == "present",
+    taxonRank == "species"
+  ) %>%
+  left_join(
+    event_data_core %>%
+      select(eventID, parentEventID),
+    by = "eventID"
+  ) %>%
+  group_by(parentEventID) %>%
+  summarise(butterfly_richness = n_distinct(scientificName), .groups = "drop")
+
+flower_richness <- occurrence_data %>%
+  filter(
+    kingdom == "Plantae",
+    occurrenceStatus == "present",
+    taxonRank == "species"
+  ) %>%
+  left_join(
+    event_data_core %>%
+      select(eventID, parentEventID),
+    by = "eventID"
+  ) %>%
+  group_by(parentEventID) %>%
+  summarise(flower_richness = n_distinct(scientificName), .groups = "drop")
+
+richness_data <- left_join(
+  butterfly_richness,
+  flower_richness,
+  by = "parentEventID"
+)
+
+ggplot(richness_data, aes(x = flower_richness, y = butterfly_richness)) +
+  geom_point(size = 3, alpha = 0.7) +
+  geom_smooth(method = "lm", se = TRUE) +
+  theme_minimal() +
+  labs(
+    x = "Flower Species Richness",
+    y = "Butterfly Species Richness",
+    title = "Butterfly vs Flower Species Richness",
+    subtitle = "One point per visit"
+  )
+```
+
+## Heatmap
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+interaction_data <- butterfly_plant_interactions %>%
+  filter(
+    relationshipOfResource == "nectaring"
+  ) %>%
+  left_join(
+    occurrence_data %>%
+      select(occurrenceID, butterfly = scientificName),
+    by = c("resourceID" = "occurrenceID")
+  ) %>%
+  left_join(
+    occurrence_data %>%
+      select(occurrenceID, plant = scientificName),
+    by = c("relatedResourceID" = "occurrenceID")
+  ) %>%
+  filter(!is.na(butterfly), !is.na(plant)) %>%
+  count(butterfly, plant, sort = TRUE)
+
+butterfly_order <- interaction_data %>%
+  group_by(butterfly) %>%
+  summarise(total = sum(n)) %>%
+  arrange(total) %>%
+  pull(butterfly)
+
+plant_order <- interaction_data %>%
+  group_by(plant) %>%
+  summarise(total = sum(n)) %>%
+  arrange(total) %>%
+  pull(plant)
+
+interaction_data$butterfly <- factor(interaction_data$butterfly, levels = butterfly_order)
+interaction_data$plant <- factor(interaction_data$plant, levels = plant_order)
+
+ggplot(interaction_data, aes(x = plant, y = butterfly, fill = n)) +
+  geom_tile(color = "gray90") +
+  scale_fill_viridis_c(option = "plasma", trans = "log10") +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5),
+    panel.grid = element_blank()
+  ) +
+  labs(
+    x = "Plant Species",
+    y = "Butterfly Species",
+    fill = "Interactions",
+    title = "Butterfly–Plant Nectaring Heatmap"
+  )
+```
+
+## Map for a species
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(maps)
+
+target_species <- "Phyciodes batesii"
+
+species_points <- occurrence_data %>%
+  filter(scientificName == target_species) %>%
+  left_join(
+    event_data_core %>%
+      select(eventID, decimalLongitude, decimalLatitude),
+    by = "eventID"
+  ) %>%
+  distinct(decimalLongitude, decimalLatitude)
+
+nd_map <- map_data("state")
+
+ggplot() +
+  geom_polygon(
+    data = subset(nd_map, region == "north dakota"),
+    aes(long, lat, group = group),
+    fill = "gray95",
+    color = "black"
+  ) +
+  geom_point(
+    data = species_points,
+    aes(decimalLongitude, decimalLatitude),
+    color = "red",
+    size = 3,
+    alpha = 0.7
+  ) +
+  coord_fixed(1.3) +
+  theme_minimal() +
+  labs(
+    title = paste("Occurrences of", target_species),
+    x = "Longitude",
+    y = "Latitude"
+  )
+```
+
