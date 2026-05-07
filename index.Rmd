@@ -1,0 +1,1237 @@
+---
+title: Translating Antonsen 2020 to Darwin Core
+date: "`r Sys.Date()`"
+author: Chandra Earl
+output: (function(...) {
+  rmdformats::robobook(toc_depth = 4, pandoc_args = c("+RTS", "-K2000m", "-RTS"), ...) })
+editor_options: 
+  chunk_output_type: console
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = ".") }) 
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook for converting the data found in the following reference to Darwin Core format for upload into [GBIF](https://gbif.org/):
+
+[Antonsen, A.K. Spatiotemporal Dynamics of Butterflies and their Floral Resources. North Dakota State University. ProQuest Dissertations & Theses, 2020. 28026937.](https://www.proquest.com/openview/513b62aa7e72c32b625ded0127ba3c63/1?pq-origsite=gscholar&cbl=44156)
+
+[Adrienne K Antonsen, Katherine C Kral-O’Brien, Torre J Hovick, Ryan F Limb, Benjamin A Geaumont, Jason P Harmon, Intra-annual Spatiotemporal Dynamics of the Monarch Butterfly (Lepidoptera: Danaidae), Regal Fritillary (Lepidoptera: Heliconiinae), and Their Floral Resources in North Dakota, United States, Annals of the Entomological Society of America, Volume 114, Issue 6, November 2021, Pages 727–737.](https://doi.org/10.1093/aesa/saab013)
+
+## Introduction to project data
+
+# Setup
+
+Call the necessary libraries and variables. Suppresses loading messages.
+
+```{r Setup}
+library(magrittr)                       # To use %<>% pipes
+suppressMessages(library(dplyr))        # To clean input data
+library(stringr)                        # To clean input data
+library(digest)                         # To generate hashes
+```
+
+# Read source data
+
+Read in source csv tables
+
+```{r Read Source Data}
+input_butterfly <- "inputs/butterfly_data.csv"
+input_flower <- "inputs/flower_data.csv"
+input_site_coords <- "inputs/site_coordinates.csv"
+input_site_vegetation <- "inputs/vegetation_data.csv"
+input_species_codes <- "inputs/species_codes.csv"
+input_site_name_mappings <- "inputs/site_name_mappings.csv"
+
+butterfly_data <- read.csv(input_butterfly)
+flower_data <- read.csv(input_flower)
+site_coords_data <- read.csv(input_site_coords)
+site_vegetation_data <- read.csv(input_site_vegetation)
+species_codes_data <- read.csv(input_species_codes)
+site_name_mappings <- read.csv(input_site_name_mappings)
+
+species_codes_data <- rbind(
+  species_codes_data,
+  data.frame(
+    Code = "grass",
+    Scientific.Name = "Poaceae",
+    Common.Name = "True grasses"
+  )
+)
+
+species_codes_data <- rbind(
+  species_codes_data,
+  data.frame(
+    Code = "Grass",
+    Scientific.Name = "Poaceae",
+    Common.Name = "True grasses"
+  )
+)
+
+species_codes_data <- rbind(
+  species_codes_data,
+  data.frame(
+    Code = "GRASS",
+    Scientific.Name = "Poaceae",
+    Common.Name = "True grasses"
+  )
+)
+# preview pretty table
+#knitr::kable(head(butterfly_data))
+```
+
+# Clean data
+
+```{r}
+#standardize site names using mappings
+butterfly_data$Original.Site <- butterfly_data$Site
+butterfly_data$Site <- site_name_mappings$Clean.Site.Abbr[
+  match(butterfly_data$Site, site_name_mappings$Dirty.Site)
+]
+
+flower_data$Original.Site <- flower_data$Site
+flower_data$Site <- site_name_mappings$Clean.Site.Abbr[
+  match(flower_data$Site, site_name_mappings$Dirty.Site)
+]
+
+site_coords_data$Original.Site <- site_coords_data$Site.Name
+site_coords_data$Site.Name <- site_name_mappings$Clean.Site.Abbr[
+  match(site_coords_data$Site.Name, site_name_mappings$Dirty.Site)
+]
+
+site_vegetation_data$Original.Site <- site_vegetation_data$Site
+site_vegetation_data$Site <- site_name_mappings$Clean.Site.Abbr[
+  match(site_vegetation_data$Site, site_name_mappings$Dirty.Site)
+]
+
+# Does BEN White Horse Hill NWR = BEN Sully's Lake NWR = BEN Sully's Hill NWR?
+
+#clean specific cells
+flower_data$Date[
+  flower_data$Site == "CAS Alice WPA 1" &
+  flower_data$Code %in% c("FLTDS-A0176", "FLTDS-A0177", "FLTDS-A0178", "FLTDS-A0179", "FLTDS-A0180", "FLTDS-A0181", "FLTDS-A0182")
+] <- "8/22/17"
+
+flower_data$Code[
+  flower_data$Site == "CAS Alice WPA 1" &
+  flower_data$Code %in% c("FLTDS-A0176", "FLTDS-A0177", "FLTDS-A0178", "FLTDS-A0179", "FLTDS-A0180", "FLTDS-A0181", "FLTDS-A0182")
+] <- "FLTDS-A0175"
+
+flower_data$Code[
+  flower_data$Code %in% c("FT-2B0837")
+] <- "FT2-B0837"
+
+butterfly_data$Code[
+  butterfly_data$Code %in% c("Lt1-B0712")
+] <- "LT1-B0712"
+
+butterfly_data$Code[
+  butterfly_data$Site == "DUN Lake Ilo NWR" &
+  butterfly_data$Code %in% c("LT1-A0910")
+] <- "LT1-A0917"
+
+butterfly_data$Code[
+  butterfly_data$Site == "DUN Zahn" &
+  butterfly_data$Code %in% c("FT2-A0910")
+] <- "FT2-A0914"
+
+#set count = 0 where empty
+flower_data$Count[flower_data$Count == ""] <- 0
+
+#remove commas from numbers
+flower_data$Count <- gsub(",", "", flower_data$Count)
+
+#remove rows where there is a species but count is 0, count is NOT ENTERED and species is NOT ENTERED
+flower_data <- flower_data %>%
+  dplyr::filter(!(Flower.Species != "none" & Count == 0)) %>%
+  dplyr::filter(Count != "NOT ENTERED") %>%
+  dplyr::filter(Flower.Species != "NOT ENTERED")
+
+#remove rows where species codes are NA or empty
+butterfly_data <- butterfly_data %>%
+  dplyr::filter(!is.na(Butterfly.Code) & Butterfly.Code != "")
+
+#group data counts the same way across rows
+butterfly_data <- butterfly_data %>%
+  dplyr::group_by(Year, Code, Observer, County, Site, Date, Time, Temperature, Wind.Speed, Humidity, Cloud.Cover, Butterfly.Code, Behavior, Plant.Species, Original.Site) %>%
+  dplyr::summarise(Count = sum(Count, na.rm = TRUE), .groups = "drop")
+
+flower_data <- flower_data %>%
+  dplyr::group_by(Year, Code, Observer, County, Site, Date, Flower.Species, X) %>%
+  dplyr::summarise(Count = as.integer(sum(as.numeric(Count), na.rm = TRUE)), .groups = "drop")
+
+#add unique occurrenceID for each observation
+vdigest <- Vectorize(digest)
+butterfly_data %<>% mutate(occurrenceID = paste(vdigest (paste(Code, Site, Date, Observer, Behavior, Butterfly.Code, Plant.Species), algo="md5"), sep=":"))
+flower_data %<>% mutate(occurrenceID = paste(vdigest (paste(Code, Site, Date, Observer, Flower.Species, X), algo="md5"), sep=":"))
+
+#remove rows with duplicate occurrenceIDs - mostly incorrect Codes or Times
+butterfly_data <- butterfly_data %>%
+  dplyr::distinct(occurrenceID, .keep_all = TRUE)
+
+```
+
+
+# Map Data
+
+## Map Event Core & Humboldt Data
+
+### Project Event
+
+The project event describes the overall project. It defines the scope of the survey (taxonomic, geographic, temporal), the general protocol, and whether absence, abundance, and material samples are reported. The data for the Event Core and Humboldt extension are split into two separate files.
+
+Mapping Event core fields for the project event level:
+
+```{r}
+NDbutterflies_project_event_core <- data.frame(eventID = "NDbutterflies_flowers",
+                                                parentEventID = NA,
+                                                fieldNumber = NA,
+                                                habitat = NA,
+                                                locationID = NA,
+                                                countryCode = "US",
+                                                decimalLatitude = 47.4501,
+                                                decimalLongitude = -100.4659,
+                                                coordinateUncertaintyInMeters = 335000,
+                                                geodeticDatum = "WGS84",
+                                                country = "United States",
+                                                stateProvince = "North Dakota",
+                                                county = NA,
+                                                locality = NA,
+                                                sampleSizeValue = NA,
+                                                sampleSizeUnit = NA,
+                                                footprintWKT = NA,
+                                                footprintSRS = NA,
+                                                eventDate = paste(
+                                                  format(min(as.Date(butterfly_data$Date, format = "%m/%d/%y"), na.rm = TRUE), "%Y-%m-%d"),
+                                                  format(max(as.Date(butterfly_data$Date, format = "%m/%d/%y"), na.rm = TRUE), "%Y-%m-%d"),
+                                                  sep = "/"
+                                                ),
+                                                eventTime = NA,
+                                                eventType = "project",
+                                                samplingEffort = "Two surveys annually at three sites per county across 53 counties",
+                                                samplingProtocol = "Butterfly fixed transect survey | Butterfly visual encounter survey | Floral fixed transect survey | Floral visual encounter survey",
+                                                dataGeneralizations = NA,
+                                                informationWithheld = NA,
+                                                fieldNotes = NA,
+                                                eventRemarks = NA,
+                                                identifiedBy = NA
+                                              )
+```
+
+Mapping Humboldt extension fields for the project event level:
+
+```{r}
+NDbutterflies_project_event_Humboldt <- data.frame(eventID = "NDbutterflies_flowers",
+                                          siteNestingDescription = "Three grassland survey sites within each of North Dakota's 53 counties were surveyed twice annually for butterflies and flowering plants via transects and encounter surveys; Individual site locations could vary among years.",
+                                          siteCount = length(unique(site_coords_data$Site.Name)),
+                                          verbatimSiteNames = paste(sort(unique(site_coords_data$Site.Name)), collapse = " | "),
+                                          verbatimSiteDescriptions = NA,
+                                          reportedWeather = NA,
+                                          reportedExtremeConditions = NA,
+                                          totalAreaSampledValue = NA,
+                                          totalAreaSampledUnit = NA,
+                                          geospatialScopeAreaValue = 178694, #full geographic extent of ND
+                                          geospatialScopeAreaUnit = "km²",
+                                          isVegetationCoverReported = NA,
+                                          eventDurationValue = NA,
+                                          eventDurationUnit = NA,
+                                          inventoryTypes = NA,
+                                          compilationTypes = NA,
+                                          compilationSourceTypes = NA,
+                                          protocolNames = "Butterfly fixed transect survey | Butterfly visual encounter survey | Floral fixed transect survey | Floral visual encounter survey",
+                                          protocolDescriptions = "Butterflies were surveyed at grassland sites across North Dakota using fixed transect and visual encounter surveys conducted by two observers under suitable weather conditions. In 2017–2018, surveys included both fixed transects and roaming visual encounter surveys. In 2019–2020, protocols switched to entirely fixed transect surveys. Floral resources were surveyed using corresponding floral transect and visual encounter survey methods, recording flowering ramets and nectar resources within survey areas.",
+                                          protocolReferences = "",
+                                          isAbsenceReported = "true",
+                                          absentTaxa = NA,
+                                          isAbundanceReported = "true",
+                                          isAbundanceCapReported = "false",
+                                          abundanceCap = NA,
+                                          hasMaterialSamples = "false",
+                                          materialSampleTypes = NA,
+                                          hasVouchers = "false",
+                                          voucherInstitutions = NA,
+                                          isLeastSpecificTargetCategoryQuantityInclusive = "true",
+                                          verbatimTargetScope = "butterflies | flowering plants",
+                                          targetTaxonomicScope = "Lepidoptera | Magnoliophyta",
+                                          excludedTaxonomicScope = NA,
+                                          isTaxonomicScopeFullyReported = "true",
+                                          taxonCompletenessReported = "notReported",
+                                          taxonCompletenessProtocols = NA,
+                                          hasNonTargetTaxa = "false",
+                                          areNonTargetTaxaFullyReported = NA,
+                                          nonTargetTaxa = NA,
+                                          targetLifeStageScope = "adult",
+                                          excludedLifeStageScope = "egg | larva | pupa",
+                                          isLifeStageScopeFullyReported = "true",
+                                          targetDegreeOfEstablishmentScope = NA,
+                                          excludedDegreeOfEstablishmentScope = NA,
+                                          isDegreeOfEstablishmentScopeFullyReported = NA,
+                                          targetGrowthFormScope = "flowering individuals",
+                                          excludedGrowthFormScope = NA,
+                                          isGrowthFormScopeFullyReported = NA,
+                                          hasNonTargetOrganisms = NA,
+                                          targetHabitatScope = NA,
+                                          excludedHabitatScope = NA,
+                                          isSamplingEffortReported = "true",
+                                          samplingEffortProtocol = "Two observers separately and simultaneously conducted butterfly and floral surveys at each site. In 2017–2018, each observer completed one fixed transect survey (100 m, 10 minutes) and one visual encounter survey (4 ha, 30 minutes). In 2019–2020, surveys switched entirely to fixed transect methods, with each observer completing two fixed transect surveys (100 m, 10 minutes each).",
+                                          samplingEffortValue = "40",
+                                          samplingEffortUnit = "minutes per site visit per observer",
+                                          samplingPerformedBy = "Field staff"
+                                        )
+```
+
+### County Events
+
+53 counties
+
+Setup:
+
+```{r}
+county_list <- sort(unique(butterfly_data$County))
+```
+
+Mapping Event core fields for the county event level:
+
+```{r}
+added_counties_data_core <- data.frame(eventID = county_list,
+                                      parentEventID = "NDbutterflies_flowers",
+                                      fieldNumber = NA,
+                                      habitat = NA,
+                                      locationID = NA,
+                                      countryCode = "US",
+                                      decimalLatitude = NA, #need
+                                      decimalLongitude = NA, #need
+                                      coordinateUncertaintyInMeters = NA, #need
+                                      geodeticDatum = "WGS84",
+                                      country = "United States",
+                                      stateProvince = "North Dakota",
+                                      county = county_list,
+                                      locality = paste0(county_list, " County"),
+                                      sampleSizeValue = NA,
+                                      sampleSizeUnit = NA,
+                                      footprintWKT = NA,
+                                      footprintSRS = NA,
+                                      eventDate = tapply(
+                                        as.Date(butterfly_data$Date, format = "%m/%d/%y"),
+                                        butterfly_data$County,
+                                        function(x) paste(
+                                          format(min(x, na.rm = TRUE), "%Y-%m-%d"),
+                                          format(max(x, na.rm = TRUE), "%Y-%m-%d"),
+                                          sep = "/"
+                                        )
+                                      )[county_list],
+                                      eventTime = NA,
+                                      eventType = "county",
+                                      samplingEffort = "Two surveys annually at three sites",
+                                      samplingProtocol = "Butterfly fixed transect survey | Butterfly visual encounter survey | Floral fixed transect survey | Floral visual encounter survey",
+                                      dataGeneralizations = NA,
+                                      informationWithheld = NA,
+                                      fieldNotes = NA,
+                                      eventRemarks = NA,
+                                      identifiedBy = NA
+                                    )
+```
+
+Mapping Humboldt extension fields for the county event level:
+
+```{r}
+added_county_data_humboldt <- data.frame(eventID = county_list,
+                                          siteNestingDescription = "Three grassland survey sites within each of North Dakota's 53 counties were surveyed twice annually for butterflies and flowering plants via transects and encounter surveys; Individual site locations could vary among years.",
+                                          siteCount = tapply(
+                                            butterfly_data$Site,
+                                            butterfly_data$County,
+                                            function(x) length(unique(x))
+                                          )[county_list],
+                                          verbatimSiteNames = tapply(
+                                            butterfly_data$Site,
+                                            butterfly_data$County,
+                                            function(x) paste(sort(unique(x)), collapse = " | ")
+                                          )[county_list],
+                                          verbatimSiteDescriptions = NA,
+                                          reportedWeather = NA,
+                                          reportedExtremeConditions = NA,
+                                          geospatialScopeAreaValue  = NA,  #need
+                                          geospatialScopeAreaUnit = NA,  #area of county
+                                          totalAreaSampledValue = as.character(
+                                            tapply(
+                                              butterfly_data$Site,
+                                              butterfly_data$County,
+                                              function(x) length(unique(x)) * 4
+                                            )[county_list]
+                                          ),
+                                          totalAreaSampledUnit = "hectares",
+                                          isVegetationCoverReported = NA,
+                                          eventDurationValue = NA,
+                                          eventDurationUnit = NA,
+                                          inventoryTypes = NA,
+                                          compilationTypes = NA,
+                                          compilationSourceTypes = NA,
+                                          protocolNames = "Butterfly fixed transect survey | Butterfly visual encounter survey | Floral fixed transect survey | Floral visual encounter survey",
+                                          protocolDescriptions = "Butterflies were surveyed at grassland sites across North Dakota using fixed transect and visual encounter surveys conducted by two observers under suitable weather conditions. In 2017–2018, surveys included both fixed transects and roaming visual encounter surveys. In 2019–2020, protocols switched to entirely fixed transect surveys. Floral resources were surveyed using corresponding floral transect and visual encounter survey methods, recording flowering ramets and nectar resources within survey areas.",
+                                          protocolReferences = "",
+                                          isAbsenceReported = "true",
+                                          absentTaxa = NA,
+                                          isAbundanceReported = "true",
+                                          isAbundanceCapReported = "false",
+                                          abundanceCap = NA,
+                                          hasMaterialSamples = "false",
+                                          materialSampleTypes = NA,
+                                          hasVouchers = "false",
+                                          voucherInstitutions = NA,
+                                          isLeastSpecificTargetCategoryQuantityInclusive = "true",
+                                          verbatimTargetScope = "butterflies | flowering plants",
+                                          targetTaxonomicScope = "Lepidoptera | Magnoliophyta",
+                                          excludedTaxonomicScope = NA,
+                                          isTaxonomicScopeFullyReported = "true",
+                                          taxonCompletenessReported = "notReported",
+                                          taxonCompletenessProtocols = NA,
+                                          hasNonTargetTaxa = "false",
+                                          areNonTargetTaxaFullyReported = NA,
+                                          nonTargetTaxa = NA,
+                                          targetLifeStageScope = "adult",
+                                          excludedLifeStageScope = "egg | larva | pupa",
+                                          isLifeStageScopeFullyReported = "true",
+                                          targetDegreeOfEstablishmentScope = NA,
+                                          excludedDegreeOfEstablishmentScope = NA,
+                                          isDegreeOfEstablishmentScopeFullyReported = NA,
+                                          targetGrowthFormScope = "flowering individuals",
+                                          excludedGrowthFormScope = NA,
+                                          isGrowthFormScopeFullyReported = NA,
+                                          hasNonTargetOrganisms = NA,
+                                          targetHabitatScope = NA,
+                                          excludedHabitatScope = NA,
+                                          isSamplingEffortReported = "true",
+                                          samplingEffortProtocol = "Two observers separately and simultaneously conducted butterfly and floral surveys at each site. In 2017–2018, each observer completed one fixed transect survey (100 m, 10 minutes) and one visual encounter survey (4 ha, 30 minutes). In 2019–2020, surveys switched entirely to fixed transect methods, with each observer completing two fixed transect surveys (100 m, 10 minutes each).",
+                                          samplingEffortValue = "40",
+                                          samplingEffortUnit = "minutes per site visit per observer",
+                                          samplingPerformedBy = "Field staff"
+                                        )
+```
+
+
+### Site Events
+
+3 sites per county per year - can be different sites
+
+Setup:
+
+```{r}
+site_list <- unique(butterfly_data$Site)
+```
+
+Mapping Event core fields for the site event level:
+
+```{r}
+added_site_data_core <- data.frame(eventID = site_list,
+                                    parentEventID = butterfly_data$County[match(site_list, butterfly_data$Site)],
+                                    fieldNumber = site_list,
+                                    habitat = "grassland",
+                                    locationID = site_list,
+                                    countryCode = "US",
+                                    decimalLatitude = tapply(site_coords_data$Y, site_coords_data$Site.Name, mean, na.rm = TRUE)[site_list],
+                                    decimalLongitude = tapply(site_coords_data$X, site_coords_data$Site.Name, mean, na.rm = TRUE)[site_list],
+                                    coordinateUncertaintyInMeters = 500,
+                                    geodeticDatum = "WGS84",
+                                    country = "United States",
+                                    stateProvince = "North Dakota",
+                                    county = butterfly_data$County[match(site_list, butterfly_data$Site)],
+                                    locality = site_name_mappings$Clean.Site[
+                                      match(site_list, site_name_mappings$Clean.Site.Abbr)
+                                    ],
+                                    sampleSizeValue = NA,
+                                    sampleSizeUnit = NA,
+                                    footprintWKT = NA,
+                                    footprintSRS = NA,
+                                    eventDate = tapply(
+                                      as.Date(butterfly_data$Date, format = "%m/%d/%y"),
+                                      butterfly_data$Site,
+                                      function(x) paste(
+                                        format(min(x, na.rm = TRUE), "%Y-%m-%d"),
+                                        format(max(x, na.rm = TRUE), "%Y-%m-%d"),
+                                        sep = "/"
+                                      )
+                                    )[site_list],
+                                    eventTime = NA,
+                                    eventType = "site",
+                                    samplingEffort = "Two surveys annually at each site",
+                                    samplingProtocol = "Butterfly fixed transect survey | Butterfly visual encounter survey | Floral fixed transect survey | Floral visual encounter survey",
+                                    dataGeneralizations = NA,
+                                    informationWithheld = NA,
+                                    fieldNotes = NA,
+                                    eventRemarks = NA,
+                                    identifiedBy = NA
+                                  )
+```
+
+Mapping Humboldt extension fields for the site event level:
+
+```{r}
+added_site_data_humboldt <- data.frame(eventID = site_list,
+                                        siteNestingDescription = "Three grassland survey sites within each of North Dakota's 53 counties were surveyed twice annually for butterflies and flowering plants via transects and encounter surveys; Individual site locations could vary among years.",
+                                        siteCount = 1,
+                                        verbatimSiteNames = site_list,
+                                        verbatimSiteDescriptions = NA,
+                                        reportedWeather = NA,
+                                        reportedExtremeConditions = NA,
+                                        geospatialScopeAreaValue = 4,
+                                        geospatialScopeAreaUnit = "hectares",
+                                        totalAreaSampledValue = "100 | 4",
+                                        totalAreaSampledUnit = "m transect | ha survey area",
+                                        isVegetationCoverReported = NA,
+                                        eventDurationValue = NA,
+                                        eventDurationUnit = NA,
+                                        inventoryTypes = NA,
+                                        compilationTypes = NA,
+                                        compilationSourceTypes = NA,
+                                        protocolNames = "Butterfly fixed transect survey | Butterfly visual encounter survey | Floral fixed transect survey | Floral visual encounter survey",
+                                        protocolDescriptions = "Butterflies were surveyed at grassland sites across North Dakota using fixed transect and visual encounter surveys conducted by two observers under suitable weather conditions. In 2017–2018, surveys included both fixed transects and roaming visual encounter surveys. In 2019–2020, protocols switched to entirely fixed transect surveys. Floral resources were surveyed using corresponding floral transect and visual encounter survey methods, recording flowering ramets and nectar resources within survey areas.",
+                                        protocolReferences = "", #need
+                                        isAbsenceReported = "true",
+                                        absentTaxa = NA,
+                                        isAbundanceReported = "true",
+                                        isAbundanceCapReported = "false",
+                                        abundanceCap = NA,
+                                        hasMaterialSamples = "false",
+                                        materialSampleTypes = NA,
+                                        hasVouchers = "false",
+                                        voucherInstitutions = NA,
+                                        isLeastSpecificTargetCategoryQuantityInclusive = "true",
+                                        verbatimTargetScope = "butterflies | flowering plants",
+                                        targetTaxonomicScope = "Lepidoptera | Magnoliophyta",
+                                        excludedTaxonomicScope = NA,
+                                        isTaxonomicScopeFullyReported = "true",
+                                        taxonCompletenessReported = "notReported",
+                                        taxonCompletenessProtocols = NA,
+                                        hasNonTargetTaxa = "false",
+                                        areNonTargetTaxaFullyReported = NA,
+                                        nonTargetTaxa = NA,
+                                        targetLifeStageScope = "adult",
+                                        excludedLifeStageScope = "egg | larva | pupa",
+                                        isLifeStageScopeFullyReported = "true",
+                                        targetDegreeOfEstablishmentScope = NA,
+                                        excludedDegreeOfEstablishmentScope = NA,
+                                        isDegreeOfEstablishmentScopeFullyReported = NA,
+                                        targetGrowthFormScope = "flowering individuals",
+                                        excludedGrowthFormScope = NA,
+                                        isGrowthFormScopeFullyReported = NA,
+                                        hasNonTargetOrganisms = NA,
+                                        targetHabitatScope = NA,
+                                        excludedHabitatScope = NA,
+                                        isSamplingEffortReported = "true",
+                                        samplingEffortProtocol = "Two observers separately and simultaneously conducted butterfly and floral surveys at each site. In 2017–2018, each observer completed one fixed transect survey (100 m, 10 minutes) and one visual encounter survey (4 ha, 30 minutes). In 2019–2020, surveys switched entirely to fixed transect methods, with each observer completing two fixed transect surveys (100 m, 10 minutes each).",
+                                        samplingEffortValue = "40",
+                                        samplingEffortUnit = "minutes per site visit per observer",
+                                        samplingPerformedBy = "Field staff"
+                                      )
+```
+
+### Site Visit Events
+
+Each site visit - 2 people; twice a year for each site
+
+Setup:
+
+```{r}
+site_visit_list <- dplyr::bind_rows(
+  butterfly_data %>%
+    dplyr::group_by(Site, Date, Year) %>%
+    dplyr::summarise(
+      Observers = paste(sort(unique(Observer)), collapse = " | "),
+      Code = first(Code),
+      .groups = "drop"
+    ),
+  flower_data %>%
+    dplyr::group_by(Site, Date, Year) %>%
+    dplyr::summarise(
+      Observers = paste(sort(unique(Observer)), collapse = " | "),
+      Code = first(Code),
+      .groups = "drop"
+    )
+) %>%
+  dplyr::group_by(Site, Date, Year) %>%
+  dplyr::summarise(
+    Observers = paste(sort(unique(unlist(strsplit(Observers, " \\| ")))), collapse = " | "),
+    Code = first(Code),
+    .groups = "drop"
+  ) %>%
+  dplyr::mutate(eventID = sub("^[A-Z0-9]+-[AB]", "", Code)) %>%
+  dplyr::select(-Code)
+
+site_visit_list <- site_visit_list %>%
+  dplyr::group_by(Site, eventID) %>%
+  dplyr::summarise(
+    Year = paste(sort(unique(Year)), collapse = " | "),
+    Date = if(length(unique(Date)) > 1) {
+      paste(
+        format(min(as.Date(Date, format = "%m/%d/%y")), "%Y-%m-%d"),
+        format(max(as.Date(Date, format = "%m/%d/%y")), "%Y-%m-%d"),
+        sep = "/"
+      )
+    } else {
+      format(as.Date(first(Date), format = "%m/%d/%y"), "%Y-%m-%d")
+    },
+    Observers = paste(sort(unique(unlist(strsplit(paste(Observers, collapse = " | "), " \\| ")))), collapse = " | "),
+    .groups = "drop"
+  )
+
+site_visit_list <- site_visit_list %>%
+  dplyr::arrange(eventID)
+```
+
+Mapping Event core fields for the site visit event level:
+
+```{r}
+added_site_visit_data_core <- data.frame(eventID = site_visit_list$eventID,
+                                          parentEventID = site_visit_list$Site,
+                                          fieldNumber = site_visit_list$Site,
+                                          habitat = "grassland",
+                                          locationID = site_visit_list$Site,
+                                          countryCode = "US",
+                                          decimalLatitude = site_coords_data$Y[match(paste(site_visit_list$Site, site_visit_list$Year), paste(site_coords_data$Site.Name, site_coords_data$Year))],
+                                          decimalLongitude = site_coords_data$X[match(paste(site_visit_list$Site, site_visit_list$Year), paste(site_coords_data$Site.Name, site_coords_data$Year))],
+                                          coordinateUncertaintyInMeters = 200,
+                                          geodeticDatum = "WGS84",
+                                          country = "United States",
+                                          stateProvince = "North Dakota",
+                                          county = butterfly_data$County[match(site_visit_list$Site, butterfly_data$Site)],
+                                          locality = site_name_mappings$Clean.Site[match(site_visit_list$Site, site_name_mappings$Clean.Site.Abbr)],
+                                          sampleSizeValue = NA,
+                                          sampleSizeUnit = NA,
+                                          footprintWKT = NA,
+                                          footprintSRS = NA,
+                                          eventDate = site_visit_list$Date,
+                                          eventTime = NA,
+                                          eventType = "site visit",
+                                          samplingProtocol = dplyr::case_when(
+                                            site_visit_list$Year %in% c(2017, 2018) ~ "Fixed transect butterfly survey | Visual encounter survey | Floral fixed transect survey | Floral visual encounter survey",
+                                            site_visit_list$Year %in% c(2019, 2020) ~ "Fixed transect butterfly survey | Floral fixed transect survey",
+                                            TRUE ~ NA
+                                          ),
+                                          dataGeneralizations = NA,
+                                          informationWithheld = NA,
+                                          fieldNotes = NA,
+                                          eventRemarks = NA,
+                                          identifiedBy = site_visit_list$Observers
+                                        )
+```
+
+Mapping Humboldt extension fields for the site visit event level:
+
+```{r}
+added_site_visit_data_humboldt <- data.frame(eventID = site_visit_list$eventID,
+                                            siteNestingDescription = "Three grassland survey sites within each of North Dakota's 53 counties were surveyed twice annually for butterflies and flowering plants via transects and encounter surveys; Individual site locations could vary among years.",
+                                            siteCount = 1,
+                                            verbatimSiteNames = site_visit_list$Site,
+                                            verbatimSiteDescriptions = NA,
+                                            reportedWeather = NA,
+                                            reportedExtremeConditions = NA,
+                                            totalAreaSampledValue = dplyr::case_when(
+                                              site_visit_list$Year %in% c(2017, 2018) ~ "100 | 4",
+                                              site_visit_list$Year %in% c(2019, 2020) ~ "100",
+                                              TRUE ~ NA_character_
+                                            ),
+                                            
+                                            totalAreaSampledUnit = dplyr::case_when(
+                                              site_visit_list$Year %in% c(2017, 2018) ~ "m transect | ha survey area",
+                                              site_visit_list$Year %in% c(2019, 2020) ~ "m transect",
+                                              TRUE ~ NA_character_
+                                            ),
+                                            geospatialScopeAreaValue = 4,
+                                            geospatialScopeAreaUnit = "hectares",
+                                            isVegetationCoverReported = "true",
+                                            eventDurationValue = 40,
+                                            eventDurationUnit = "minutes",
+                                            inventoryTypes = NA,
+                                            compilationTypes = NA,
+                                            compilationSourceTypes = NA,
+                                            protocolNames = dplyr::case_when(
+                                              site_visit_list$Year %in% c(2017, 2018) ~ "Butterfly fixed transect survey | Butterfly visual encounter survey | Floral fixed transect survey | Floral visual encounter survey",
+                                              site_visit_list$Year %in% c(2019, 2020) ~ "Butterfly fixed transect survey | Floral fixed transect survey",
+                                              TRUE ~ NA
+                                            ),
+                                            protocolDescriptions = "Butterflies were surveyed at grassland sites across North Dakota using fixed transect and visual encounter surveys conducted by two observers under suitable weather conditions. In 2017–2018, surveys included both fixed transects and roaming visual encounter surveys. In 2019–2020, protocols switched to entirely fixed transect surveys. Floral resources were surveyed using corresponding floral transect and visual encounter survey methods, recording flowering ramets and nectar resources within survey areas.",
+                                            protocolReferences = "", #need
+                                            isAbsenceReported = "true",
+                                            absentTaxa = NA,
+                                            isAbundanceReported = "true",
+                                            isAbundanceCapReported = "false",
+                                            abundanceCap = NA,
+                                            hasMaterialSamples = "false",
+                                            materialSampleTypes = NA,
+                                            hasVouchers = "false",
+                                            voucherInstitutions = NA,
+                                            isLeastSpecificTargetCategoryQuantityInclusive = "true",
+                                            verbatimTargetScope = "butterflies | flowering plants",
+                                            targetTaxonomicScope = "Lepidoptera | Magnoliophyta",
+                                            excludedTaxonomicScope = NA,
+                                            isTaxonomicScopeFullyReported = "true",
+                                            taxonCompletenessReported = "notReported",
+                                            taxonCompletenessProtocols = NA,
+                                            hasNonTargetTaxa = "false",
+                                            areNonTargetTaxaFullyReported = NA,
+                                            nonTargetTaxa = NA,
+                                            targetLifeStageScope = "adult",
+                                            excludedLifeStageScope = "egg | larva | pupa",
+                                            isLifeStageScopeFullyReported = "true",
+                                            targetDegreeOfEstablishmentScope = NA,
+                                            excludedDegreeOfEstablishmentScope = NA,
+                                            isDegreeOfEstablishmentScopeFullyReported = NA,
+                                            targetGrowthFormScope = "flowering individuals",
+                                            excludedGrowthFormScope = NA,
+                                            isGrowthFormScopeFullyReported = NA,
+                                            hasNonTargetOrganisms = NA,
+                                            targetHabitatScope = NA,
+                                            excludedHabitatScope = NA,
+                                            isSamplingEffortReported = "true",
+                                            samplingEffortProtocol = "Two observers separately and simultaneously conducted butterfly and floral surveys at each site. In 2017–2018, each observer completed one fixed transect survey (100 m, 10 minutes) and one visual encounter survey (4 ha, 30 minutes). In 2019–2020, surveys switched entirely to fixed transect methods, with each observer completing two fixed transect surveys (100 m, 10 minutes each).",
+                                            samplingEffortValue = "80",
+                                            samplingEffortUnit = "observer minutes",
+                                            samplingPerformedBy = site_visit_list$Observers
+                                          )
+```
+
+
+### Survey Events
+
+Surveys at each visit - transects and visual encounters
+
+Setup:
+
+```{r}
+survey_list <- dplyr::bind_rows(
+  butterfly_data %>% dplyr::distinct(Code, Site, Date, Year, Observer, Time, Temperature, Wind.Speed, Humidity, Cloud.Cover),
+  flower_data %>% dplyr::distinct(Code, Site, Date, Year, Observer)
+) %>% dplyr::distinct(Code, .keep_all = TRUE)
+```
+
+Mapping Event core fields for the survey event level:
+
+```{r}
+added_survey_data_core <- data.frame(eventID = survey_list$Code,
+                                          parentEventID = sub("^[A-Z0-9]+-[AB]", "", survey_list$Code),
+                                          fieldNumber = survey_list$Site,
+                                          habitat = "grassland",
+                                          locationID = survey_list$Site,
+                                          countryCode = "US",
+                                          decimalLatitude = site_coords_data$Y[match(paste(survey_list$Site, survey_list$Year), paste(site_coords_data$Site.Name, site_coords_data$Year))],
+                                          decimalLongitude = site_coords_data$X[match(paste(survey_list$Site, survey_list$Year), paste(site_coords_data$Site.Name, site_coords_data$Year))],
+                                          coordinateUncertaintyInMeters = 200,
+                                          geodeticDatum = "WGS84",
+                                          country = "United States",
+                                          stateProvince = "North Dakota",
+                                          county = butterfly_data$County[match(survey_list$Site, butterfly_data$Site)],
+                                          locality = site_name_mappings$Clean.Site[match(survey_list$Site, site_name_mappings$Clean.Site.Abbr)],
+                                          sampleSizeValue = dplyr::case_when(
+                                            grepl("LTDS|FLTDS|LT1|LT2|FT1|FT2", survey_list$Code) ~ 100,
+                                            grepl("VES|FVES", survey_list$Code) ~ 4,
+                                            TRUE ~ NA_real_
+                                          ),
+                                          
+                                          sampleSizeUnit = dplyr::case_when(
+                                            grepl("LTDS|FLTDS|LT1|LT2|FT1|FT2", survey_list$Code) ~ "m",
+                                            grepl("VES|FVES", survey_list$Code) ~ "ha",
+                                            TRUE ~ NA_character_
+                                          ),
+                                          footprintWKT = NA,
+                                          footprintSRS = NA,
+                                          eventDate = format(as.Date(as.character(survey_list$Date), format = "%m/%d/%y"), "%Y-%m-%d"),
+                                          eventTime = survey_list$Time,
+                                          eventType = "survey",
+                                          samplingProtocol = dplyr::case_when(
+                                            grepl("^LTDS", survey_list$Code) ~ "Butterfly fixed transect survey",
+                                            grepl("^VES", survey_list$Code) ~ "Butterfly visual encounter survey",
+                                            grepl("^FLTDS", survey_list$Code) ~ "Floral fixed transect survey",
+                                            grepl("^FVES", survey_list$Code) ~ "Floral visual encounter survey",
+                                            grepl("^LT[12]", survey_list$Code) ~ "Butterfly fixed transect survey",
+                                            grepl("^FT[12]", survey_list$Code) ~ "Floral fixed transect survey",
+                                            TRUE ~ NA
+                                          ),
+                                          dataGeneralizations = NA,
+                                          informationWithheld = NA,
+                                          fieldNotes = NA,
+                                          eventRemarks = NA,
+                                          identifiedBy = survey_list$Observer
+                                        )
+```
+
+Mapping Humboldt extension fields for the survey event level:
+
+```{r}
+added_survey_data_humboldt <- data.frame(eventID = survey_list$Code,
+                                            siteNestingDescription = "Three grassland survey sites within each of North Dakota's 53 counties were surveyed twice annually for butterflies and flowering plants via transects and encounter surveys; Individual site locations could vary among years.",
+                                            siteCount = NA,
+                                            verbatimSiteNames = NA,
+                                            verbatimSiteDescriptions = NA,
+                                            reportedWeather = apply(
+                                              survey_list[, c("Temperature", "Wind.Speed", "Humidity", "Cloud.Cover")],
+                                              1,
+                                              function(x) {
+                                                vals <- c(
+                                                  if(!is.na(x[1])) paste("Temperature:", x[1]),
+                                                  if(!is.na(x[2])) paste("Wind speed:", x[2]),
+                                                  if(!is.na(x[3])) paste("Humidity:", x[3]),
+                                                  if(!is.na(x[4])) paste("Cloud cover:", x[4])
+                                                )
+                                                if(length(vals) == 0) NA else paste(vals, collapse = " | ")
+                                              }
+                                            ),
+                                            reportedExtremeConditions = NA,
+                                            totalAreaSampledValue = dplyr::case_when(
+                                              grepl("LTDS|FLTDS|LT1|LT2|FT1|FT2", survey_list$Code) ~ "100",
+                                              grepl("VES|FVES", survey_list$Code) ~ "4",
+                                              TRUE ~ NA_character_
+                                            ),
+                                            
+                                            totalAreaSampledUnit = dplyr::case_when(
+                                              grepl("LTDS|FLTDS|LT1|LT2|FT1|FT2", survey_list$Code) ~ "m",
+                                              grepl("VES|FVES", survey_list$Code) ~ "ha",
+                                              TRUE ~ NA_character_
+                                            ),
+                                            geospatialScopeAreaValue = dplyr::case_when(
+                                              grepl("LTDS|FLTDS|LT1|LT2|FT1|FT2", survey_list$Code) ~ 100,
+                                              grepl("VES|FVES", survey_list$Code) ~ 4,
+                                              TRUE ~ NA_real_
+                                            ),
+                                            
+                                            geospatialScopeAreaUnit = dplyr::case_when(
+                                              grepl("LTDS|FLTDS|LT1|LT2|FT1|FT2", survey_list$Code) ~ "m",
+                                              grepl("VES|FVES", survey_list$Code) ~ "ha",
+                                              TRUE ~ NA_character_
+                                            ),
+                                            isVegetationCoverReported = NA,
+                                            eventDurationValue = dplyr::case_when(
+                                              grepl("LTDS|FLTDS|LT1|LT2|FT1|FT2", survey_list$Code) ~ 10,
+                                              grepl("VES|FVES", survey_list$Code) ~ 30,
+                                              TRUE ~ NA_real_
+                                            ),
+                                            
+                                            eventDurationUnit = "minutes",
+                                            inventoryTypes = NA,
+                                            compilationTypes = NA,
+                                            compilationSourceTypes = NA,
+                                            protocolNames = dplyr::case_when(
+                                              grepl("^LTDS|^LT[12]", survey_list$Code) ~ "Butterfly fixed transect survey",
+                                              grepl("^VES", survey_list$Code) ~ "Butterfly visual encounter survey",
+                                              grepl("^FLTDS|^FT[12]", survey_list$Code) ~ "Floral fixed transect survey",
+                                              grepl("^FVES", survey_list$Code) ~ "Floral visual encounter survey",
+                                              TRUE ~ NA
+                                            ),
+                                            protocolDescriptions = "Butterflies were surveyed at grassland sites across North Dakota using fixed transect and visual encounter surveys conducted by two observers under suitable weather conditions. In 2017–2018, surveys included both fixed transects and roaming visual encounter surveys. In 2019–2020, protocols switched to entirely fixed transect surveys. Floral resources were surveyed using corresponding floral transect and visual encounter survey methods, recording flowering ramets and nectar resources within survey areas.",
+                                            protocolReferences = "", #need
+                                            isAbsenceReported = "true",
+                                            absentTaxa = NA,
+                                            isAbundanceReported = "true",
+                                            isAbundanceCapReported = "false",
+                                            abundanceCap = NA,
+                                            hasMaterialSamples = "false",
+                                            materialSampleTypes = NA,
+                                            hasVouchers = "false",
+                                            voucherInstitutions = NA,
+                                            isLeastSpecificTargetCategoryQuantityInclusive = "true",
+                                            verbatimTargetScope = "butterflies | flowering plants",
+                                            targetTaxonomicScope = "Lepidoptera | Magnoliophyta",
+                                            excludedTaxonomicScope = NA,
+                                            isTaxonomicScopeFullyReported = "true",
+                                            taxonCompletenessReported = "notReported",
+                                            taxonCompletenessProtocols = NA,
+                                            hasNonTargetTaxa = "false",
+                                            areNonTargetTaxaFullyReported = NA,
+                                            nonTargetTaxa = NA,
+                                            targetLifeStageScope = "adult",
+                                            excludedLifeStageScope = "egg | larva | pupa",
+                                            isLifeStageScopeFullyReported = "true",
+                                            targetDegreeOfEstablishmentScope = NA,
+                                            excludedDegreeOfEstablishmentScope = NA,
+                                            isDegreeOfEstablishmentScopeFullyReported = NA,
+                                            targetGrowthFormScope = "flowering individuals",
+                                            excludedGrowthFormScope = NA,
+                                            isGrowthFormScopeFullyReported = NA,
+                                            hasNonTargetOrganisms = NA,
+                                            targetHabitatScope = NA,
+                                            excludedHabitatScope = NA,
+                                            isSamplingEffortReported = "true",
+                                            samplingEffortProtocol = "Two observers separately and simultaneously conducted butterfly and floral surveys at each site. In 2017–2018, each observer completed one fixed transect survey (100 m, 10 minutes) and one visual encounter survey (4 ha, 30 minutes). In 2019–2020, surveys switched entirely to fixed transect methods, with each observer completing two fixed transect surveys (100 m, 10 minutes each).",
+                                            samplingEffortValue = "40",
+                                            samplingEffortUnit = "minutes per site visit per observer",
+                                            samplingPerformedBy = survey_list$Observer
+                                          )
+```
+
+
+### Merge Event Tables
+
+```{r}
+event_data_core <- bind_rows(
+  NDbutterflies_project_event_core,
+  added_counties_data_core,
+  added_site_data_core,
+  added_site_visit_data_core,
+  added_survey_data_core
+)
+
+event_data_humboldt <- bind_rows(
+  NDbutterflies_project_event_Humboldt,
+  added_county_data_humboldt,
+  added_site_data_humboldt,
+  added_site_visit_data_humboldt,
+  added_survey_data_humboldt
+)
+
+rownames(event_data_core) <- NULL
+event_data_core <- event_data_core %>% select(where(~ !all(is.na(.)))) #Remove columns that are entirely NA
+
+rownames(event_data_humboldt) <- NULL
+event_data_humboldt <- event_data_humboldt %>% select(where(~ !all(is.na(.)))) #Remove columns that are entirely NA
+```
+
+## Map Occurrence Data
+
+### Butterfly Occurrences
+
+```{r}
+#map species codes
+butterfly_data$scientificName <- species_codes_data$Scientific.Name[
+  match(butterfly_data$Butterfly.Code, species_codes_data$Code)
+]
+
+butterfly_data$vernacularName <- species_codes_data$Common.Name[
+  match(butterfly_data$Butterfly.Code, species_codes_data$Code)
+]
+```
+
+
+```{r}
+added_butterfly_occurrence_data <- data.frame(eventID = butterfly_data$Code,
+                                              occurrenceID = butterfly_data$occurrenceID,
+                                              basisOfRecord = "HumanObservation",
+                                              scientificName = butterfly_data$scientificName,
+                                              vernacularName = butterfly_data$vernacularName,
+                                              taxonRank = ifelse(
+                                                is.na(butterfly_data$scientificName),
+                                                NA,
+                                                ifelse(grepl(" spp$", butterfly_data$scientificName), "genus", "species")
+                                              ),
+                                              occurrenceStatus = ifelse(butterfly_data$Butterfly.Code == "None", "absent", "present"),
+                                              individualCount = butterfly_data$Count,
+                                              organismQuantity = butterfly_data$Count,
+                                              organismQuantityType = "Individuals",
+                                              recordedBy = butterfly_data$Observer,
+                                              behavior = ifelse(
+                                                butterfly_data$Behavior == "" & butterfly_data$Plant.Species == "",
+                                                NA,
+                                                ifelse(
+                                                  grepl("ground|litter|rock", butterfly_data$Plant.Species, ignore.case = TRUE),
+                                                  paste(butterfly_data$Behavior, butterfly_data$Plant.Species),
+                                                  butterfly_data$Behavior
+                                                )
+                                              ),
+                                              lifeStage = ifelse(butterfly_data$Butterfly.Code == "None", NA, "adult"),
+                                              vitality = ifelse(butterfly_data$Butterfly.Code == "None", NA, "alive"),
+                                              identifiedBy = ifelse(butterfly_data$Butterfly.Code == "None", NA, butterfly_data$Observer)
+                                            )
+
+```
+
+### Plant Occurrences from Butterfly Data
+
+Add plant occurrences from butterfly_data where there is no matching flower occurrence
+
+```{r}
+butterfly_data$associatedOccurrences <- flower_data$occurrenceID[
+  match(
+    paste(
+      dplyr::case_when(
+        grepl("^VES", butterfly_data$Code) ~ sub("^VES", "FVES", butterfly_data$Code),
+        grepl("^LTDS", butterfly_data$Code) ~ sub("^LTDS", "FLTDS", butterfly_data$Code),
+        grepl("^LT1", butterfly_data$Code) ~ sub("^LT1", "FT1", butterfly_data$Code),
+        grepl("^LT2", butterfly_data$Code) ~ sub("^LT2", "FT2", butterfly_data$Code),
+        TRUE ~ butterfly_data$Code
+      ),
+      butterfly_data$Plant.Species
+    ),
+    paste(flower_data$Code, flower_data$Flower.Species)
+  )
+]
+
+missing_matches <- is.na(butterfly_data$associatedOccurrences) & butterfly_data$Plant.Species != ""
+
+alt_codes <- dplyr::case_when(
+  grepl("^VES", butterfly_data$Code[missing_matches]) ~ sub("^VES", "FVES", butterfly_data$Code[missing_matches]),
+  grepl("^LTDS", butterfly_data$Code[missing_matches]) ~ sub("^LTDS", "FLTDS", butterfly_data$Code[missing_matches]),
+  grepl("^LT1", butterfly_data$Code[missing_matches]) ~ sub("^LT1", "FT1", butterfly_data$Code[missing_matches]),
+  grepl("^LT2", butterfly_data$Code[missing_matches]) ~ sub("^LT2", "FT2", butterfly_data$Code[missing_matches]),
+  TRUE ~ butterfly_data$Code[missing_matches]
+)
+
+alt_codes <- ifelse(grepl("-A", alt_codes),
+                    sub("-A", "-B", alt_codes),
+                    sub("-B", "-A", alt_codes))
+
+butterfly_data$associatedOccurrences[missing_matches] <- flower_data$occurrenceID[
+  match(
+    paste(alt_codes, butterfly_data$Plant.Species[missing_matches]),
+    paste(flower_data$Code, flower_data$Flower.Species)
+  )
+]
+
+plants_to_add <- butterfly_data %>%
+  dplyr::filter(
+    Plant.Species != "",
+    is.na(associatedOccurrences)
+  )
+
+#map species codes
+plants_to_add$scientificName <- species_codes_data$Scientific.Name[
+  match(plants_to_add$Plant.Species, species_codes_data$Code)
+]
+
+plants_to_add$vernacularName <- species_codes_data$Common.Name[
+  match(plants_to_add$Plant.Species, species_codes_data$Code)
+]
+
+#remove rows where could not map
+plants_to_add <- plants_to_add %>%
+  dplyr::filter(!is.na(scientificName))
+
+#redo occurrenceID
+plants_to_add <- plants_to_add %>%
+  dplyr::select(-Butterfly.Code, -Temperature, -Wind.Speed, -Cloud.Cover, -Behavior, -Time, -Count, -occurrenceID) %>%
+  dplyr::distinct()
+plants_to_add %<>% mutate(occurrenceID = paste(vdigest (paste(Code, Site, Date, Observer, Plant.Species), algo="md5"), sep=":"))
+```
+
+
+```{r}
+added_plant_occurrence_data <- data.frame(eventID = plants_to_add$Code,
+                                              occurrenceID = plants_to_add$occurrenceID,
+                                              basisOfRecord = "HumanObservation",
+                                              scientificName = plants_to_add$scientificName,
+                                              vernacularName = plants_to_add$vernacularName,
+                                              taxonRank = ifelse(
+                                                is.na(plants_to_add$scientificName),
+                                                NA,
+                                                ifelse(grepl(" spp$", plants_to_add$scientificName), "family", "species")
+                                              ),
+                                              occurrenceStatus = "present",
+                                              recordedBy = plants_to_add$Observer,
+                                              vitality = "alive",
+                                              identifiedBy = plants_to_add$Observer
+                                            )
+
+```
+
+### Flower Occurrences
+
+```{r}
+#map species codes
+flower_data$scientificName <- species_codes_data$Scientific.Name[
+  match(flower_data$Flower.Species, species_codes_data$Code)
+]
+
+flower_data$vernacularName <- species_codes_data$Common.Name[
+  match(flower_data$Flower.Species, species_codes_data$Code)
+]
+
+#remove rows where could not map
+flower_data <- flower_data %>%
+  dplyr::filter(Flower.Species == "none" | !is.na(scientificName))
+```
+
+
+```{r}
+added_flower_occurrence_data <- data.frame(eventID = flower_data$Code,
+                                            occurrenceID = flower_data$occurrenceID,
+                                            basisOfRecord = "HumanObservation",
+                                            scientificName = flower_data$scientificName,
+                                            vernacularName = flower_data$vernacularName,
+                                            taxonRank = ifelse(
+                                              is.na(flower_data$scientificName),
+                                              NA,
+                                              ifelse(grepl(" spp$", flower_data$scientificName), "genus", "species")
+                                            ),
+                                            occurrenceStatus = ifelse(flower_data$Flower.Species == "none", "absent", "present"),
+                                            organismQuantity = flower_data$Count,
+                                            organismQuantityType = "Flowering ramets (stems)",
+                                            recordedBy = flower_data$Observer,
+                                            vitality = ifelse(flower_data$Flower.Species == "none", NA, "alive"),
+                                            identifiedBy = ifelse(flower_data$Flower.Species == "none", NA, butterfly_data$Observer)
+                                          )
+
+```
+
+### Merge Occurrence Tables
+```{r}
+occurrence_data <- bind_rows(added_butterfly_occurrence_data,
+                             added_flower_occurrence_data,
+                             added_plant_occurrence_data)
+rownames(occurrence_data) <- NULL
+occurrence_data <- occurrence_data %>% select(where(~ !all(is.na(.)))) #Remove columns that are entirely NA
+```
+
+
+## Map Resource Relationship Data
+
+```{r}
+missing_matches <- is.na(butterfly_data$associatedOccurrences) & butterfly_data$Plant.Species != ""
+
+butterfly_data$associatedOccurrences[missing_matches] <- plants_to_add$occurrenceID[
+  match(
+    paste(butterfly_data$Code[missing_matches], butterfly_data$Plant.Species[missing_matches]),
+    paste(plants_to_add$Code, plants_to_add$Plant.Species)
+  )
+]
+
+butterfly_plant_interactions <- butterfly_data %>%
+  dplyr::filter(!is.na(associatedOccurrences), Plant.Species != "") %>%
+  dplyr::transmute(
+    resourceID = occurrenceID,
+    relatedResourceID = associatedOccurrences,
+    relationshipOfResource = Behavior
+  )
+
+butterfly_plant_interactions <- butterfly_plant_interactions %>%
+  dplyr::filter(!is.na(relatedResourceID))
+```
+
+
+```{r}
+butterfly_plant_interactions <- butterfly_plant_interactions %>%
+  dplyr::filter(relationshipOfResource != "")
+
+resource_relationship_data <- data.frame(resourceID = butterfly_plant_interactions$resourceID,
+                                         relatedResourceID = butterfly_plant_interactions$relatedResourceID,
+                                         relationshipOfResource = tolower(butterfly_plant_interactions$relationshipOfResource)
+)
+```
+
+## Map Extended Measurement or Fact Data
+
+Certain details do not fit into the core event or occurrence tables. These are represented in the ExtendedMeasurementOrFact (eMoF) table.
+
+### Site Vegetation
+
+```{r}
+site_vegetation_data$eventID <- site_visit_list$eventID[
+  match(
+    paste(site_vegetation_data$Site, site_vegetation_data$Year),
+    paste(site_visit_list$Site, site_visit_list$Year)
+  )
+]
+
+emof_vegetation_data <- site_vegetation_data %>%
+  tidyr::pivot_longer(
+    cols = -c(Year, Site, Original.Site, eventID),
+    names_to = "measurementType",
+    values_to = "measurementValue"
+  ) %>%
+  dplyr::filter(!is.na(eventID)) %>%
+  dplyr::select(eventID, measurementType, measurementValue)
+```
+
+### Site Agency
+
+```{r}
+butterfly_data <- read.csv(input_butterfly)
+flower_data <- read.csv(input_flower)
+
+butterfly_data$Original.Site <- butterfly_data$Site
+butterfly_data$Site <- site_name_mappings$Clean.Site.Abbr[
+  match(butterfly_data$Site, site_name_mappings$Dirty.Site)
+]
+
+flower_data$Original.Site <- flower_data$Site
+flower_data$Site <- site_name_mappings$Clean.Site.Abbr[
+  match(flower_data$Site, site_name_mappings$Dirty.Site)
+]
+
+emof_agency_data <- dplyr::bind_rows(
+  butterfly_data %>% dplyr::select(Site, Agency),
+  flower_data %>% dplyr::select(Site, Agency)
+) %>%
+  dplyr::distinct() %>%
+  dplyr::mutate(
+    measurementType = "agency",
+    measurementValue = Agency
+  ) %>%
+  dplyr::select(
+    eventID = Site,
+    measurementType,
+    measurementValue
+  )
+```
+
+### Ecoregion Number
+
+Once we have the shape file, fill this data out more
+
+```{r}
+emof_ecoregion_data <- dplyr::bind_rows(
+  butterfly_data %>% dplyr::select(Site, Ecoregion.Number),
+  flower_data %>% dplyr::select(Site, Ecoregion.Number)
+) %>%
+  dplyr::distinct() %>%
+  dplyr::mutate(
+    measurementType = "ecoregion number",
+    measurementValue = Ecoregion.Number
+  ) %>%
+  dplyr::select(
+    eventID = Site,
+    measurementType,
+    measurementValue
+  ) %>%
+  dplyr::filter(!is.na(measurementValue))
+```
+
+### Visit Number
+
+Once we have the shape file, fill this data out more
+
+```{r}
+emof_visit_data <- site_visit_list %>%
+  dplyr::group_by(Site, Year) %>%
+  dplyr::arrange(Date, .by_group = TRUE) %>%
+  dplyr::mutate(
+    measurementType = "visit number",
+    measurementValue = row_number()
+  ) %>%
+  dplyr::ungroup() %>%
+  dplyr::select(
+    eventID,
+    measurementType,
+    measurementValue
+  )
+```
+
+
+### Merge Extended Measurement or Fact Tables
+
+```{r}
+emof_vegetation_data$measurementValue <- as.character(emof_vegetation_data$measurementValue)
+emof_agency_data$measurementValue <- as.character(emof_agency_data$measurementValue)
+emof_ecoregion_data$measurementValue <- as.character(emof_ecoregion_data$measurementValue)
+emof_visit_data$measurementValue <- as.character(emof_visit_data$measurementValue)
+
+emof_data <- bind_rows(emof_vegetation_data,
+                       emof_agency_data,
+                       emof_ecoregion_data,
+                       emof_visit_data
+                       )
+rownames(emof_data) <- NULL
+```
+
+# Save Data
+
+## Full Dataset
+
+The full processed event and occurrence tables generated through this workflow are available in the project repository. [NDButterfliesDwC/full](https://github.com/sunray1/NDButterfliesDwC/tree/master/full).
+
+```{r}
+write.csv(event_data_core, "outputs/event.csv", row.names = FALSE)
+write.csv(event_data_humboldt, "outputs/humboldtecologicalinventory.csv", row.names = FALSE)
+write.csv(occurrence_data, "outputs/occurrence.csv", row.names = FALSE)
+write.csv(resource_relationship_data, "outputs/resourceRelationship.csv", row.names = FALSE)
+write.csv(emof_data, "outputs/extendedMeasurementOrFact.csv", row.names = FALSE)
+```

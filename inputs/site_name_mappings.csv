@@ -1,0 +1,986 @@
+County,County Abbr,Dirty-Site,Clean-Site,Clean-Site-Abbr
+Adams,ADA,ADA 130-092-36,130-092-36,ADA 130-092-36
+Adams,ADA,ADA-130-092-36,130-092-36,ADA 130-092-36
+Adams,ADA,ADA 132-097-16,132-097-16,ADA 132-097-16
+Adams,ADA,ADA-132-097-16,132-097-16,ADA 132-097-16
+Adams,ADA,Blaha Cedar Creek,Blaha Cedar Creek,ADA Blaha Cedar Creek
+Adams,ADA,ADA Blaha Dozer Q,Blaha Dozer Q,ADA Blaha Dozer Q
+Adams,ADA,Blaha Dozer Q,Blaha Dozer Q,ADA Blaha Dozer Q
+Adams,ADA,ADA Blaha EZ Encha,Blaha EZ Encha,ADA Blaha EZ Encha
+Adams,ADA,Blaha EZ Encha,Blaha EZ Encha,ADA Blaha EZ Encha
+Adams,ADA,Blaha South Russian Slough,Blaha South Russian Slough,ADA Blaha South Russian Slough
+Adams,ADA,ADA Blaha Wolf Butte,Blaha Wolf Butte,ADA Blaha Wolf Butte
+Adams,ADA,Blaha Wolf Butte,Blaha Wolf Butte,ADA Blaha Wolf Butte
+Adams,ADA,ADA Dayton,Dayton,ADA Dayton
+Adams,ADA,Dayton,Dayton,ADA Dayton
+Adams,ADA,ADA HREC,HREC,ADA HREC
+Adams,ADA,ADA HREC 1,HREC,ADA HREC
+Adams,ADA,HREC,HREC,ADA HREC
+Barnes,BAR,BAR-141-061-28,141-061-28,BAR 141-061-28
+Barnes,BAR,BAR 142-059-12,142-059-12,BAR 142-059-12
+Barnes,BAR,BAR-142-059-12,142-059-12,BAR 142-059-12
+Barnes,BAR,BAR Boom,Boom,BAR Boom
+Barnes,BAR,Boom,Boom,BAR Boom
+Barnes,BAR,BAR Clausen Springs WMA,Clausen Springs WMA,BAR Clausen Springs WMA
+Barnes,BAR,Clausen Springs WMA,Clausen Springs WMA,BAR Clausen Springs WMA
+Barnes,BAR,CLAUSEN SPRINGS WMA,Clausen Springs WMA,BAR Clausen Springs WMA
+Barnes,BAR,BAR Legge,Legge,BAR Legge
+Barnes,BAR,Legge,Legge,BAR Legge
+Barnes,BAR,BAR Lettenmaier WPA,Lettenmaier WPA,BAR Lettenmaier WPA
+Barnes,BAR,Lettenmaier WPA,Lettenmaier WPA,BAR Lettenmaier WPA
+Barnes,BAR,Lettenmeier WPA,Lettenmaier WPA,BAR Lettenmaier WPA
+Barnes,BAR,BAR Olson WMA,Olson WMA,BAR Olson WMA
+Barnes,BAR,Olson WMA,Olson WMA,BAR Olson WMA
+Barnes,BAR,Rasmusson,Rasmusson,BAR Rasmusson
+Barnes,BAR,BAR Stoney Slough WPA,Stoney Slough WPA,BAR Stoney Slough WPA
+Barnes,BAR,Stoney Slough WPA,Stoney Slough WPA,BAR Stoney Slough WPA
+Benson,BEN,BEN 151-070-14,151-070-14,BEN 151-070-14
+Benson,BEN,BEN-151-070-14,151-070-14,BEN 151-070-14
+Benson,BEN,BEN-151-70-14,151-070-14,BEN 151-070-14
+Benson,BEN,BEN-151-070-16,151-070-16,BEN 151-070-16
+Benson,BEN,BEN 156-071-16,156-071-16,BEN 156-071-16
+Benson,BEN,BEN-156-071-16,156-071-16,BEN 156-071-16
+Benson,BEN,BEN Deep Valley WPA,Deep Valley WPA,BEN Deep Valley WPA
+Benson,BEN,Deep Valley WPA,Deep Valley WPA,BEN Deep Valley WPA
+Benson,BEN,BEN Elstad,Elstad,BEN Elstad
+Benson,BEN,BEN ELSTAD,Elstad,BEN Elstad
+Benson,BEN,BEN-Elstad,Elstad,BEN Elstad
+Benson,BEN,Knox WPA,Knox WPA,BEN Knox WPA
+Benson,BEN,BEN Orts,Orts,BEN Orts
+Benson,BEN,Orts,Orts,BEN Orts
+Benson,BEN,Sully's Hill,Sully's Hill NWR,BEN Sully's Hill NWR
+Benson,BEN,Sully's Hill NWR,Sully's Hill NWR,BEN Sully's Hill NWR
+Benson,BEN,BEN Sully's Lake NWR,Sully's Lake NWR,BEN Sully's Lake NWR
+Benson,BEN,SULLY'S LAKE NWR,Sully's Lake NWR,BEN Sully's Lake NWR
+Benson,BEN,BEN Twin Lakes WPA,Twin Lakes WPA,BEN Twin Lakes WPA
+Benson,BEN,Twin Lakes WPA,Twin Lakes WPA,BEN Twin Lakes WPA
+Benson,BEN,White Horse Hill NWR,White Horse Hill NWR,BEN White Horse Hill NWR
+Billings,BIL,BIL 144-099-36,144-099-36,BIL 144-099-36
+Billings,BIL,BIL-144-099-36,144-099-36,BIL 144-099-36
+Billings,BIL,BIL Bull Creek WMA,Bull Creek WMA,BIL Bull Creek WMA
+Billings,BIL,Billings Bull Creek ,Bull Creek WMA,BIL Bull Creek WMA
+Billings,BIL,Bull Creek WMA,Bull Creek WMA,BIL Bull Creek WMA
+Billings,BIL,BIL Little Missouri NG 1,Little Missouri NG 1,BIL Little Missouri NG 1
+Billings,BIL,BIL-Little Missouri NG 1,Little Missouri NG 1,BIL Little Missouri NG 1
+Billings,BIL,BIL Little Missouri NG 2,Little Missouri NG 2,BIL Little Missouri NG 2
+Billings,BIL,BIL-Little Missouri NG 2,Little Missouri NG 2,BIL Little Missouri NG 2
+Billings,BIL,BIL Little Missouri NG 3,Little Missouri NG 3,BIL Little Missouri NG 3
+Billings,BIL,BIL-Little Missouri NG 3,Little Missouri NG 3,BIL Little Missouri NG 3
+Billings,BIL,BIL-Little Missouri NG 4,Little Missouri NG 4,BIL Little Missouri NG 4
+Billings,BIL,BIL Odermann East,Odermann East,BIL Odermann East
+Billings,BIL,Odermann East,Odermann East,BIL Odermann East
+Billings,BIL,Odermann West,Odermann West,BIL Odermann West
+Billings,BIL,BIL Shade,Shade,BIL Shade
+Billings,BIL,Shade,Shade,BIL Shade
+Bottineau,BOT,BOT 160-080-36,160-080-36,BOT 160-080-36
+Bottineau,BOT,BOT-160-080-36,160-080-36,BOT 160-080-36
+Bottineau,BOT,BOT 164-083-36,164-083-36,BOT 164-083-36
+Bottineau,BOT,BOT-146-083-36,164-083-36,BOT 164-083-36
+Bottineau,BOT,BOT-164-083-36,164-083-36,BOT 164-083-36
+Bottineau,BOT,Beatty WPA,Beatty WPA,BOT Beatty WPA
+Bottineau,BOT,BOT JCS NWR 1,JCS NWR 1,BOT JCS NWR 1
+Bottineau,BOT,BOT JCS NWR 1 ,JCS NWR 1,BOT JCS NWR 1
+Bottineau,BOT,BOT-JCS NWR 1,JCS NWR 1,BOT JCS NWR 1
+Bottineau,BOT,BOT JCS NWR 2,JCS NWR 2,BOT JCS NWR 2
+Bottineau,BOT,BOT-JCS NWR 2,JCS NWR 2,BOT JCS NWR 2
+Bottineau,BOT,BOT JCS NWR 3,JCS NWR 3,BOT JCS NWR 3
+Bottineau,BOT,BOT-JCS NWR 3,JCS NWR 3,BOT JCS NWR 3
+Bottineau,BOT,BOT JCS NWR 4,JCS NWR 4,BOT JCS NWR 4
+Bottineau,BOT,BOT JCS NWR 4 ,JCS NWR 4,BOT JCS NWR 4
+Bottineau,BOT,BOT-JCS NWR 4,JCS NWR 4,BOT JCS NWR 4
+Bottineau,BOT,BOT Lansford WPA,Lansford WPA,BOT Lansford WPA
+Bottineau,BOT,Lansford WPA,Lansford WPA,BOT Lansford WPA
+Bottineau,BOT,Turtle Mountain WMA,Turtle Mountain WMA,BOT Turtle Mountain WMA
+Bowman,BOW,BOW 130-103-36,130-103-36,BOW 130-103-36
+Bowman,BOW,BOW-130-103-36,130-103-36,BOW 130-103-36
+Bowman,BOW,BOW 131-105-36,131-105-36,BOW 131-105-36
+Bowman,BOW,BOW-131-105-36,131-105-36,BOW 131-105-36
+Bowman,BOW,BOW-132-102-36,132-102-36,BOW 132-102-36
+Bowman,BOW,Alkali Creek WMA,Alkali Creek WMA,BOW Alkali Creek WMA
+Bowman,BOW,BOW Alkali Creek WMA,Alkali Creek WMA,BOW Alkali Creek WMA
+Bowman,BOW,Bowman Alkali Creek,Alkali Creek WMA,BOW Alkali Creek WMA
+Bowman,BOW,BOW Hansen,Hansen,BOW Hansen
+Bowman,BOW,Hansen,Hansen,BOW Hansen
+Bowman,BOW,BOW Kromerek,Kromerek,BOW Kromerek
+Bowman,BOW,Kromerek,Kromerek,BOW Kromerek
+Bowman,BOW,BOW Spring Creek WMA,Spring Creek WMA,BOW Spring Creek WMA
+Bowman,BOW,Spring Creek,Spring Creek WMA,BOW Spring Creek WMA
+Bowman,BOW,Spring Creek WMA,Spring Creek WMA,BOW Spring Creek WMA
+Bowman,BOW,Tom Fish,Tom Fish,BOW Tom Fish
+Bowman,BOW,BOW White,White,BOW White
+Bowman,BOW,White,White,BOW White
+Burke,BRK,BRK 162-094-36,162-094-36,BRK 162-094-36
+Burke,BRK,BRK-162-094-36,162-094-36,BRK 162-094-36
+Burke,BRK,BRK Des Lacs NWR 1,Des Lacs NWR 1,BRK Des Lacs NWR 1
+Burke,BRK,BRK-Des Lacs NWR 1,Des Lacs NWR 1,BRK Des Lacs NWR 1
+Burke,BRK,BRK Des Lacs NWR 2,Des Lacs NWR 2,BRK Des Lacs NWR 2
+Burke,BRK,BRK-Des Lacs NWR 2,Des Lacs NWR 2,BRK Des Lacs NWR 2
+Burke,BRK,BRK Lostwood NWR 1,Lostwood NWR 1,BRK Lostwood NWR 1
+Burke,BRK,BRK-Lostwood NWR 1,Lostwood NWR 1,BRK Lostwood NWR 1
+Burke,BRK,BRK Lostwood NWR 2,Lostwood NWR 2,BRK Lostwood NWR 2
+Burke,BRK,BRK-Lostwood NWR 2,Lostwood NWR 2,BRK Lostwood NWR 2
+Burke,BRK,BRK Staael North,Staael North,BRK Staael North
+Burke,BRK,Staael North,Staael North,BRK Staael North
+Burke,BRK,Staael north 1,Staael North,BRK Staael North
+Burke,BRK,BRK Staael South 1,Staael South 1,BRK Staael South 1
+Burke,BRK,Staael South 1,Staael South 1,BRK Staael South 1
+Burke,BRK,Staael south 1,Staael South 1,BRK Staael South 1
+Burke,BRK,Staael South 2,Staael South 2,BRK Staael South 2
+Burke,BRK,Staael South 3,Staael South 3,BRK Staael South 3
+Burleigh,BUR,BRL-137-078-36,137-078-36,BUR 137-078-36
+Burleigh,BUR,BUR 137-078-36,137-078-36,BUR 137-078-36
+Burleigh,BUR,BUR-137-078-36,137-078-36,BUR 137-078-36
+Burleigh,BUR,BRL-141-075-36,141-075-36,BUR 141-075-36
+Burleigh,BUR,BUR-141-075-36,141-075-36,BUR 141-075-36
+Burleigh,BUR,BRL-141-078-16,141-078-16,BUR 141-078-16
+Burleigh,BUR,BUR 141-078-16,141-078-16,BUR 141-078-16
+Burleigh,BUR,Art Brazda WMA,Art Brazda WMA,BUR Art Brazda WMA
+Burleigh,BUR,BUR Art Brazda WMA,Art Brazda WMA,BUR Art Brazda WMA
+Burleigh,BUR,BUR Cutting,Cutting,BUR Cutting
+Burleigh,BUR,Cutting,Cutting,BUR Cutting
+Burleigh,BUR,BRL-Long Lake NWR,Long Lake NWR,BUR Long Lake NWR
+Burleigh,BUR,BUR Long Lake NWR 1,Long Lake NWR,BUR Long Lake NWR
+Burleigh,BUR,BUR Rath/Wonnenburg WPA,Rath/Wonnenburg WPA,BUR Rath/Wonnenburg WPA
+Burleigh,BUR,Rath/Wonnenburg WPA,Rath/Wonnenburg WPA,BUR Rath/Wonnenburg WPA
+Burleigh,BUR,Russ Stuart WMA,Russ Stuart WMA,BUR Russ Stuart WMA
+Burleigh,BUR,BUR RW Henderson WMA,RW Henderson WMA,BUR RW Henderson WMA
+Burleigh,BUR,RW Henderson,RW Henderson WMA,BUR RW Henderson WMA
+Burleigh,BUR,RW Henderson WMA,RW Henderson WMA,BUR RW Henderson WMA
+Cass,CAS,Alice WPA,Alice WPA 1,CAS Alice WPA 1
+Cass,CAS,Alice WPA 1,Alice WPA 1,CAS Alice WPA 1
+Cass,CAS,CAS Alice WPA 1,Alice WPA 1,CAS Alice WPA 1
+Cass,CAS,Alice WPA 2,Alice WPA 2,CAS Alice WPA 2
+Cass,CAS,CAS Alice WPA 2,Alice WPA 2,CAS Alice WPA 2
+Cass,CAS,CAS Erie Dam WMA,Erie Dam WMA,CAS Erie Dam WMA
+Cass,CAS,Erie Dam WMA,Erie Dam WMA,CAS Erie Dam WMA
+Cass,CAS,Erie Dam WMA 2,Erie Dam WMA 2,CAS Erie Dam WMA 2
+Cass,CAS,CAS Hamilton Wills WMA,Hamilton Wills WMA,CAS Hamilton Wills WMA
+Cass,CAS,Hamilton Wills,Hamilton Wills WMA,CAS Hamilton Wills WMA
+Cass,CAS,Hamilton Wills WMA,Hamilton Wills WMA,CAS Hamilton Wills WMA
+Cass,CAS,CAS Kemmer WPA,Kemmer WPA,CAS Kemmer WPA
+Cass,CAS,Kemmer WPA,Kemmer WPA,CAS Kemmer WPA
+Cass,CAS,CAS Stordalen,Stordalen,CAS Stordalen
+Cass,CAS,Stordalen,Stordalen,CAS Stordalen
+Cass,CAS,STORDALEN,Stordalen,CAS Stordalen
+Cass,CAS,Torgerson,Torgerson,CAS Torgerson
+Cass,CAS,CAS Trego,Trego,CAS Trego
+Cass,CAS,Trego,Trego,CAS Trego
+Cass,CAS,TREGO,Trego,CAS Trego
+Cavalier,CAV,Billings Lake WPA,Billings Lake WPA,CAV Billings Lake WPA
+Cavalier,CAV,CAV Billings Lake WPA,Billings Lake WPA,CAV Billings Lake WPA
+Cavalier,CAV,CAV Mulberry Creek WPA,Mulberry Creek WPA,CAV Mulberry Creek WPA
+Cavalier,CAV,Mulberry Creek WPA,Mulberry Creek WPA,CAV Mulberry Creek WPA
+Cavalier,CAV,MULBERRY CREEK WPA,Mulberry Creek WPA,CAV Mulberry Creek WPA
+Cavalier,CAV,CAV Pembina Hills WMA,Pembina Hills WMA,CAV Pembina Hills WMA
+Cavalier,CAV,Pembina Hills WMA,Pembina Hills WMA,CAV Pembina Hills WMA
+Cavalier,CAV,CAV Pung WPA,Pung WPA,CAV Pung WPA
+Cavalier,CAV,Pung WPA,Pung WPA,CAV Pung WPA
+Cavalier,CAV,PUNG WPA,Pung WPA,CAV Pung WPA
+Cavalier,CAV,CAV Schill,Schill,CAV Schill
+Cavalier,CAV,Schill,Schill,CAV Schill
+Cavalier,CAV,Stinkeoway WPA,Stinkeoway WPA,CAV Stinkeoway WPA
+Cavalier,CAV,Thorson WPA,Thorson WPA,CAV Thorson WPA
+Cavalier,CAV,CAV Ullyot WPA,Ullyot WPA,CAV Ullyot WPA
+Cavalier,CAV,Ullyot,Ullyot WPA,CAV Ullyot WPA
+Cavalier,CAV,Ullyot WPA,Ullyot WPA,CAV Ullyot WPA
+Cavalier,CAV,CAV Wengeler WPA,Wengeler WPA,CAV Wengeler WPA
+Cavalier,CAV,Wengeler,Wengeler WPA,CAV Wengeler WPA
+Cavalier,CAV,Wengeler WPA,Wengeler WPA,CAV Wengeler WPA
+Dickey,DIC,Bluestem Prairie WMA,Bluestem Prairie WMA,DIC Bluestem Prairie WMA
+Dickey,DIC,DIC Bluestem Prairie WMA,Bluestem Prairie WMA,DIC Bluestem Prairie WMA
+Dickey,DIC,Brummond,Brummond,DIC Brummond
+Dickey,DIC,Burkhardt,Burkhardt,DIC Burkhardt
+Dickey,DIC,DIC Burkhardt,Burkhardt,DIC Burkhardt
+Dickey,DIC,DIC Grunneich WPA,Grunneich WPA,DIC Grunneich WPA
+Dickey,DIC,Grunneich WPA,Grunneich WPA,DIC Grunneich WPA
+Dickey,DIC,DIC Johnson's Gulch WMA,Johnson's Gulch WMA,DIC Johnson's Gulch WMA
+Dickey,DIC,Johnson's Gulch WMA,Johnson's Gulch WMA,DIC Johnson's Gulch WMA
+Dickey,DIC,DIC Lazy M WPA,Lazy M WPA,DIC Lazy M WPA
+Dickey,DIC,Lazy M WPA,Lazy M WPA,DIC Lazy M WPA
+Dickey,DIC,DIC Maple River WMA,Maple River WMA,DIC Maple River WMA
+Dickey,DIC,Maple River WMA,Maple River WMA,DIC Maple River WMA
+Dickey,DIC,DIC Sand,Sand,DIC Sand
+Dickey,DIC,Sand,Sand,DIC Sand
+Dickey,DIC,Sand 2,Sand 2,DIC Sand 2
+Divide,DIV,DIV 161-101-36,161-101-36,DIV 161-101-36
+Divide,DIV,DIV-161-101-36,161-101-36,DIV 161-101-36
+Divide,DIV,DIV 161-102-16,161-102-16,DIV 161-102-16
+Divide,DIV,DIV-161-102-16,161-102-16,DIV 161-102-16
+Divide,DIV,DIV-162-102-36,162-102-36,DIV 162-102-36
+Divide,DIV,DIV Drawbond WPA,Drawbond WPA,DIV Drawbond WPA
+Divide,DIV,Drawbond WPA,Drawbond WPA,DIV Drawbond WPA
+Divide,DIV,Gillund,Gillund,DIV Gillund
+Divide,DIV,DIV Hall,Hall,DIV Hall
+Divide,DIV,Hall,Hall,DIV Hall
+Divide,DIV,DIV Salt Flats WMA,Salt Flats WMA,DIV Salt Flats WMA
+Divide,DIV,Salt Flats WMA,Salt Flats WMA,DIV Salt Flats WMA
+Divide,DIV,DIV Soo Grade WPA,Soo Grade WPA,DIV Soo Grade WPA
+Divide,DIV,Soo Grade WPA,Soo Grade WPA,DIV Soo Grade WPA
+Divide,DIV,DIV Wenstad,Wenstad,DIV Wenstad
+Divide,DIV,Wenstad,Wenstad,DIV Wenstad
+Dunn,DUN,DUN 142-093-16,142-093-16,DUN 142-093-16
+Dunn,DUN,DUN-142-093-16,142-093-16,DUN 142-093-16
+Dunn,DUN,DUN-142-097-16,142-097-16,DUN 142-097-16
+Dunn,DUN,DUN-146-091-16,146-091-16,DUN 146-091-16
+Dunn,DUN,DUN Killdeer Mtns WMA,Killdeer Mtns WMA,DUN Killdeer Mtns WMA
+Dunn,DUN,Killdeer Mtns WMA 1,Killdeer Mtns WMA,DUN Killdeer Mtns WMA
+Dunn,DUN,DUN Killdeer Mtns WMA 2,Killdeer Mtns WMA 2,DUN Killdeer Mtns WMA 2
+Dunn,DUN,Killdeer Mtns WMA 2,Killdeer Mtns WMA 2,DUN Killdeer Mtns WMA 2
+Dunn,DUN,DUN Lake Ilo NWR,Lake Ilo NWR,DUN Lake Ilo NWR
+Dunn,DUN,Lake Ilo NWR,Lake Ilo NWR,DUN Lake Ilo NWR
+Dunn,DUN,DUN Tuhy,Tuhy,DUN Tuhy
+Dunn,DUN,Tuhy,Tuhy,DUN Tuhy
+Dunn,DUN,TUHY,Tuhy,DUN Tuhy
+Dunn,DUN,DUN Voigt,Voigt,DUN Voigt
+Dunn,DUN,Voigt,Voigt,DUN Voigt
+Dunn,DUN,DUN Zahn,Zahn,DUN Zahn
+Dunn,DUN,Zahn,Zahn,DUN Zahn
+Eddy,EDD,EDD 150-065-7,150-065-07,EDD 150-065-07
+Eddy,EDD,EDD-150-065-07,150-065-07,EDD 150-065-07
+Eddy,EDD,EDD-150-065-7,150-065-07,EDD 150-065-07
+Eddy,EDD,EDD 150-065-24,150-065-24,EDD 150-065-24
+Eddy,EDD,EDD-150-065-24,150-065-24,EDD 150-065-24
+Eddy,EDD,EDD 150-067-3,150-067-03,EDD 150-067-03
+Eddy,EDD,EDD-150-067-3,150-067-03,EDD 150-067-03
+Eddy,EDD,EDD-150-67-03,150-067-03,EDD 150-067-03
+Eddy,EDD,EDD Haven WPA,Haven WPA,EDD Haven WPA
+Eddy,EDD,Haven WPA,Haven WPA,EDD Haven WPA
+Eddy,EDD,HAVEN WPA,Haven WPA,EDD Haven WPA
+Eddy,EDD,EDD Lake Washington WMA,Lake Washington WMA,EDD Lake Washington WMA
+Eddy,EDD,Lake Washington WMA,Lake Washington WMA,EDD Lake Washington WMA
+Eddy,EDD,Langley WPA,Langley WPA,EDD Langley WPA
+Eddy,EDD,EDD-Larson WPA,Larson WPA,EDD Larson WPA
+Eddy,EDD,EDD Swan Lake WPA,Swan Lake WPA,EDD Swan Lake WPA
+Eddy,EDD,Swan Lake WPA,Swan Lake WPA,EDD Swan Lake WPA
+Eddy,EDD,EDD Wallace WPA,Wallace WPA,EDD Wallace WPA
+Eddy,EDD,Wallace,Wallace WPA,EDD Wallace WPA
+Eddy,EDD,Wallace WPA,Wallace WPA,EDD Wallace WPA
+Emmons,EMM,EMM 129-077-16,129-077-16,EMM 129-077-16
+Emmons,EMM,EMM-129-077-16,129-077-16,EMM 129-077-16
+Emmons,EMM,EMM-132-078-16,132-078-16,EMM 132-078-16
+Emmons,EMM,EMM 133-074-16,133-074-16,EMM 133-074-16
+Emmons,EMM,EMM-133-074-16,133-074-16,EMM 133-074-16
+Emmons,EMM,EMM Hague WMA,Hague WMA,EMM Hague WMA
+Emmons,EMM,Hague WMA,Hague WMA,EMM Hague WMA
+Emmons,EMM,Krumm,Krumm,EMM Krumm
+Emmons,EMM,EMM Kurtz WPA,Kurtz WPA,EMM Kurtz WPA
+Emmons,EMM,Emmons Kurtz,Kurtz WPA,EMM Kurtz WPA
+Emmons,EMM,Kurtz WPA,Kurtz WPA,EMM Kurtz WPA
+Emmons,EMM,EMM MacLean Bottoms WMA,MacLean Bottoms WMA,EMM MacLean Bottoms WMA
+Emmons,EMM,MacLean Bottoms,MacLean Bottoms WMA,EMM MacLean Bottoms WMA
+Emmons,EMM,MacLean Bottoms WMA,MacLean Bottoms WMA,EMM MacLean Bottoms WMA
+Emmons,EMM,EMM Schiermeister WPA,Schiermeister WPA,EMM Schiermeister WPA
+Emmons,EMM,Schiermeister WPA,Schiermeister WPA,EMM Schiermeister WPA
+Emmons,EMM,EMM Vander Vorst,Vander Vorst,EMM Vander Vorst
+Emmons,EMM,Vander Vorst,Vander Vorst,EMM Vander Vorst
+Foster,FOS,FOS 147-062-26,147-062-26,FOS 147-062-26
+Foster,FOS,FOS-147-062-26,147-062-26,FOS 147-062-26
+Foster,FOS,FOS-147-063-22,147-063-22,FOS 147-063-22
+Foster,FOS,FOS-147-064-16,147-064-16,FOS 147-064-16
+Foster,FOS,Barlow,Barlow WPA,FOS Barlow WPA
+Foster,FOS,Barlow WPA,Barlow WPA,FOS Barlow WPA
+Foster,FOS,FOS Barlow WPA,Barlow WPA,FOS Barlow WPA
+Foster,FOS,FOS George Karpen WMA,George Karpen WMA,FOS George Karpen WMA
+Foster,FOS,George Karpen,George Karpen WMA,FOS George Karpen WMA
+Foster,FOS,George Karpen WMA,George Karpen WMA,FOS George Karpen WMA
+Foster,FOS,FOS Gussiaas,Gussiaas,FOS Gussiaas
+Foster,FOS,Gussiaas,Gussiaas,FOS Gussiaas
+Foster,FOS,FOS Leppke,Leppke,FOS Leppke
+Foster,FOS,Leppke,Leppke,FOS Leppke
+Foster,FOS,FOS Lutz East,Lutz East,FOS Lutz East
+Foster,FOS,Lutz East,Lutz East,FOS Lutz East
+Foster,FOS,FOS Lutz West,Lutz West,FOS Lutz West
+Foster,FOS,Lutz West,Lutz West,FOS Lutz West
+Foster,FOS,Lutz West ,Lutz West,FOS Lutz West
+Grand Forks,GFO,GFO 151-056-16,151-056-16,GFO 151-056-16
+Grand Forks,GFO,GFO-151-056-16,151-056-16,GFO 151-056-16
+Grand Forks,GFO,Agnes Marsh WPA,Agnes Marsh WPA,GFO Agnes Marsh WPA
+Grand Forks,GFO,GFO Agnes Marsh WPA,Agnes Marsh WPA,GFO Agnes Marsh WPA
+Grand Forks,GFO,Crawford Oakville Prairie WMA,Crawford Oakville Prairie WMA,GFO Crawford Oakville Prairie WMA
+Grand Forks,GFO,GFO Crawford Oakville Prairie WMA,Crawford Oakville Prairie WMA,GFO Crawford Oakville Prairie WMA
+Grand Forks,GFO,GFO Mekinock WPA,Mekinock WPA,GFO Mekinock WPA
+Grand Forks,GFO,Mekinock,Mekinock WPA,GFO Mekinock WPA
+Grand Forks,GFO,Mekinock WPA,Mekinock WPA,GFO Mekinock WPA
+Grand Forks,GFO,GFO Prairie Chicken WMA,Prairie Chicken WMA,GFO Prairie Chicken WMA
+Grand Forks,GFO,Prairie Chicken ,Prairie Chicken WMA,GFO Prairie Chicken WMA
+Grand Forks,GFO,Prairie Chicken WMA,Prairie Chicken WMA,GFO Prairie Chicken WMA
+Grand Forks,GFO,GFO Sproule North,Sproule North,GFO Sproule North
+Grand Forks,GFO,Sproule North,Sproule North,GFO Sproule North
+Grand Forks,GFO,GFO Sproule South,Sproule South,GFO Sproule South
+Grand Forks,GFO,GFO-Sproule South,Sproule South,GFO Sproule South
+Grand Forks,GFO,Stewart Lake WPA,Stewart Lake WPA,GFO Stewart Lake WPA
+Grand Forks,GFO,Tennison WPA,Tennison WPA,GFO Tennison WPA
+Golden Valley,GOL,GOL 136-106-36,136-106-36,GOL 136-106-36
+Golden Valley,GOL,GOL-136-106-36,136-106-36,GOL 136-106-36
+Golden Valley,GOL,GOL-139-105-36,139-105-36,GOL 139-105-36
+Golden Valley,GOL,GOL 140-104-36,140-104-36,GOL 140-104-36
+Golden Valley,GOL,GOL-140-104-36,140-104-36,GOL 140-104-36
+Golden Valley,GOL,GOL 144-105-36,144-105-36,GOL 144-105-36
+Golden Valley,GOL,GOL-144-105-36,144-105-36,GOL 144-105-36
+Golden Valley,GOL,GOL Little Missouri NG 1,Little Missouri NG 1,GOL Little Missouri NG 1
+Golden Valley,GOL,GOL-Little Missouri NG 1,Little Missouri NG 1,GOL Little Missouri NG 1
+Golden Valley,GOL,GOL Little Missouri NG 2,Little Missouri NG 2,GOL Little Missouri NG 2
+Golden Valley,GOL,GOL Little MIssouri NG 2,Little Missouri NG 2,GOL Little Missouri NG 2
+Golden Valley,GOL,GOL-Little Missouri NG 2,Little Missouri NG 2,GOL Little Missouri NG 2
+Golden Valley,GOL,GOL Little Missouri NG 3,Little Missouri NG 3,GOL Little Missouri NG 3
+Golden Valley,GOL,GOL Little MIssouri NG 3,Little Missouri NG 3,GOL Little Missouri NG 3
+Golden Valley,GOL,GOL-Little Missouri NG 3,Little Missouri NG 3,GOL Little Missouri NG 3
+Golden Valley,GOL,GOL-Little Missouri NG 4,Little Missouri NG 4,GOL Little Missouri NG 4
+Golden Valley,GOL,GOL Stedman,Stedman,GOL Stedman
+Golden Valley,GOL,Stedman,Stedman,GOL Stedman
+Grant,GRA,GRA-132-089-13,132-089-13,GRA 132-089-13
+Grant,GRA,GRA 133-083-16,133-083-16,GRA 133-083-16
+Grant,GRA,GRA-133-083-16,133-083-16,GRA 133-083-16
+Grant,GRA,GRA 137-088-16,137-088-16,GRA 137-088-16
+Grant,GRA,GRA-137-088-16,137-088-16,GRA 137-088-16
+Grant,GRA,GRA Cedar River NG 1,Cedar River NG 1,GRA Cedar River NG 1
+Grant,GRA,GRA-Cedar River NG 1,Cedar River NG 1,GRA Cedar River NG 1
+Grant,GRA,Grant Cedar River,Cedar River NG 1,GRA Cedar River NG 1
+Grant,GRA,Gaugler CRP,Gaugler CRP,GRA Gaugler CRP
+Grant,GRA,GRA Gaugler CRP,Gaugler CRP,GRA Gaugler CRP
+Grant,GRA,Gaugler North,Gaugler North,GRA Gaugler North
+Grant,GRA,GRA Gaugler North,Gaugler North,GRA Gaugler North
+Grant,GRA,Gaugler South,Gaugler South,GRA Gaugler South
+Grant,GRA,GRA Gaugler South,Gaugler South,GRA Gaugler South
+Grant,GRA,GRA Otter Creek WMA,Otter Creek WMA,GRA Otter Creek WMA
+Grant,GRA,Grant Otter Creek,Otter Creek WMA,GRA Otter Creek WMA
+Grant,GRA,Otter Creek WMA,Otter Creek WMA,GRA Otter Creek WMA
+Grant,GRA,Three Buttes WMA,Three Buttes WMA,GRA Three Buttes WMA
+Griggs,GRI,GRI 148-061-16,148-061-16,GRI 148-061-16
+Griggs,GRI,GRI-148-061-16,148-061-16,GRI 148-061-16
+Griggs,GRI,GRI 148-061-36,148-061-36,GRI 148-061-36
+Griggs,GRI,GRI-148-061-36,148-061-36,GRI 148-061-36
+Griggs,GRI,Evers WPA,Evers WPA,GRI Evers WPA
+Griggs,GRI,GRI Evers WPA,Evers WPA,GRI Evers WPA
+Griggs,GRI,GRI Jackson,Jackson,GRI Jackson
+Griggs,GRI,Jackson,Jackson,GRI Jackson
+Griggs,GRI,GRI-Larson WPA,Larson WPA,GRI Larson WPA
+Griggs,GRI,GRI Sibley Lake NWR,Sibley Lake NWR,GRI Sibley Lake NWR
+Griggs,GRI,Sibley Lake NWR,Sibley Lake NWR,GRI Sibley Lake NWR
+Griggs,GRI,SIBLEY LAKE NWR,Sibley Lake NWR,GRI Sibley Lake NWR
+Griggs,GRI,GRI Southward,Southward,GRI Southward
+Griggs,GRI,Southward,Southward,GRI Southward
+Griggs,GRI,Southward Old Pasture,Southward Old Pasture,GRI Southward Old Pasture
+Griggs,GRI,GRI Southward South,Southward South,GRI Southward South
+Griggs,GRI,Southward South,Southward South,GRI Southward South
+Griggs,GRI,southward south,Southward South,GRI Southward South
+Hettinger,HET,HET 133-091-10,133-091-10,HET 133-091-10
+Hettinger,HET,HET-133-091-10,133-091-10,HET 133-091-10
+Hettinger,HET,HET 134-094-16,134-094-16,HET 134-094-16
+Hettinger,HET,HET-134-094-16,134-094-16,HET 134-094-16
+Hettinger,HET,HET-135-091-16,135-091-16,HET 135-091-16
+Hettinger,HET,HET-135-096-16,135-096-16,HET 135-096-16
+Hettinger,HET,HET 135-097-16,135-097-16,HET 135-097-16
+Hettinger,HET,HET-135-097-16,135-097-16,HET 135-097-16
+Hettinger,HET,HET 136-091-34,136-091-34,HET 136-091-34
+Hettinger,HET,HET-136-091-34,136-091-34,HET 136-091-34
+Hettinger,HET,HET Hillsview WPA,Hillsview WPA,HET Hillsview WPA
+Hettinger,HET,Hettinger Hillsview,Hillsview WPA,HET Hillsview WPA
+Hettinger,HET,Hillsview WPA,Hillsview WPA,HET Hillsview WPA
+Hettinger,HET,HET Indian Creek WMA,Indian Creek WMA,HET Indian Creek WMA
+Hettinger,HET,Indian Creek WMA,Indian Creek WMA,HET Indian Creek WMA
+Hettinger,HET,HET Indian Creek WMA 2,Indian Creek WMA 2,HET Indian Creek WMA 2
+Hettinger,HET,Indian Creek WMA 2,Indian Creek WMA 2,HET Indian Creek WMA 2
+Kidder,KID,KID 138-074-16,138-074-16,KID 138-074-16
+Kidder,KID,KID-138-074-16,138-074-16,KID 138-074-16
+Kidder,KID,Dawson ,Dawson WMA,KID Dawson WMA
+Kidder,KID,Dawson WMA,Dawson WMA,KID Dawson WMA
+Kidder,KID,KID Dawson WMA,Dawson WMA,KID Dawson WMA
+Kidder,KID,Goosey,Goosey,KID Goosey
+Kidder,KID,Haven Hills WMA,Haven Hills WMA,KID Haven Hills WMA
+Kidder,KID,KID Haven Hills WMA,Haven Hills WMA,KID Haven Hills WMA
+Kidder,KID,Horsehead WMA,Horsehead WMA,KID Horsehead WMA
+Kidder,KID,KID Horsehead WMA,Horsehead WMA,KID Horsehead WMA
+Kidder,KID,KID Long Lake NWR 1,Long Lake NWR,KID Long Lake NWR
+Kidder,KID,Kidder Long Lake,Long Lake NWR,KID Long Lake NWR
+Kidder,KID,KID-Long Lake NWR,Long Lake NWR,KID Long Lake NWR
+Kidder,KID,KID Personius WPA,Personius WPA,KID Personius WPA
+Kidder,KID,Personius WPA,Personius WPA,KID Personius WPA
+Kidder,KID,KID Slade NWR,Slade NWR,KID Slade NWR
+Kidder,KID,Slade NWR,Slade NWR,KID Slade NWR
+Kidder,KID,KID-Weinmann,Weinmann,KID Weinmann
+LaMoure,LAM,LAM 133-065-36,133-065-36,LAM 133-065-36
+LaMoure,LAM,LAM-133-065-36,133-065-36,LAM 133-065-36
+LaMoure,LAM,LAM 136-059-36,136-059-36,LAM 136-059-36
+LaMoure,LAM,LAM-136-059-36,136-059-36,LAM 136-059-36
+LaMoure,LAM,Barr WPA,Barr WPA,LAM Barr WPA
+LaMoure,LAM,LAM Barr WPA,Barr WPA,LAM Barr WPA
+LaMoure,LAM,Cisinkski,Cisinski,LAM Cisinski
+LaMoure,LAM,Cisinski,Cisinski,LAM Cisinski
+LaMoure,LAM,Cornell,Cornell WPA,LAM Cornell WPA
+LaMoure,LAM,Cornell WPA,Cornell WPA,LAM Cornell WPA
+LaMoure,LAM,LAM Cornell WPA,Cornell WPA,LAM Cornell WPA
+LaMoure,LAM,Cottonwood Creek,Cottonwood Creek WMA,LAM Cottonwood Creek WMA
+LaMoure,LAM,Cottonwood Creek WMA,Cottonwood Creek WMA,LAM Cottonwood Creek WMA
+LaMoure,LAM,LAM Cottonwood Creek WMA,Cottonwood Creek WMA,LAM Cottonwood Creek WMA
+LaMoure,LAM,LAM Olson,Olson,LAM Olson
+LaMoure,LAM,Olson,Olson,LAM Olson
+LaMoure,LAM,Teterud,Teterud,LAM Teterud
+LaMoure,LAM,LAM Toay,Toay,LAM Toay
+LaMoure,LAM,Toay,Toay,LAM Toay
+Logan,LOG,LOG 134-071-36,134-071-36,LOG 134-071-36
+Logan,LOG,LOG-134-071-36,134-071-36,LOG 134-071-36
+Logan,LOG,LOG 135-070-16,135-070-16,LOG 135-070-16
+Logan,LOG,LOG-135-070-16,135-070-16,LOG 135-070-16
+Logan,LOG,LOG-136-071-04,136-071-04,LOG 136-071-04
+Logan,LOG,LOG-136-071-4,136-071-04,LOG 136-071-04
+Logan,LOG,Boschee,Boschee WPA,LOG Boschee WPA
+Logan,LOG,Boschee WPA,Boschee WPA,LOG Boschee WPA
+Logan,LOG,LOG Boschee WPA,Boschee WPA,LOG Boschee WPA
+Logan,LOG,Grohne WPA,Grohne WPA,LOG Grohne WPA
+Logan,LOG,LOG Grohne WPA,Grohne WPA,LOG Grohne WPA
+Logan,LOG,Gross,Gross,LOG Gross
+Logan,LOG,Herr,Herr,LOG Herr
+Logan,LOG,LOG Herr,Herr,LOG Herr
+Logan,LOG,Lang,Lang,LOG Lang
+Logan,LOG,LOG Lang,Lang,LOG Lang
+Logan,LOG,Larson ,Larson WPA,LOG Larson WPA
+Logan,LOG,LOG-Larson WPA,Larson WPA,LOG Larson WPA
+Logan,LOG,LOG Mund WPA,Mund WPA,LOG Mund WPA
+Logan,LOG,Logan Mund,Mund WPA,LOG Mund WPA
+McHenry,MCH,MCH JCS NWR,JCS NWR,MCH JCS NWR
+McHenry,MCH,MCH-JCS NWR,JCS NWR,MCH JCS NWR
+McHenry,MCH,Keller WPA,Keller WPA,MCH Keller WPA
+McHenry,MCH,MCH Keller WPA,Keller WPA,MCH Keller WPA
+McHenry,MCH,MCH Rieder WPA,Rieder WPA,MCH Rieder WPA
+McHenry,MCH,Rieder,Rieder WPA,MCH Rieder WPA
+McHenry,MCH,Rieder WPA,Rieder WPA,MCH Rieder WPA
+McHenry,MCH,MCH Round Lake Township WMA,Round Lake Township WMA,MCH Round Lake Township WMA
+McHenry,MCH,Round Lake Township WMA,Round Lake Township WMA,MCH Round Lake Township WMA
+McHenry,MCH,MCH Taylor Central,Taylor Central,MCH Taylor Central
+McHenry,MCH,Taylor Central,Taylor Central,MCH Taylor Central
+McHenry,MCH,MCH Taylor East,Taylor East,MCH Taylor East
+McHenry,MCH,Taylor East,Taylor East,MCH Taylor East
+McHenry,MCH,MCH Taylor North,Taylor North,MCH Taylor North
+McHenry,MCH,Taylor North,Taylor North,MCH Taylor North
+McHenry,MCH,Taylor South,Taylor South,MCH Taylor South
+McHenry,MCH,Taylor West,Taylor West,MCH Taylor West
+McHenry,MCH,TAYLOR WEST,Taylor West,MCH Taylor West
+McIntosh,MCI,Camp Lake,Camp Lake WMA,MCI Camp Lake WMA
+McIntosh,MCI,Camp Lake WMA,Camp Lake WMA,MCI Camp Lake WMA
+McIntosh,MCI,MCI Camp Lake WMA,Camp Lake WMA,MCI Camp Lake WMA
+McIntosh,MCI,Eszlinger,Eszlinger WPA,MCI Eszlinger WPA
+McIntosh,MCI,Eszlinger WPA,Eszlinger WPA,MCI Eszlinger WPA
+McIntosh,MCI,MCI Eszlinger WPA,Eszlinger WPA,MCI Eszlinger WPA
+McIntosh,MCI,Fiechtner,Fiechtner,MCI Fiechtner
+McIntosh,MCI,MCI Fiechtner,Fiechtner,MCI Fiechtner
+McIntosh,MCI,Herr East,Herr East,MCI Herr East
+McIntosh,MCI,MCI Herr East,Herr East,MCI Herr East
+McIntosh,MCI,Herr West,Herr West,MCI Herr West
+McIntosh,MCI,MCI Herr West,Herr West,MCI Herr West
+McIntosh,MCI,MCI Mund WPA,Mund WPA,MCI Mund WPA
+McIntosh,MCI,McIntosh Mund,Mund WPA,MCI Mund WPA
+McIntosh,MCI,Mund WPA,Mund WPA,MCI Mund WPA
+McIntosh,MCI,Sand East,Sand East,MCI Sand East
+McIntosh,MCI,MCI Sand West,Sand West,MCI Sand West
+McIntosh,MCI,Sand West,Sand West,MCI Sand West
+McIntosh,MCI,Sand West ,Sand West,MCI Sand West
+McIntosh,MCI,Sand West 2,Sand West 2,MCI Sand West 2
+McKenzie,MCK,MCK 146-100-36,146-100-36,MCK 146-100-36
+McKenzie,MCK,MCK-146-100-36,146-100-36,MCK 146-100-36
+McKenzie,MCK,MCK-148-102-16,148-102-16,MCK 148-102-16
+McKenzie,MCK,MCK Little Missouri NG 1,Little Missouri NG 1,MCK Little Missouri NG 1
+McKenzie,MCK,MCK-Little Missouri NG 1,Little Missouri NG 1,MCK Little Missouri NG 1
+McKenzie,MCK,MCK Little Missouri NG 2,Little Missouri NG 2,MCK Little Missouri NG 2
+McKenzie,MCK,MCK-Little Missouri NG 2,Little Missouri NG 2,MCK Little Missouri NG 2
+McKenzie,MCK,MCK Little Missouri NG 3,Little Missouri NG 3,MCK Little Missouri NG 3
+McKenzie,MCK,MCK-Little Missouri NG 3,Little Missouri NG 3,MCK Little Missouri NG 3
+McKenzie,MCK,MCK Little Missouri NG 4,Little Missouri NG 4,MCK Little Missouri NG 4
+McKenzie,MCK,MCK-Little Missouri NG 4,Little Missouri NG 4,MCK Little Missouri NG 4
+McKenzie,MCK,MCK-Little Missouri NG 5,Little Missouri NG 5,MCK Little Missouri NG 5
+McKenzie,MCK,MCK Ochs Point WMA,Ochs Point WMA,MCK Ochs Point WMA
+McKenzie,MCK,Och's Point,Ochs Point WMA,MCK Ochs Point WMA
+McKenzie,MCK,Ochs Point WMA,Ochs Point WMA,MCK Ochs Point WMA
+McKenzie,MCK,MCK Tobacco Gardens WMA,Tobacco Gardens WMA,MCK Tobacco Gardens WMA
+McKenzie,MCK,Tobacco Gardens WMA,Tobacco Gardens WMA,MCK Tobacco Gardens WMA
+McLean,MCL,MCL-147-079-16,147-079-16,MCL 147-079-16
+McLean,MCL,MCL 150-082-36,150-082-36,MCL 150-082-36
+McLean,MCL,MCL-150-082-36,150-082-36,MCL 150-082-36
+McLean,MCL,Charles Schroeder,Charles Schroeder WMA,MCL Charles Schroeder WMA
+McLean,MCL,Charles Schroeder WMA,Charles Schroeder WMA,MCL Charles Schroeder WMA
+McLean,MCL,MCL Charles Schroeder WMA,Charles Schroeder WMA,MCL Charles Schroeder WMA
+McLean,MCL,Coal Coulee WPA,Coal Coulee WPA,MCL Coal Coulee WPA
+McLean,MCL,MCL Coal Coulee WPA,Coal Coulee WPA,MCL Coal Coulee WPA
+McLean,MCL,deTrobrian WMA,deTrobrian WMA,MCL deTrobrian WMA
+McLean,MCL,MCL deTrobrian WMA,deTrobrian WMA,MCL deTrobrian WMA
+McLean,MCL,MCL Finken,Finken,MCL Finken
+McLean,MCL,MCL-Finken,Finken,MCL Finken
+McLean,MCL,Goven,Goven,MCL Goven
+McLean,MCL,MCL Goven,Goven,MCL Goven
+McLean,MCL,Lick North,Lick North,MCL Lick North
+McLean,MCL,MCL Lick North,Lick North,MCL Lick North
+McLean,MCL,Lick South,Lick South,MCL Lick South
+Mercer,MER,MER 143-089-36,143-089-36,MER 143-089-36
+Mercer,MER,MER-143-089-36,143-089-36,MER 143-089-36
+Mercer,MER,MER-143-89-36,143-089-36,MER 143-089-36
+Mercer,MER,MER 144-085-16,144-085-16,MER 144-085-16
+Mercer,MER,MER-144-085-16,144-085-16,MER 144-085-16
+Mercer,MER,MER 144-089-16,144-089-16,MER 144-089-16
+Mercer,MER,MER-144-089-16,144-089-16,MER 144-089-16
+Mercer,MER,Beaver Creek WMA,Beaver Creek WMA,MER Beaver Creek WMA
+Mercer,MER,Flemmer,Flemmer,MER Flemmer
+Mercer,MER,Golden Valley,Golden Valley WMA,MER Golden Valley WMA
+Mercer,MER,Golden Valley WMA,Golden Valley WMA,MER Golden Valley WMA
+Mercer,MER,MER Golden Valley WMA,Golden Valley WMA,MER Golden Valley WMA
+Mercer,MER,Hille WMA,Hille WMA,MER Hille WMA
+Mercer,MER,MER Hille WMA,Hille WMA,MER Hille WMA
+Mercer,MER,MER Missouri Breaks WMA,Missouri Breaks WMA,MER Missouri Breaks WMA
+Mercer,MER,Missouri Breaks WMA,Missouri Breaks WMA,MER Missouri Breaks WMA
+Mercer,MER,MER North Beulah Mine WMA,North Beulah Mine WMA,MER North Beulah Mine WMA
+Mercer,MER,Mercer North Beulah Mine,North Beulah Mine WMA,MER North Beulah Mine WMA
+Mercer,MER,North Beulah Mine WMA,North Beulah Mine WMA,MER North Beulah Mine WMA
+Morton,MOR,MOR 134-083-36,134-083-36,MOR 134-083-36
+Morton,MOR,MOR-134-083-36,134-083-36,MOR 134-083-36
+Morton,MOR,MOR 137-085-16,137-085-16,MOR 137-085-16
+Morton,MOR,MOR-137-085-16,137-085-16,MOR 137-085-16
+Morton,MOR,MOR-137-85-16,137-085-16,MOR 137-085-16
+Morton,MOR,MOR 138-083-36,138-083-36,MOR 138-083-36
+Morton,MOR,MOR-138-083-36,138-083-36,MOR 138-083-36
+Morton,MOR,MOR 140-089-16,140-089-16,MOR 140-089-16
+Morton,MOR,MOR-140-089-16,140-089-16,MOR 140-089-16
+Morton,MOR,Graner Bottoms WMA,Graner Bottoms WMA,MOR Graner Bottoms WMA
+Morton,MOR,MOR Graner Bottoms WMA,Graner Bottoms WMA,MOR Graner Bottoms WMA
+Morton,MOR,Hatzenbuhler,Hatzenbuhler,MOR Hatzenbuhler
+Morton,MOR,Lake Patricia WMA,Lake Patricia WMA,MOR Lake Patricia WMA
+Morton,MOR,MOR Morton County WMA,Morton County WMA,MOR Morton County WMA
+Morton,MOR,Morton County,Morton County WMA,MOR Morton County WMA
+Morton,MOR,Morton County WMA,Morton County WMA,MOR Morton County WMA
+Morton,MOR,MOR Storm Creek Lake WMA,Storm Creek Lake WMA,MOR Storm Creek Lake WMA
+Morton,MOR,Storm Creek Lake WMA,Storm Creek Lake WMA,MOR Storm Creek Lake WMA
+Mountrail,MOU,MOU 153-091-16,153-091-16,MOU 153-091-16
+Mountrail,MOU,MOU-153-091-16,153-091-16,MOU 153-091-16
+Mountrail,MOU,MOU 154-093-36,154-093-36,MOU 154-093-36
+Mountrail,MOU,MOU-154-093-36,154-093-36,MOU 154-093-36
+Mountrail,MOU,MOU-154-93-36,154-093-36,MOU 154-093-36
+Mountrail,MOU,MOU 157-093-36,157-093-36,MOU 157-093-36
+Mountrail,MOU,MOU-157-093-36,157-093-36,MOU 157-093-36
+Burleigh,BUR,Audobon wicks,Audubon Wicks,MOU Audubon Wicks
+Mountrail,MOU,Audubon Wicks Cell 1,Audubon Wicks,MOU Audubon Wicks
+Mountrail,MOU,MOU Audubon Wicks,Audubon Wicks,MOU Audubon Wicks
+Mountrail,MOU,Audubon Wicks Cell 3,Audubon Wicks Cell 3,MOU Audubon Wicks Cell 3
+Mountrail,MOU,Davy,Davy,MOU Davy
+Mountrail,MOU,Kjallberg,Kjallberg WPA,MOU Kjallberg WPA
+Mountrail,MOU,Kjallberg WPA,Kjallberg WPA,MOU Kjallberg WPA
+Mountrail,MOU,MOU Kjallberg WPA,Kjallberg WPA,MOU Kjallberg WPA
+Mountrail,MOU,Lostwood,Lostwood NWR,MOU Lostwood NWR
+Mountrail,MOU,Lostwood NWR,Lostwood NWR,MOU Lostwood NWR
+Mountrail,MOU,MOU Lostwood NWR 1,Lostwood NWR,MOU Lostwood NWR
+Mountrail,MOU,MOU Lostwood NWR1,Lostwood NWR,MOU Lostwood NWR
+Mountrail,MOU,MOU-Lostwood NWR,Lostwood NWR,MOU Lostwood NWR
+Mountrail,MOU,MOU Van Hook WMA,Van Hook WMA,MOU Van Hook WMA
+Mountrail,MOU,Van Hook WMA,Van Hook WMA,MOU Van Hook WMA
+Nelson,NEL,NEL 149-061-20,149-061-20,NEL 149-061-20
+Nelson,NEL,NEL-149-061-20,149-061-20,NEL 149-061-20
+Nelson,NEL,NEL 149-061-36,149-061-36,NEL 149-061-36
+Nelson,NEL,NEL-149-061-36,149-061-36,NEL 149-061-36
+Nelson,NEL,NEL-150-061-16,150-061-16,NEL 150-061-16
+Nelson,NEL,NEL 150-061-21,150-061-21,NEL 150-061-21
+Nelson,NEL,NEL-150-061-21,150-061-21,NEL 150-061-21
+Nelson,NEL,NEL-150-61-21,150-061-21,NEL 150-061-21
+Nelson,NEL,Engen,Engen,NEL Engen
+Nelson,NEL,NEL Engen,Engen,NEL Engen
+Nelson,NEL,Lambs Lake NWR,Lambs Lake NWR,NEL Lambs Lake NWR
+Nelson,NEL,LAMBS LAKE NWR,Lambs Lake NWR,NEL Lambs Lake NWR
+Nelson,NEL,NEL Lambs Lake NWR,Lambs Lake NWR,NEL Lambs Lake NWR
+Nelson,NEL,Lambs Lake NWR 2,Lambs Lake NWR 2,NEL Lambs Lake NWR 2
+Nelson,NEL,NEL Rose Lake WPA,Rose Lake WPA,NEL Rose Lake WPA
+Nelson,NEL,Rose Lake,Rose Lake WPA,NEL Rose Lake WPA
+Nelson,NEL,Rose Lake WPA,Rose Lake WPA,NEL Rose Lake WPA
+Nelson,NEL,NEL Sahl WPA,Sahl WPA,NEL Sahl WPA
+Nelson,NEL,Sahl WPA,Sahl WPA,NEL Sahl WPA
+Nelson,NEL,SAHL WPA,Sahl WPA,NEL Sahl WPA
+Oliver,OLI,OLI-141-084-16,141-084-16,OLI 141-084-16
+Oliver,OLI,OLI 141-085-16,141-085-16,OLI 141-085-16
+Oliver,OLI,OLI-141-085-16,141-085-16,OLI 141-085-16
+Oliver,OLI,OLI-141-85-16,141-085-16,OLI 141-085-16
+Oliver,OLI,OLI 143-082-16,143-082-16,OLI 143-082-16
+Oliver,OLI,OLI-143-082-16,143-082-16,OLI 143-082-16
+Oliver,OLI,OLI-143-084-14,143-084-14,OLI 143-084-14
+Oliver,OLI,Bittner,Bittner,OLI Bittner
+Oliver,OLI,OLI Bittner,Bittner,OLI Bittner
+Oliver,OLI,Duhr,Duhr,OLI Duhr
+Oliver,OLI,OLI Duhr,Duhr,OLI Duhr
+Oliver,OLI,OLI Rick Schmidt,Rick Schmidt,OLI Rick Schmidt
+Oliver,OLI,Rick Schmidt,Rick Schmidt,OLI Rick Schmidt
+Oliver,OLI,OLI Rob Schmidt,Rob Schmidt,OLI Rob Schmidt
+Oliver,OLI,Rob Schmidt,Rob Schmidt,OLI Rob Schmidt
+Oliver,OLI,OLI Wilbur Boldt WMA,Wilbur Boldt WMA,OLI Wilbur Boldt WMA
+Oliver,OLI,Wilbur Boldt,Wilbur Boldt WMA,OLI Wilbur Boldt WMA
+Oliver,OLI,Wilbur Boldt WMA,Wilbur Boldt WMA,OLI Wilbur Boldt WMA
+Pembina,PEM,Denault,Denault WMA,PEM Denault WMA
+Pembina,PEM,Denault WMA,Denault WMA,PEM Denault WMA
+Pembina,PEM,PEM Denault WMA,Denault WMA,PEM Denault WMA
+Pembina,PEM,Duncan WPA,Duncan WPA,PEM Duncan WPA
+Pembina,PEM,Fitzsimond Slough WMA,Fitzsimond Slough WMA,PEM Fitzsimond Slough WMA
+Pembina,PEM,PEM Fitzsimond Slough WMA,Fitzsimond Slough WMA,PEM Fitzsimond Slough WMA
+Pembina,PEM,Jay V. Wessels WMA,Jay V. Wessels WMA,PEM Jay V. Wessels WMA
+Pembina,PEM,Lubenow East High,Lubenow East High,PEM Lubenow East High
+Pembina,PEM,LUBENOW EAST HIGH,Lubenow East High,PEM Lubenow East High
+Pembina,PEM,PEM Lubenow East High,Lubenow East High,PEM Lubenow East High
+Pembina,PEM,Lubenow East Low,Lubenow East Low,PEM Lubenow East Low
+Pembina,PEM,PEM Lubenow East Low,Lubenow East Low,PEM Lubenow East Low
+Pembina,PEM,Lubenow West Low,Lubenow West Low,PEM Lubenow West Low
+Pembina,PEM,LUBENOW WEST LOW,Lubenow West Low,PEM Lubenow West Low
+Pembina,PEM,PEM Lubenow West Low,Lubenow West Low,PEM Lubenow West Low
+Pembina,PEM,PEM Pembina Prairie WPA,Pembina Prairie WPA,PEM Pembina Prairie WPA
+Pembina,PEM,Pembina Prairie WPA,Pembina Prairie WPA,PEM Pembina Prairie WPA
+Pembina,PEM,Pembina Prarie,Pembina Prairie WPA,PEM Pembina Prairie WPA
+Pembina,PEM,PEM Sproule,Sproule,PEM Sproule
+Pembina,PEM,Sproule,Sproule,PEM Sproule
+Pierce,PIE,PIE-151-074-16,151-074-16,PIE 151-074-16
+Pierce,PIE,PIE 152-073-16,152-073-16,PIE 152-073-16
+Pierce,PIE,PIE-152-073-16,152-073-16,PIE 152-073-16
+Pierce,PIE,PIE 154-074-16,154-074-16,PIE 154-074-16
+Pierce,PIE,PIE-154-074-16,154-074-16,PIE 154-074-16
+Pierce,PIE,Buffalo Lake WMA,Buffalo Lake WMA,PIE Buffalo Lake WMA
+Pierce,PIE,BUFFALO LAKE WMA,Buffalo Lake WMA,PIE Buffalo Lake WMA
+Pierce,PIE,PIE Buffalo Lake WMA,Buffalo Lake WMA,PIE Buffalo Lake WMA
+Pierce,PIE,Kilgore Lake,Kilgore Lake WPA,PIE Kilgore Lake WPA
+Pierce,PIE,Kilgore Lake WPA,Kilgore Lake WPA,PIE Kilgore Lake WPA
+Pierce,PIE,PIE Kilgore Lake WPA,Kilgore Lake WPA,PIE Kilgore Lake WPA
+Pierce,PIE,Long Lake WPA,Long Lake WPA,PIE Long Lake WPA
+Pierce,PIE,PIE Long Lake WPA,Long Lake WPA,PIE Long Lake WPA
+Pierce,PIE,PIE Round Lake WPA,Round Lake WPA,PIE Round Lake WPA
+Pierce,PIE,Round Lake,Round Lake WPA,PIE Round Lake WPA
+Pierce,PIE,Round Lake WPA,Round Lake WPA,PIE Round Lake WPA
+Pierce,PIE,PIE Weinmann,Weinmann,PIE Weinmann
+Pierce,PIE,PIE-Weinmann,Weinmann,PIE Weinmann
+Pierce,PIE,PIE-Weinmann 2,Weinmann 2,PIE Weinmann 2
+Ramsey,RAM,RAM Elstad,Elstad,RAM Elstad
+Ramsey,RAM,RAM ELSTAD,Elstad,RAM Elstad
+Ramsey,RAM,RAM-Elstad,Elstad,RAM Elstad
+Ramsey,RAM,Kenner Marsh WMA,Kenner Marsh WMA,RAM Kenner Marsh WMA
+Ramsey,RAM,RAM Kenner Marsh WMA,Kenner Marsh WMA,RAM Kenner Marsh WMA
+Ramsey,RAM,Kneeling Moose WPA,Kneeling Moose WPA,RAM Kneeling Moose WPA
+Ramsey,RAM,Lost Island ,Lost Island WPA,RAM Lost Island WPA
+Ramsey,RAM,Lost Island WPA,Lost Island WPA,RAM Lost Island WPA
+Ramsey,RAM,RAM Lost Island WPA,Lost Island WPA,RAM Lost Island WPA
+Ramsey,RAM,Martinson WPA West Unit,Martinson WPA West Unit,RAM Martinson WPA West Unit
+Ramsey,RAM,Myrvik WPA,Myrvik WPA,RAM Myrvik WPA
+Ramsey,RAM,RAM Myrvik WPA,Myrvik WPA,RAM Myrvik WPA
+Ramsey,RAM,Phil Aus WPA,Phil Aus WPA,RAM Phil Aus WPA
+Ramsey,RAM,RAM Phil Aus WPA,Phil Aus WPA,RAM Phil Aus WPA
+Ramsey,RAM,Pintail,Pintail WPA,RAM Pintail WPA
+Ramsey,RAM,Pintail WPA,Pintail WPA,RAM Pintail WPA
+Ramsey,RAM,RAM Pintail WPA,Pintail WPA,RAM Pintail WPA
+Ramsey,RAM,RAM Ziegler WPA,Ziegler WPA,RAM Ziegler WPA
+Ramsey,RAM,Ziegler WPA,Ziegler WPA,RAM Ziegler WPA
+Ramsey,RAM,ZIEGLER WPA,Ziegler WPA,RAM Ziegler WPA
+Ransom,RAN,Fort Ransom WMA,Fort Ransom WMA,RAN Fort Ransom WMA
+Ransom,RAN,RAN Fort Ransom WMA,Fort Ransom WMA,RAN Fort Ransom WMA
+Ransom,RAN,Grinstead WPA,Grinstead WPA,RAN Grinstead WPA
+Ransom,RAN,GRINSTEAD WPA,Grinstead WPA,RAN Grinstead WPA
+Ransom,RAN,RAN Grinstead WPA,Grinstead WPA,RAN Grinstead WPA
+Ransom,RAN,Heiser,Heiser,RAN Heiser
+Ransom,RAN,RAN Heiser,Heiser,RAN Heiser
+Ransom,RAN,Kenyons WPA,Kenyons WPA,RAN Kenyons WPA
+Ransom,RAN,RAN Kenyons WPA,Kenyons WPA,RAN Kenyons WPA
+Ransom,RAN,RAN Reinke WPA,Reinke WPA,RAN Reinke WPA
+Ransom,RAN,Reinke,Reinke WPA,RAN Reinke WPA
+Ransom,RAN,Reinke WPA,Reinke WPA,RAN Reinke WPA
+Ransom,RAN,RAN Sheyenne NG 1,Sheyenne NG 1,RAN Sheyenne NG 1
+Ransom,RAN,RAN-Sheyenne NG 1,Sheyenne NG 1,RAN Sheyenne NG 1
+Ransom,RAN,RAN Sheyenne NG 2,Sheyenne NG 2,RAN Sheyenne NG 2
+Ransom,RAN,RAN SHEYENNE NG 2,Sheyenne NG 2,RAN Sheyenne NG 2
+Ransom,RAN,RAN-Sheyenne NG 2,Sheyenne NG 2,RAN Sheyenne NG 2
+Ransom,RAN,RAN-Sheyenne NG 3,Sheyenne NG 3,RAN Sheyenne NG 3
+Ransom,RAN,Warner WPA,Warner WPA,RAN Warner WPA
+Renville,REN,REN 162-086-36,162-086-36,REN 162-086-36
+Renville,REN,REN-162-086-36,162-086-36,REN 162-086-36
+Renville,REN,REN 163-084-16,163-084-16,REN 163-084-16
+Renville,REN,REN-163-084-16,163-084-16,REN 163-084-16
+Renville,REN,REN 164-084-36,164-084-36,REN 164-084-36
+Renville,REN,REN-164-084-36,164-084-36,REN 164-084-36
+Renville,REN,REN-164-087-36,164-087-36,REN 164-087-36
+Renville,REN,REN Upper Souris NWR 1,Upper Souris NWR 1,REN Upper Souris NWR 1
+Renville,REN,REN-Upper Souris NWR,Upper Souris NWR 1,REN Upper Souris NWR 1
+Renville,REN,REN-Upper Souris NWR 1,Upper Souris NWR 1,REN Upper Souris NWR 1
+Renville,REN,Upper Souris 1,Upper Souris NWR 1,REN Upper Souris NWR 1
+Renville,REN,Upper Souris 2,Upper Souris NWR 1,REN Upper Souris NWR 1
+Renville,REN,REN Upper Souris NWR 2,Upper Souris NWR 2,REN Upper Souris NWR 2
+Renville,REN,REN-Upper Souris NWR 2,Upper Souris NWR 2,REN Upper Souris NWR 2
+Renville,REN,REN Upper Souris NWR 3,Upper Souris NWR 3,REN Upper Souris NWR 3
+Renville,REN,REN-Upper Souris NWR 3,Upper Souris NWR 3,REN Upper Souris NWR 3
+Renville,REN,REN Upper Souris NWR 4,Upper Souris NWR 4,REN Upper Souris NWR 4
+Renville,REN,REN Upper Souris NWR4,Upper Souris NWR 4,REN Upper Souris NWR 4
+Renville,REN,REN-Upper Souris NWR 4,Upper Souris NWR 4,REN Upper Souris NWR 4
+Renville,REN,REN-Upper Souris NWR 5,Upper Souris NWR 5,REN Upper Souris NWR 5
+Richland,RIC,RIC 136-052-36,136-052-36,RIC 136-052-36
+Richland,RIC,RIC-136-052-36,136-052-36,RIC 136-052-36
+Richland,RIC,RIC-136-52-36,136-052-36,RIC 136-052-36
+Richland,RIC,Hartleben WPA,Hartleben WPA,RIC Hartleben WPA
+Richland,RIC,RIC Hartleben WPA,Hartleben WPA,RIC Hartleben WPA
+Richland,RIC,Overboe,Overboe,RIC Overboe
+Richland,RIC,OVERBOE,Overboe,RIC Overboe
+Richland,RIC,RIC Overboe,Overboe,RIC Overboe
+Richland,RIC,RIC Sheyenne NG 1,Sheyenne NG 1,RIC Sheyenne NG 1
+Richland,RIC,RIC-Sheyenne NG 1,Sheyenne NG 1,RIC Sheyenne NG 1
+Richland,RIC,RIC Sheyenne NG 2,Sheyenne NG 2,RIC Sheyenne NG 2
+Richland,RIC,RIC-Sheyenne NG 2,Sheyenne NG 2,RIC Sheyenne NG 2
+Richland,RIC,RIC-Sheyenne NG 3,Sheyenne NG 3,RIC Sheyenne NG 3
+Richland,RIC,RIC Stack Slough WMA,Stack Slough WMA,RIC Stack Slough WMA
+Richland,RIC,Stack Slough,Stack Slough WMA,RIC Stack Slough WMA
+Richland,RIC,Stack Slough WMA,Stack Slough WMA,RIC Stack Slough WMA
+Richland,RIC,RIC Wild Rice WMA,Wild Rice WMA,RIC Wild Rice WMA
+Richland,RIC,Wild Rice WMA,Wild Rice WMA,RIC Wild Rice WMA
+Richland,RIC,Wollitz WPA,Wollitz WPA,RIC Wollitz WPA
+Rolette,ROL,ROL 160-071-36,160-071-36,ROL 160-071-36
+Rolette,ROL,ROL-160-071-36,160-071-36,ROL 160-071-36
+Rolette,ROL,ROL-160-072-36,160-072-36,ROL 160-072-36
+Rolette,ROL,ROL 161-069-22,161-069-22,ROL 161-069-22
+Rolette,ROL,ROL-161-069-22,161-069-22,ROL 161-069-22
+Rolette,ROL,ROL-161-072-3,161-072-03,ROL 161-072-03
+Rolette,ROL,ROL 162-072-36,162-072-36,ROL 162-072-36
+Rolette,ROL,ROL-162-072-36,162-072-36,ROL 162-072-36
+Rolette,ROL,Armstrong,Armstrong WPA,ROL Armstrong WPA
+Rolette,ROL,Armstrong WPA,Armstrong WPA,ROL Armstrong WPA
+Rolette,ROL,ROL Armstrong WPA,Armstrong WPA,ROL Armstrong WPA
+Rolette,ROL,Ghost Valley,Ghost Valley WPA,ROL Ghost Valley WPA
+Rolette,ROL,Ghost Valley WPA,Ghost Valley WPA,ROL Ghost Valley WPA
+Rolette,ROL,ROL Ghost Valley WPA,Ghost Valley WPA,ROL Ghost Valley WPA
+Rolette,ROL,LaFromboise WPA,LaFromboise WPA,ROL LaFromboise WPA
+Rolette,ROL,ROL LaFromboise WPA,LaFromboise WPA,ROL LaFromboise WPA
+Rolette,ROL,ROL Twin Lake WPA,Twin Lake WPA,ROL Twin Lake WPA
+Rolette,ROL,Twin Lake WPA,Twin Lake WPA,ROL Twin Lake WPA
+Rolette,ROL,TWIN LAKE WPA,Twin Lake WPA,ROL Twin Lake WPA
+Sargent,SAR,SAR 129-058-5,129-058-05,SAR 129-058-05
+Sargent,SAR,SAR-129-058-5,129-058-05,SAR 129-058-05
+Sargent,SAR,SAR-130-054-03,130-054-03,SAR 130-054-03
+Sargent,SAR,SAR-130-054-3,130-054-03,SAR 130-054-03
+Sargent,SAR,Anderson WPA,Anderson WPA,SAR Anderson WPA
+Sargent,SAR,SAR Anderson WPA,Anderson WPA,SAR Anderson WPA
+Sargent,SAR,Coleman,Coleman,SAR Coleman
+Sargent,SAR,Cooper,Cooper,SAR Cooper
+Sargent,SAR,SAR Cooper,Cooper,SAR Cooper
+Sargent,SAR,Gainor WPA,Gainor WPA,SAR Gainor WPA
+Sargent,SAR,SAR Gainor WPA,Gainor WPA,SAR Gainor WPA
+Sargent,SAR,Kraft Slough WPA,Kraft Slough WPA,SAR Kraft Slough WPA
+Sargent,SAR,SAR Kraft Slough WPA,Kraft Slough WPA,SAR Kraft Slough WPA
+Sargent,SAR,Kraft Slough WPA 2,Kraft Slough WPA 2,SAR Kraft Slough WPA 2
+Sargent,SAR,Kraft slough WPA 2,Kraft Slough WPA 2,SAR Kraft Slough WPA 2
+Sargent,SAR,SAR Kraft Slough WPA 2,Kraft Slough WPA 2,SAR Kraft Slough WPA 2
+Sargent,SAR,SAR Tewaukon NWR,Tewaukon NWR,SAR Tewaukon NWR
+Sargent,SAR,Tewaukon NWR,Tewaukon NWR,SAR Tewaukon NWR
+Sheridan,SHE,Goodrich WPA,Goodrich WPA,SHE Goodrich WPA
+Sheridan,SHE,SHE Goodrich WPA,Goodrich WPA,SHE Goodrich WPA
+Sheridan,SHE,Johns Lake WPA,Johns Lake WPA,SHE Johns Lake WPA
+Sheridan,SHE,SHE Johns Lake WPA,Johns Lake WPA,SHE Johns Lake WPA
+Sheridan,SHE,Lincoln Valley South,Lincoln Valley South WPA,SHE Lincoln Valley South WPA
+Sheridan,SHE,Lincoln Valley South WPA,Lincoln Valley South WPA,SHE Lincoln Valley South WPA
+Sheridan,SHE,SHE Lincoln Valley South WPA,Lincoln Valley South WPA,SHE Lincoln Valley South WPA
+Sheridan,SHE,SHE Lonetree WMA,Lonetree WMA,SHE Lonetree WMA
+Sheridan,SHE,SHE-Lonetree WMA,Lonetree WMA,SHE Lonetree WMA
+Sheridan,SHE,Rolling Hills,Rolling Hills WMA,SHE Rolling Hills WMA
+Sheridan,SHE,Rolling Hills WMA,Rolling Hills WMA,SHE Rolling Hills WMA
+Sheridan,SHE,SHE Rolling Hills WMA,Rolling Hills WMA,SHE Rolling Hills WMA
+Sheridan,SHE,Trego East,Trego East,SHE Trego East
+Sheridan,SHE,SHE Trego North,Trego North,SHE Trego North
+Sheridan,SHE,Trego North,Trego North,SHE Trego North
+Sheridan,SHE,SHE Trego West 1,Trego West 1,SHE Trego West 1
+Sheridan,SHE,Trego West 1,Trego West 1,SHE Trego West 1
+Sheridan,SHE,Trego West 2,Trego West 2,SHE Trego West 2
+Sioux,SIO,SIO-129-087-16,129-087-16,SIO 129-087-16
+Sioux,SIO,SIO 130-085-36,130-085-36,SIO 130-085-36
+Sioux,SIO,SIO-130-085-36,130-085-36,SIO 130-085-36
+Sioux,SIO,SIO 130-090-36,130-090-36,SIO 130-090-36
+Sioux,SIO,SIO-130-090-36,130-090-36,SIO 130-090-36
+Sioux,SIO,SIO-130-90-36,130-090-36,SIO 130-090-36
+Sioux,SIO,SIO Cedar River NG 1,Cedar River NG 1,SIO Cedar River NG 1
+Sioux,SIO,SIO-Cedar River NG 1,Cedar River NG 1,SIO Cedar River NG 1
+Sioux,SIO,SIO Cedar River NG 2,Cedar River NG 2,SIO Cedar River NG 2
+Sioux,SIO,SIO-Cedar River NG 2,Cedar River NG 2,SIO Cedar River NG 2
+Sioux,SIO,SIO Cedar River NG 3,Cedar River NG 3,SIO Cedar River NG 3
+Sioux,SIO,SIO Cedar RIver NG 3,Cedar River NG 3,SIO Cedar River NG 3
+Sioux,SIO,SIO-Cedar River NG 3,Cedar River NG 3,SIO Cedar River NG 3
+Sioux,SIO,SIO Cedar River NG 4,Cedar River NG 4,SIO Cedar River NG 4
+Sioux,SIO,SIO-Cedar River NG 4,Cedar River NG 4,SIO Cedar River NG 4
+Sioux,SIO,SIO-Cedar River NG 5,Cedar River NG 5,SIO Cedar River NG 5
+Sioux,SIO,Froelich Dam WMA,Froelich Dam WMA,SIO Froelich Dam WMA
+Sioux,SIO,SIO Froelich Dam WMA,Froelich Dam WMA,SIO Froelich Dam WMA
+Sioux,SIO,Sioux Froleich Dam,Froelich Dam WMA,SIO Froelich Dam WMA
+Slope,SLO,SLO 135-106-16,135-106-16,SLO 135-106-16
+Slope,SLO,SLO-135-106-16,135-106-16,SLO 135-106-16
+Slope,SLO,Cedar Lake WMA,Cedar Lake WMA,SLO Cedar Lake WMA
+Slope,SLO,SLO Cedar Lake WMA,Cedar Lake WMA,SLO Cedar Lake WMA
+Slope,SLO,Slope Cedar Lake,Cedar Lake WMA,SLO Cedar Lake WMA
+Slope,SLO,Gerbig,Gerbig,SLO Gerbig
+Slope,SLO,SLO Gerbig,Gerbig,SLO Gerbig
+Slope,SLO,Hewson,Hewson,SLO Hewson
+Slope,SLO,SLO Hewson,Hewson,SLO Hewson
+Slope,SLO,SLO Little Missouri NG 1,Little Missouri NG 1,SLO Little Missouri NG 1
+Slope,SLO,SLO-Little Missouri NG 1,Little Missouri NG 1,SLO Little Missouri NG 1
+Slope,SLO,SLO Little Missouri NG 2,Little Missouri NG 2,SLO Little Missouri NG 2
+Slope,SLO,SLO-Little Missouri NG 2,Little Missouri NG 2,SLO Little Missouri NG 2
+Slope,SLO,SLO-Little Missouri NG 3,Little Missouri NG 3,SLO Little Missouri NG 3
+Slope,SLO,SLO-LIttle Missouri NG 3,Little Missouri NG 3,SLO Little Missouri NG 3
+Slope,SLO,Nordby,Nordby,SLO Nordby
+Slope,SLO,SLO Norby,Nordby,SLO Nordby
+Slope,SLO,Seymanski,Seymanski,SLO Seymanski
+Stark,STA,STA 137-091-16,137-091-16,STA 137-091-16
+Stark,STA,STA-137-091-16,137-091-16,STA 137-091-16
+Stark,STA,STA-137-91-16,137-091-16,STA 137-091-16
+Stark,STA,STA 137-099-16,137-099-16,STA 137-099-16
+Stark,STA,STA-137-099-16,137-099-16,STA 137-099-16
+Stark,STA,STA 138-092-16,138-092-16,STA 138-092-16
+Stark,STA,STA-138-092-16,138-092-16,STA 138-092-16
+Stark,STA,STA-138-093-16,138-093-16,STA 138-093-16
+Stark,STA,STA-138-099-24,138-099-24,STA 138-099-24
+Stark,STA,STA 139-095-36,139-095-36,STA 139-095-36
+Stark,STA,STA-139-095-36,139-095-36,STA 139-095-36
+Stark,STA,STA 140-094-16,140-094-16,STA 140-094-16
+Stark,STA,STA-140-094-16,140-094-16,STA 140-094-16
+Stark,STA,Adam and Teresa Raab,Adam and Teresa Raab WMA,STA Adam and Teresa Raab WMA
+Stark,STA,Adam and Teresa Raab WMA,Adam and Teresa Raab WMA,STA Adam and Teresa Raab WMA
+Stark,STA,STA Adam and Teresa Raab WMA,Adam and Teresa Raab WMA,STA Adam and Teresa Raab WMA
+Stark,STA,Emch,Emch,STA Emch
+Stark,STA,STA Emch,Emch,STA Emch
+Steele,STE,Bower,Bower,STE Bower
+Steele,STE,Fugelstad WPA,Fugelstad WPA,STE Fugelstad WPA
+Steele,STE,STE Fugelstad WPA,Fugelstad WPA,STE Fugelstad WPA
+Steele,STE,Fuller Lake WPA,Fuller's Lake WPA,STE Fuller's Lake WPA
+Steele,STE,Fuller's Lake WPA,Fuller's Lake WPA,STE Fuller's Lake WPA
+Steele,STE,STE Fuller's Lake WPA,Fuller's Lake WPA,STE Fuller's Lake WPA
+Steele,STE,Otto Spies WMA,Otto Spies WMA,STE Otto Spies WMA
+Steele,STE,STE Otto Spies WMA,Otto Spies WMA,STE Otto Spies WMA
+Steele,STE,Rogers,Rogers WPA,STE Rogers WPA
+Steele,STE,Rogers WPA,Rogers WPA,STE Rogers WPA
+Steele,STE,STE Rogers WPA,Rogers WPA,STE Rogers WPA
+Steele,STE,Rue,Rue,STE Rue
+Steele,STE,Salander,Salander WPA,STE Salander WPA
+Steele,STE,Salander WPA,Salander WPA,STE Salander WPA
+Steele,STE,STE Salander WPA,Salander WPA,STE Salander WPA
+Steele,STE,Shaw WPA 1,Shaw WPA 1,STE Shaw WPA 1
+Steele,STE,STE Shaw WPA 1,Shaw WPA 1,STE Shaw WPA 1
+Steele,STE,Shaw WPA 2,Shaw WPA 2,STE Shaw WPA 2
+Steele,STE,STE Shaw WPA 2,Shaw WPA 2,STE Shaw WPA 2
+Stutsman,STU,STU 137-063-36,137-063-36,STU 137-063-36
+Stutsman,STU,STU-137-063-36,137-063-36,STU 137-063-36
+Stutsman,STU,STU-137-63-36,137-063-36,STU 137-063-36
+Stutsman,STU,STU 138-064-36,138-064-36,STU 138-064-36
+Stutsman,STU,STU-138-064-36,138-064-36,STU 138-064-36
+Stutsman,STU,Audobon Brigham,Audubon Brigham,STU Audubon Brigham
+Stutsman,STU,STU Audubon Brigham,Audubon Brigham,STU Audubon Brigham
+Stutsman,STU,STU Audubon Brigham ,Audubon Brigham ,STU Audubon Brigham
+Stutsman,STU,Audubon Brigham Cell 12,Audubon Brigham Cell 12,STU Audubon Brigham Cell 12
+Stutsman,STU,Audubon Brigham Cell 13,Audubon Brigham Cell 13,STU Audubon Brigham Cell 13
+Stutsman,STU,Buegel,Buegel,STU Buegel
+Stutsman,STU,STU Buegel,Buegel,STU Buegel
+Stutsman,STU,Chase Lake NWR,Chase Lake NWR,STU Chase Lake NWR
+Stutsman,STU,STU Chase Lake NWR,Chase Lake NWR,STU Chase Lake NWR
+Stutsman,STU,Chase Lake WMA,Chase Lake WMA,STU Chase Lake WMA
+Stutsman,STU,STU Chase Lake WMA,Chase Lake WMA,STU Chase Lake WMA
+Stutsman,STU,Northwestern Lake WPA,Northwestern Lake WPA,STU Northwestern Lake WPA
+Stutsman,STU,Northwestern Lakw WPA,Northwestern Lake WPA,STU Northwestern Lake WPA
+Stutsman,STU,STU Northwestern Lake WPA,Northwestern Lake WPA,STU Northwestern Lake WPA
+Stutsman,STU,Peterson,Peterson,STU Peterson
+Towner,TOW,TOW 161-066-15,161-066-15,TOW 161-066-15
+Towner,TOW,TOW-161-066-15,161-066-15,TOW 161-066-15
+Towner,TOW,TOW 163-066-21,163-066-21,TOW 163-066-21
+Towner,TOW,TOW-163-066-21,163-066-21,TOW 163-066-21
+Towner,TOW,TOW-163-066-28,163-066-28,TOW 163-066-28
+Towner,TOW,Berg West,Berg West,TOW Berg West
+Towner,TOW,TOW Berg West,Berg West,TOW Berg West
+Towner,TOW,CC Underwood ,CC Underwood WMA,TOW CC Underwood WMA
+Towner,TOW,CC Underwood WMA,CC Underwood WMA,TOW CC Underwood WMA
+Towner,TOW,TOW CC Underwood WMA,CC Underwood WMA,TOW CC Underwood WMA
+Towner,TOW,Laturnus,Laturnus,TOW Laturnus
+Towner,TOW,Lindy,Lindy,TOW Lindy
+Towner,TOW,TOW Lindy,Lindy,TOW Lindy
+Towner,TOW,Nikolaisen WPA,Nikolaisen WPA,TOW Nikolaisen WPA
+Towner,TOW,TOW Nikolaisen WPA,Nikolaisen WPA,TOW Nikolaisen WPA
+Towner,TOW,TOW Towner WPA,Towner WPA,TOW Towner WPA
+Towner,TOW,Towner WPA,Towner WPA,TOW Towner WPA
+Traill,TRA,Elken WPA,Elken WPA,TRA Elken WPA
+Traill,TRA,TRA Elken WPA,Elken WPA,TRA Elken WPA
+Traill,TRA,Elliott,Elliott,TRA Elliott
+Traill,TRA,ELLIOTT,Elliott,TRA Elliott
+Traill,TRA,TRA Elliott,Elliott,TRA Elliott
+Traill,TRA,Erickson ,Erickson WPA,TRA Erickson WPA
+Traill,TRA,Erickson WPA,Erickson WPA,TRA Erickson WPA
+Traill,TRA,TRA Erickson WPA,Erickson WPA,TRA Erickson WPA
+Traill,TRA,Gabrielson,Gabrielson,TRA Gabrielson
+Traill,TRA,Groven WPA,Groven WPA,TRA Groven WPA
+Traill,TRA,TRA Groven WPA,Groven WPA,TRA Groven WPA
+Traill,TRA,Osland,Osland,TRA Osland
+Traill,TRA,Sproule East,Sproule East,TRA Sproule East
+Traill,TRA,SPROULE EAST,Sproule East,TRA Sproule East
+Traill,TRA,TRA Sproule East,Sproule East,TRA Sproule East
+Traill,TRA,TRA Sproule South,Sproule South,TRA Sproule South
+Traill,TRA,TRA-Sproule South,Sproule South,TRA Sproule South
+Traill,TRA,Thompson WPA,Thompson WPA,TRA Thompson WPA
+Traill,TRA,TRA Thompson WPA,Thompson WPA,TRA Thompson WPA
+Walsh,WAL,WAL 155-058-8,155-058-08,WAL 155-058-08
+Walsh,WAL,WAL-155-058-08,155-058-08,WAL 155-058-08
+Walsh,WAL,WAL-155-058-8,155-058-08,WAL 155-058-08
+Walsh,WAL,Ardoch NWR,Ardoch NWR,WAL Ardoch NWR
+Walsh,WAL,ARDOCH NWR,Ardoch NWR,WAL Ardoch NWR
+Walsh,WAL,WAL Ardoch NWR,Ardoch NWR,WAL Ardoch NWR
+Walsh,WAL,Bjerke WPA,Bjerke WPA,WAL Bjerke WPA
+Walsh,WAL,BJERKE WPA,Bjerke WPA,WAL Bjerke WPA
+Walsh,WAL,WAL Bjerke WPA,Bjerke WPA,WAL Bjerke WPA
+Walsh,WAL,Charles C. Cook,Charles C. Cook WMA,WAL Charles C. Cook WMA
+Walsh,WAL,Charles C. Cook WMA,Charles C. Cook WMA,WAL Charles C. Cook WMA
+Walsh,WAL,WAL Charles C. Cook WMA,Charles C. Cook WMA,WAL Charles C. Cook WMA
+Walsh,WAL,Fairdale WPA,Fairdale WPA,WAL Fairdale WPA
+Walsh,WAL,WAL Fairdale WPA,Fairdale WPA,WAL Fairdale WPA
+Walsh,WAL,Greeenwing,Greenwing WPA,WAL Greenwing WPA
+Walsh,WAL,Greenwing WPA,Greenwing WPA,WAL Greenwing WPA
+Walsh,WAL,WAL Greenwing WPA,Greenwing WPA,WAL Greenwing WPA
+Walsh,WAL,Joliet Ferry WMA,Joliet Ferry WMA,WAL Joliet Ferry WMA
+Walsh,WAL,WAL Joliet Ferry WMA,Joliet Ferry WMA,WAL Joliet Ferry WMA
+Walsh,WAL,Old Adelen WPA,Old Adelen WPA,WAL Old Adelen WPA
+Walsh,WAL,Shirek,Shirek,WAL Shirek
+Ward,WAR,WAR-156-084-16,156-084-16,WAR 156-084-16
+Ward,WAR,Danielson,Danielson WPA,WAR Danielson WPA
+Ward,WAR,Danielson WPA,Danielson WPA,WAR Danielson WPA
+Ward,WAR,WAR Danielson WPA,Danielson WPA,WAR Danielson WPA
+Ward,WAR,Finken,Finken,WAR Finken
+Ward,WAR,WAR Finken,Finken,WAR Finken
+Ward,WAR,WAR-Finken,Finken,WAR Finken
+Ward,WAR,Gaines,Gaines WPA,WAR Gaines WPA
+Ward,WAR,Gaines WPA,Gaines WPA,WAR Gaines WPA
+Ward,WAR,WAR Gaines WPA,Gaines WPA,WAR Gaines WPA
+Ward,WAR,Krueger,Krueger,WAR Krueger
+Ward,WAR,WAR Krueger,Krueger,WAR Krueger
+Ward,WAR,Minot AFB East,Minot AFB East,WAR Minot AFB East
+Ward,WAR,WAR Minot AFB East,Minot AFB East,WAR Minot AFB East
+Ward,WAR,Minot AFB West,Minot AFB West,WAR Minot AFB West
+Ward,WAR,WAR Minot AFB West,Minot AFB West,WAR Minot AFB West
+Ward,WAR,Nelson WPA,Nelson WPA,WAR Nelson WPA
+Ward,WAR,WAR Upper Souris NWR 1,Upper Souris NWR,WAR Upper Souris NWR
+Ward,WAR,WAR-Upper Souris NWR,Upper Souris NWR,WAR Upper Souris NWR
+Wells,WEL,WEL-145-073-16,145-073-16,WEL 145-073-16
+Wells,WEL,WEL 149-069-36,149-069-36,WEL 149-069-36
+Wells,WEL,WEL-149-069-36,149-069-36,WEL 149-069-36
+Wells,WEL,WEL 150-070-22,150-070-22,WEL 150-070-22
+Wells,WEL,WEL-150-070-22,150-070-22,WEL 150-070-22
+Wells,WEL,Hoornaert,Hoornaert WPA,WEL Hoornaert WPA
+Wells,WEL,Hoornaert WPA,Hoornaert WPA,WEL Hoornaert WPA
+Wells,WEL,WEL Hoornaert WPA,Hoornaert WPA,WEL Hoornaert WPA
+Wells,WEL,Karl T. Frederick,Karl T. Frederick WMA,WEL Karl T. Frederick WMA
+Wells,WEL,Karl T. Frederick WMA,Karl T. Frederick WMA,WEL Karl T. Frederick WMA
+Wells,WEL,WEL Karl T. Frederick WMA,Karl T. Frederick WMA,WEL Karl T. Frederick WMA
+Wells,WEL,WEL Lonetree WMA,Lonetree WMA,WEL Lonetree WMA
+Wells,WEL,WEL-Lonetree WMA,Lonetree WMA,WEL Lonetree WMA
+Wells,WEL,Pipestone WPA,Pipestone WPA,WEL Pipestone WPA
+Wells,WEL,Weber WPA,Weber WPA,WEL Weber WPA
+Wells,WEL,WEL Weber WPA,Weber WPA,WEL Weber WPA
+Wells,WEL,WEL Wells County WMA,Wells County WMA,WEL Wells County WMA
+Wells,WEL,Wells County WMA,Wells County WMA,WEL Wells County WMA
+Williams,WIL,WIL 156-100-16,156-100-16,WIL 156-100-16
+Williams,WIL,WIL-156-100-16,156-100-16,WIL 156-100-16
+Williams,WIL,WIL 156-101-16,156-101-16,WIL 156-101-16
+Williams,WIL,WIL-156-101-16,156-101-16,WIL 156-101-16
+Williams,WIL,WIL-156-102-16,156-102-16,WIL 156-102-16
+Williams,WIL,Hofflund,Hofflund WMA,WIL Hofflund WMA
+Williams,WIL,Hofflund WMA,Hofflund WMA,WIL Hofflund WMA
+Williams,WIL,WIL Hofflund WMA,Hofflund WMA,WIL Hofflund WMA
+Williams,WIL,Kraft,Kraft,WIL Kraft
+Williams,WIL,WIL Kraft,Kraft,WIL Kraft
+Williams,WIL,Spangrud WPA,Spangrud WPA,WIL Spangrud WPA
+Williams,WIL,WIL Spangrud WPA,Spangrud WPA,WIL Spangrud WPA
+Williams,WIL,Zahn East,Zahn East,WIL Zahn East
+Williams,WIL,WIL Zahn North,Zahn North,WIL Zahn North
+Williams,WIL,Zahn North,Zahn North,WIL Zahn North
+Williams,WIL,WIL Zahn West,Zahn West,WIL Zahn West
+Williams,WIL,Zahn West,Zahn West,WIL Zahn West

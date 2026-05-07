@@ -1,0 +1,482 @@
+County Abbr,Clean-Site,Clean-Site-Abbr,indata,incoords
+ADA,130-092-36,ADA 130-092-36,1,1
+ADA,132-097-16,ADA 132-097-16,1,1
+ADA,Blaha Cedar Creek,ADA Blaha Cedar Creek,1,1
+ADA,Blaha Dozer Q,ADA Blaha Dozer Q,1,1
+ADA,Blaha EZ Encha,ADA Blaha EZ Encha,1,1
+ADA,Blaha South Russian Slough,ADA Blaha South Russian Slough,1,1
+ADA,Blaha Wolf Butte,ADA Blaha Wolf Butte,1,1
+ADA,Dayton,ADA Dayton,1,1
+ADA,HREC,ADA HREC,1,1
+BAR,141-061-28,BAR 141-061-28,1,1
+BAR,142-059-12,BAR 142-059-12,1,1
+BAR,Boom,BAR Boom,1,1
+BAR,Clausen Springs WMA,BAR Clausen Springs WMA,1,1
+BAR,Legge,BAR Legge,1,1
+BAR,Lettenmaier WPA,BAR Lettenmaier WPA,1,1
+BAR,Olson WMA,BAR Olson WMA,1,1
+BAR,Rasmusson,BAR Rasmusson,1,1
+BAR,Stoney Slough WPA,BAR Stoney Slough WPA,1,1
+BEN,151-070-14,BEN 151-070-14,1,1
+BEN,151-070-16,BEN 151-070-16,1,1
+BEN,156-071-16,BEN 156-071-16,1,1
+BEN,Deep Valley WPA,BEN Deep Valley WPA,1,1
+BEN,Elstad,BEN Elstad,1,1
+BEN,Knox WPA,BEN Knox WPA,1,1
+BEN,Orts,BEN Orts,1,1
+BEN,Sully's Hill NWR,BEN Sully's Hill NWR,1,0
+BEN,Sully's Lake NWR,BEN Sully's Lake NWR,1,0
+BEN,Twin Lakes WPA,BEN Twin Lakes WPA,1,1
+BEN,White Horse Hill NWR,BEN White Horse Hill NWR,0,1
+BIL,144-099-36,BIL 144-099-36,1,1
+BIL,Bull Creek WMA,BIL Bull Creek WMA,1,1
+BIL,Little Missouri NG 1,BIL Little Missouri NG 1,1,1
+BIL,Little Missouri NG 2,BIL Little Missouri NG 2,1,1
+BIL,Little Missouri NG 3,BIL Little Missouri NG 3,1,1
+BIL,Little Missouri NG 4,BIL Little Missouri NG 4,1,1
+BIL,Odermann East,BIL Odermann East,1,1
+BIL,Odermann West,BIL Odermann West,1,1
+BIL,Shade,BIL Shade,1,1
+BOT,160-080-36,BOT 160-080-36,1,1
+BOT,164-083-36,BOT 164-083-36,1,1
+BOT,Beatty WPA,BOT Beatty WPA,1,1
+BOT,JCS NWR 1,BOT JCS NWR 1,1,1
+BOT,JCS NWR 2,BOT JCS NWR 2,1,1
+BOT,JCS NWR 3,BOT JCS NWR 3,1,1
+BOT,JCS NWR 4,BOT JCS NWR 4,1,1
+BOT,Lansford WPA,BOT Lansford WPA,1,1
+BOT,Turtle Mountain WMA,BOT Turtle Mountain WMA,1,1
+BOW,130-103-36,BOW 130-103-36,1,1
+BOW,131-105-36,BOW 131-105-36,1,1
+BOW,132-102-36,BOW 132-102-36,1,1
+BOW,Alkali Creek WMA,BOW Alkali Creek WMA,1,1
+BOW,Hansen,BOW Hansen,1,1
+BOW,Kromerek,BOW Kromerek,1,1
+BOW,Spring Creek WMA,BOW Spring Creek WMA,1,1
+BOW,Tom Fish,BOW Tom Fish,1,1
+BOW,White,BOW White,1,1
+BRK,162-094-36,BRK 162-094-36,1,1
+BRK,Des Lacs NWR 1,BRK Des Lacs NWR 1,1,1
+BRK,Des Lacs NWR 2,BRK Des Lacs NWR 2,1,1
+BRK,Lostwood NWR 1,BRK Lostwood NWR 1,1,1
+BRK,Lostwood NWR 2,BRK Lostwood NWR 2,1,1
+BRK,Staael North,BRK Staael North,1,1
+BRK,Staael South 1,BRK Staael South 1,1,1
+BRK,Staael South 2,BRK Staael South 2,1,1
+BRK,Staael South 3,BRK Staael South 3,1,1
+BUR,137-078-36,BUR 137-078-36,1,1
+BUR,141-075-36,BUR 141-075-36,1,1
+BUR,141-078-16,BUR 141-078-16,1,1
+BUR,Art Brazda WMA,BUR Art Brazda WMA,1,1
+BUR,Cutting,BUR Cutting,1,1
+BUR,Long Lake NWR,BUR Long Lake NWR,1,1
+BUR,Rath/Wonnenburg WPA,BUR Rath/Wonnenburg WPA,1,1
+BUR,Russ Stuart WMA,BUR Russ Stuart WMA,1,1
+BUR,RW Henderson WMA,BUR RW Henderson WMA,1,1
+CAS,Alice WPA 1,CAS Alice WPA 1,1,1
+CAS,Alice WPA 2,CAS Alice WPA 2,1,1
+CAS,Erie Dam WMA,CAS Erie Dam WMA,1,1
+CAS,Erie Dam WMA 2,CAS Erie Dam WMA 2,1,1
+CAS,Hamilton Wills WMA,CAS Hamilton Wills WMA,1,1
+CAS,Kemmer WPA,CAS Kemmer WPA,1,1
+CAS,Stordalen,CAS Stordalen,1,1
+CAS,Torgerson,CAS Torgerson,1,1
+CAS,Trego,CAS Trego,1,1
+CAV,Billings Lake WPA,CAV Billings Lake WPA,1,1
+CAV,Mulberry Creek WPA,CAV Mulberry Creek WPA,1,1
+CAV,Pembina Hills WMA,CAV Pembina Hills WMA,1,1
+CAV,Pung WPA,CAV Pung WPA,1,1
+CAV,Schill,CAV Schill,1,1
+CAV,Stinkeoway WPA,CAV Stinkeoway WPA,1,1
+CAV,Thorson WPA,CAV Thorson WPA,1,1
+CAV,Ullyot WPA,CAV Ullyot WPA,1,1
+CAV,Wengeler WPA,CAV Wengeler WPA,1,1
+DIC,Bluestem Prairie WMA,DIC Bluestem Prairie WMA,1,1
+DIC,Brummond,DIC Brummond,1,1
+DIC,Burkhardt,DIC Burkhardt,1,1
+DIC,Grunneich WPA,DIC Grunneich WPA,1,1
+DIC,Johnson's Gulch WMA,DIC Johnson's Gulch WMA,1,1
+DIC,Lazy M WPA,DIC Lazy M WPA,1,1
+DIC,Maple River WMA,DIC Maple River WMA,1,1
+DIC,Sand,DIC Sand,1,1
+DIC,Sand 2,DIC Sand 2,1,1
+DIV,161-101-36,DIV 161-101-36,1,1
+DIV,161-102-16,DIV 161-102-16,1,1
+DIV,162-102-36,DIV 162-102-36,1,1
+DIV,Drawbond WPA,DIV Drawbond WPA,1,1
+DIV,Gillund,DIV Gillund,1,1
+DIV,Hall,DIV Hall,1,1
+DIV,Salt Flats WMA,DIV Salt Flats WMA,1,1
+DIV,Soo Grade WPA,DIV Soo Grade WPA,1,1
+DIV,Wenstad,DIV Wenstad,1,1
+DUN,142-093-16,DUN 142-093-16,1,1
+DUN,142-097-16,DUN 142-097-16,1,1
+DUN,146-091-16,DUN 146-091-16,1,1
+DUN,Killdeer Mtns WMA,DUN Killdeer Mtns WMA,1,1
+DUN,Killdeer Mtns WMA 2,DUN Killdeer Mtns WMA 2,1,1
+DUN,Lake Ilo NWR,DUN Lake Ilo NWR,1,1
+DUN,Tuhy,DUN Tuhy,1,1
+DUN,Voigt,DUN Voigt,1,1
+DUN,Zahn,DUN Zahn,1,1
+EDD,150-065-07,EDD 150-065-07,1,1
+EDD,150-065-24,EDD 150-065-24,1,1
+EDD,150-067-03,EDD 150-067-03,1,1
+EDD,Haven WPA,EDD Haven WPA,1,1
+EDD,Lake Washington WMA,EDD Lake Washington WMA,1,1
+EDD,Langley WPA,EDD Langley WPA,1,1
+EDD,Larson WPA,EDD Larson WPA,1,1
+EDD,Swan Lake WPA,EDD Swan Lake WPA,1,1
+EDD,Wallace WPA,EDD Wallace WPA,1,1
+EMM,129-077-16,EMM 129-077-16,1,1
+EMM,132-078-16,EMM 132-078-16,1,1
+EMM,133-074-16,EMM 133-074-16,1,1
+EMM,Hague WMA,EMM Hague WMA,1,1
+EMM,Krumm,EMM Krumm,1,1
+EMM,Kurtz WPA,EMM Kurtz WPA,1,1
+EMM,MacLean Bottoms WMA,EMM MacLean Bottoms WMA,1,1
+EMM,Schiermeister WPA,EMM Schiermeister WPA,1,1
+EMM,Vander Vorst,EMM Vander Vorst,1,1
+FOS,147-062-26,FOS 147-062-26,1,1
+FOS,147-063-22,FOS 147-063-22,1,1
+FOS,147-064-16,FOS 147-064-16,1,1
+FOS,Barlow WPA,FOS Barlow WPA,1,1
+FOS,George Karpen WMA,FOS George Karpen WMA,1,1
+FOS,Gussiaas,FOS Gussiaas,1,1
+FOS,Leppke,FOS Leppke,1,1
+FOS,Lutz East,FOS Lutz East,1,1
+FOS,Lutz West,FOS Lutz West,1,1
+GFO,151-056-16,GFO 151-056-16,1,1
+GFO,Agnes Marsh WPA,GFO Agnes Marsh WPA,1,1
+GFO,Crawford Oakville Prairie WMA,GFO Crawford Oakville Prairie WMA,1,1
+GFO,Mekinock WPA,GFO Mekinock WPA,1,1
+GFO,Prairie Chicken WMA,GFO Prairie Chicken WMA,1,1
+GFO,Sproule North,GFO Sproule North,1,1
+GFO,Sproule South,GFO Sproule South,1,1
+GFO,Stewart Lake WPA,GFO Stewart Lake WPA,1,1
+GFO,Tennison WPA,GFO Tennison WPA,1,1
+GOL,136-106-36,GOL 136-106-36,1,1
+GOL,139-105-36,GOL 139-105-36,1,1
+GOL,140-104-36,GOL 140-104-36,1,1
+GOL,144-105-36,GOL 144-105-36,1,1
+GOL,Little Missouri NG 1,GOL Little Missouri NG 1,1,1
+GOL,Little Missouri NG 2,GOL Little Missouri NG 2,1,1
+GOL,Little Missouri NG 3,GOL Little Missouri NG 3,1,1
+GOL,Little Missouri NG 4,GOL Little Missouri NG 4,1,1
+GOL,Stedman,GOL Stedman,1,1
+GRA,132-089-13,GRA 132-089-13,1,1
+GRA,133-083-16,GRA 133-083-16,1,1
+GRA,137-088-16,GRA 137-088-16,1,1
+GRA,Cedar River NG 1,GRA Cedar River NG 1,1,1
+GRA,Gaugler CRP,GRA Gaugler CRP,1,1
+GRA,Gaugler North,GRA Gaugler North,1,1
+GRA,Gaugler South,GRA Gaugler South,1,1
+GRA,Otter Creek WMA,GRA Otter Creek WMA,1,1
+GRA,Three Buttes WMA,GRA Three Buttes WMA,1,1
+GRI,148-061-16,GRI 148-061-16,1,1
+GRI,148-061-36,GRI 148-061-36,1,1
+GRI,Evers WPA,GRI Evers WPA,1,1
+GRI,Jackson,GRI Jackson,1,1
+GRI,Larson WPA,GRI Larson WPA,1,1
+GRI,Sibley Lake NWR,GRI Sibley Lake NWR,1,1
+GRI,Southward,GRI Southward,1,1
+GRI,Southward Old Pasture,GRI Southward Old Pasture,1,1
+GRI,Southward South,GRI Southward South,1,1
+HET,133-091-10,HET 133-091-10,1,1
+HET,134-094-16,HET 134-094-16,1,1
+HET,135-091-16,HET 135-091-16,1,1
+HET,135-096-16,HET 135-096-16,1,1
+HET,135-097-16,HET 135-097-16,1,1
+HET,136-091-34,HET 136-091-34,1,1
+HET,Hillsview WPA,HET Hillsview WPA,1,1
+HET,Indian Creek WMA,HET Indian Creek WMA,1,1
+HET,Indian Creek WMA 2,HET Indian Creek WMA 2,1,1
+KID,138-074-16,KID 138-074-16,1,1
+KID,Dawson WMA,KID Dawson WMA,1,1
+KID,Goosey,KID Goosey,1,1
+KID,Haven Hills WMA,KID Haven Hills WMA,1,1
+KID,Horsehead WMA,KID Horsehead WMA,1,1
+KID,Long Lake NWR,KID Long Lake NWR,1,1
+KID,Personius WPA,KID Personius WPA,1,1
+KID,Slade NWR,KID Slade NWR,1,1
+KID,Weinmann,KID Weinmann,1,1
+LAM,133-065-36,LAM 133-065-36,1,1
+LAM,136-059-36,LAM 136-059-36,1,1
+LAM,Barr WPA,LAM Barr WPA,1,1
+LAM,Cisinski,LAM Cisinski,1,1
+LAM,Cornell WPA,LAM Cornell WPA,1,1
+LAM,Cottonwood Creek WMA,LAM Cottonwood Creek WMA,1,1
+LAM,Olson,LAM Olson,1,1
+LAM,Teterud,LAM Teterud,1,1
+LAM,Toay,LAM Toay,1,1
+LOG,134-071-36,LOG 134-071-36,1,1
+LOG,135-070-16,LOG 135-070-16,1,1
+LOG,136-071-04,LOG 136-071-04,1,1
+LOG,Boschee WPA,LOG Boschee WPA,1,1
+LOG,Grohne WPA,LOG Grohne WPA,1,1
+LOG,Gross,LOG Gross,1,1
+LOG,Herr,LOG Herr,1,1
+LOG,Lang,LOG Lang,1,1
+LOG,Larson WPA,LOG Larson WPA,0,1
+LOG,Mund WPA,LOG Mund WPA,1,0
+MCH,JCS NWR,MCH JCS NWR,1,1
+MCH,Keller WPA,MCH Keller WPA,1,1
+MCH,Rieder WPA,MCH Rieder WPA,1,1
+MCH,Round Lake Township WMA,MCH Round Lake Township WMA,1,1
+MCH,Taylor Central,MCH Taylor Central,1,1
+MCH,Taylor East,MCH Taylor East,1,1
+MCH,Taylor North,MCH Taylor North,1,1
+MCH,Taylor South,MCH Taylor South,1,1
+MCH,Taylor West,MCH Taylor West,1,1
+MCI,Camp Lake WMA,MCI Camp Lake WMA,1,1
+MCI,Eszlinger WPA,MCI Eszlinger WPA,1,1
+MCI,Fiechtner,MCI Fiechtner,1,1
+MCI,Herr East,MCI Herr East,1,1
+MCI,Herr West,MCI Herr West,1,1
+MCI,Mund WPA,MCI Mund WPA,1,1
+MCI,Sand East,MCI Sand East,1,1
+MCI,Sand West,MCI Sand West,1,1
+MCI,Sand West 2,MCI Sand West 2,1,1
+MCK,146-100-36,MCK 146-100-36,1,1
+MCK,148-102-16,MCK 148-102-16,1,1
+MCK,Little Missouri NG 1,MCK Little Missouri NG 1,1,1
+MCK,Little Missouri NG 2,MCK Little Missouri NG 2,1,1
+MCK,Little Missouri NG 3,MCK Little Missouri NG 3,1,1
+MCK,Little Missouri NG 4,MCK Little Missouri NG 4,1,1
+MCK,Little Missouri NG 5,MCK Little Missouri NG 5,1,1
+MCK,Ochs Point WMA,MCK Ochs Point WMA,1,1
+MCK,Tobacco Gardens WMA,MCK Tobacco Gardens WMA,1,1
+MCL,147-079-16,MCL 147-079-16,1,1
+MCL,150-082-36,MCL 150-082-36,1,1
+MCL,Charles Schroeder WMA,MCL Charles Schroeder WMA,1,1
+MCL,Coal Coulee WPA,MCL Coal Coulee WPA,1,1
+MCL,deTrobrian WMA,MCL deTrobrian WMA,1,1
+MCL,Finken,MCL Finken,1,1
+MCL,Goven,MCL Goven,1,1
+MCL,Lick North,MCL Lick North,1,1
+MCL,Lick South,MCL Lick South,1,1
+MER,143-089-36,MER 143-089-36,1,1
+MER,144-085-16,MER 144-085-16,1,1
+MER,144-089-16,MER 144-089-16,1,1
+MER,Beaver Creek WMA,MER Beaver Creek WMA,1,1
+MER,Flemmer,MER Flemmer,1,1
+MER,Golden Valley WMA,MER Golden Valley WMA,1,1
+MER,Hille WMA,MER Hille WMA,1,1
+MER,Missouri Breaks WMA,MER Missouri Breaks WMA,1,1
+MER,North Beulah Mine WMA,MER North Beulah Mine WMA,1,1
+MOR,134-083-36,MOR 134-083-36,1,1
+MOR,137-085-16,MOR 137-085-16,1,1
+MOR,138-083-36,MOR 138-083-36,1,1
+MOR,140-089-16,MOR 140-089-16,1,1
+MOR,Graner Bottoms WMA,MOR Graner Bottoms WMA,1,1
+MOR,Hatzenbuhler,MOR Hatzenbuhler,1,1
+MOR,Lake Patricia WMA,MOR Lake Patricia WMA,1,1
+MOR,Morton County WMA,MOR Morton County WMA,1,1
+MOR,Storm Creek Lake WMA,MOR Storm Creek Lake WMA,1,1
+MOU,153-091-16,MOU 153-091-16,1,1
+MOU,154-093-36,MOU 154-093-36,1,1
+MOU,157-093-36,MOU 157-093-36,1,1
+MOU,Audubon Wicks,MOU Audubon Wicks,1,1
+MOU,Audubon Wicks Cell 3,MOU Audubon Wicks Cell 3,1,1
+MOU,Davy,MOU Davy,1,1
+MOU,Kjallberg WPA,MOU Kjallberg WPA,1,1
+MOU,Lostwood NWR,MOU Lostwood NWR,1,1
+MOU,Van Hook WMA,MOU Van Hook WMA,1,1
+NEL,149-061-20,NEL 149-061-20,1,1
+NEL,149-061-36,NEL 149-061-36,1,1
+NEL,150-061-16,NEL 150-061-16,1,1
+NEL,150-061-21,NEL 150-061-21,1,1
+NEL,Engen,NEL Engen,1,1
+NEL,Lambs Lake NWR,NEL Lambs Lake NWR,1,1
+NEL,Lambs Lake NWR 2,NEL Lambs Lake NWR 2,1,1
+NEL,Rose Lake WPA,NEL Rose Lake WPA,1,1
+NEL,Sahl WPA,NEL Sahl WPA,1,1
+OLI,141-084-16,OLI 141-084-16,1,1
+OLI,141-085-16,OLI 141-085-16,1,1
+OLI,143-082-16,OLI 143-082-16,1,1
+OLI,143-084-14,OLI 143-084-14,1,1
+OLI,Bittner,OLI Bittner,1,1
+OLI,Duhr,OLI Duhr,1,1
+OLI,Rick Schmidt,OLI Rick Schmidt,1,1
+OLI,Rob Schmidt,OLI Rob Schmidt,1,1
+OLI,Wilbur Boldt WMA,OLI Wilbur Boldt WMA,1,1
+PEM,Denault WMA,PEM Denault WMA,1,1
+PEM,Duncan WPA,PEM Duncan WPA,1,1
+PEM,Fitzsimond Slough WMA,PEM Fitzsimond Slough WMA,1,1
+PEM,Jay V. Wessels WMA,PEM Jay V. Wessels WMA,1,1
+PEM,Lubenow East High,PEM Lubenow East High,1,1
+PEM,Lubenow East Low,PEM Lubenow East Low,1,1
+PEM,Lubenow West Low,PEM Lubenow West Low,1,1
+PEM,Pembina Prairie WPA,PEM Pembina Prairie WPA,1,1
+PEM,Sproule,PEM Sproule,1,1
+PIE,151-074-16,PIE 151-074-16,1,1
+PIE,152-073-16,PIE 152-073-16,1,1
+PIE,154-074-16,PIE 154-074-16,1,1
+PIE,Buffalo Lake WMA,PIE Buffalo Lake WMA,1,1
+PIE,Kilgore Lake WPA,PIE Kilgore Lake WPA,1,1
+PIE,Long Lake WPA,PIE Long Lake WPA,1,1
+PIE,Round Lake WPA,PIE Round Lake WPA,1,1
+PIE,Weinmann,PIE Weinmann,1,1
+PIE,Weinmann 2,PIE Weinmann 2,1,1
+RAM,Elstad,RAM Elstad,1,1
+RAM,Kenner Marsh WMA,RAM Kenner Marsh WMA,1,1
+RAM,Kneeling Moose WPA,RAM Kneeling Moose WPA,1,1
+RAM,Lost Island WPA,RAM Lost Island WPA,1,1
+RAM,Martinson WPA West Unit,RAM Martinson WPA West Unit,1,1
+RAM,Myrvik WPA,RAM Myrvik WPA,1,1
+RAM,Phil Aus WPA,RAM Phil Aus WPA,1,1
+RAM,Pintail WPA,RAM Pintail WPA,1,1
+RAM,Ziegler WPA,RAM Ziegler WPA,1,1
+RAN,Fort Ransom WMA,RAN Fort Ransom WMA,1,1
+RAN,Grinstead WPA,RAN Grinstead WPA,1,1
+RAN,Heiser,RAN Heiser,1,1
+RAN,Kenyons WPA,RAN Kenyons WPA,1,1
+RAN,Reinke WPA,RAN Reinke WPA,1,1
+RAN,Sheyenne NG 1,RAN Sheyenne NG 1,1,1
+RAN,Sheyenne NG 2,RAN Sheyenne NG 2,1,1
+RAN,Sheyenne NG 3,RAN Sheyenne NG 3,1,1
+RAN,Warner WPA,RAN Warner WPA,1,1
+REN,162-086-36,REN 162-086-36,1,1
+REN,163-084-16,REN 163-084-16,1,1
+REN,164-084-36,REN 164-084-36,1,1
+REN,164-087-36,REN 164-087-36,1,1
+REN,Upper Souris NWR 1,REN Upper Souris NWR 1,1,1
+REN,Upper Souris NWR 2,REN Upper Souris NWR 2,1,1
+REN,Upper Souris NWR 3,REN Upper Souris NWR 3,1,1
+REN,Upper Souris NWR 4,REN Upper Souris NWR 4,1,1
+REN,Upper Souris NWR 5,REN Upper Souris NWR 5,1,1
+RIC,136-052-36,RIC 136-052-36,1,1
+RIC,Hartleben WPA,RIC Hartleben WPA,1,1
+RIC,Overboe,RIC Overboe,1,1
+RIC,Sheyenne NG 1,RIC Sheyenne NG 1,1,1
+RIC,Sheyenne NG 2,RIC Sheyenne NG 2,1,1
+RIC,Sheyenne NG 3,RIC Sheyenne NG 3,1,1
+RIC,Stack Slough WMA,RIC Stack Slough WMA,1,1
+RIC,Wild Rice WMA,RIC Wild Rice WMA,1,1
+RIC,Wollitz WPA,RIC Wollitz WPA,1,1
+ROL,160-071-36,ROL 160-071-36,1,1
+ROL,160-072-36,ROL 160-072-36,1,1
+ROL,161-069-22,ROL 161-069-22,1,1
+ROL,161-072-03,ROL 161-072-03,1,1
+ROL,162-072-36,ROL 162-072-36,1,1
+ROL,Armstrong WPA,ROL Armstrong WPA,1,1
+ROL,Ghost Valley WPA,ROL Ghost Valley WPA,1,1
+ROL,LaFromboise WPA,ROL LaFromboise WPA,1,1
+ROL,Twin Lake WPA,ROL Twin Lake WPA,1,1
+SAR,129-058-05,SAR 129-058-05,1,1
+SAR,130-054-03,SAR 130-054-03,1,1
+SAR,Anderson WPA,SAR Anderson WPA,1,1
+SAR,Coleman,SAR Coleman,1,1
+SAR,Cooper,SAR Cooper,1,1
+SAR,Gainor WPA,SAR Gainor WPA,1,1
+SAR,Kraft Slough WPA,SAR Kraft Slough WPA,1,1
+SAR,Kraft Slough WPA 2,SAR Kraft Slough WPA 2,1,1
+SAR,Tewaukon NWR,SAR Tewaukon NWR,1,1
+SHE,Goodrich WPA,SHE Goodrich WPA,1,1
+SHE,Johns Lake WPA,SHE Johns Lake WPA,1,1
+SHE,Lincoln Valley South WPA,SHE Lincoln Valley South WPA,1,1
+SHE,Lonetree WMA,SHE Lonetree WMA,1,1
+SHE,Rolling Hills WMA,SHE Rolling Hills WMA,1,1
+SHE,Trego East,SHE Trego East,1,1
+SHE,Trego North,SHE Trego North,1,1
+SHE,Trego West 1,SHE Trego West 1,1,1
+SHE,Trego West 2,SHE Trego West 2,1,1
+SIO,129-087-16,SIO 129-087-16,1,1
+SIO,130-085-36,SIO 130-085-36,1,1
+SIO,130-090-36,SIO 130-090-36,1,1
+SIO,Cedar River NG 1,SIO Cedar River NG 1,1,1
+SIO,Cedar River NG 2,SIO Cedar River NG 2,1,1
+SIO,Cedar River NG 3,SIO Cedar River NG 3,1,1
+SIO,Cedar River NG 4,SIO Cedar River NG 4,1,1
+SIO,Cedar River NG 5,SIO Cedar River NG 5,1,1
+SIO,Froelich Dam WMA,SIO Froelich Dam WMA,1,1
+SLO,135-106-16,SLO 135-106-16,1,1
+SLO,Cedar Lake WMA,SLO Cedar Lake WMA,1,1
+SLO,Gerbig,SLO Gerbig,1,1
+SLO,Hewson,SLO Hewson,1,1
+SLO,Little Missouri NG 1,SLO Little Missouri NG 1,1,1
+SLO,Little Missouri NG 2,SLO Little Missouri NG 2,1,1
+SLO,Little Missouri NG 3,SLO Little Missouri NG 3,1,1
+SLO,Nordby,SLO Nordby,1,1
+SLO,Seymanski,SLO Seymanski,1,1
+STA,137-091-16,STA 137-091-16,1,1
+STA,137-099-16,STA 137-099-16,1,1
+STA,138-092-16,STA 138-092-16,1,1
+STA,138-093-16,STA 138-093-16,1,1
+STA,138-099-24,STA 138-099-24,1,1
+STA,139-095-36,STA 139-095-36,1,1
+STA,140-094-16,STA 140-094-16,1,1
+STA,Adam and Teresa Raab WMA,STA Adam and Teresa Raab WMA,1,1
+STA,Emch,STA Emch,1,1
+STE,Bower,STE Bower,1,1
+STE,Fugelstad WPA,STE Fugelstad WPA,1,1
+STE,Fuller's Lake WPA,STE Fuller's Lake WPA,1,1
+STE,Otto Spies WMA,STE Otto Spies WMA,1,1
+STE,Rogers WPA,STE Rogers WPA,1,1
+STE,Rue,STE Rue,1,1
+STE,Salander WPA,STE Salander WPA,1,1
+STE,Shaw WPA 1,STE Shaw WPA 1,1,1
+STE,Shaw WPA 2,STE Shaw WPA 2,1,1
+STU,137-063-36,STU 137-063-36,1,1
+STU,138-064-36,STU 138-064-36,1,1
+STU,Audubon Brigham,STU Audubon Brigham,1,0
+STU,Audubon Brigham Cell 12,STU Audubon Brigham Cell 12,1,1
+STU,Audubon Brigham Cell 13,STU Audubon Brigham Cell 13,0,1
+STU,Buegel,STU Buegel,1,1
+STU,Chase Lake NWR,STU Chase Lake NWR,1,1
+STU,Chase Lake WMA,STU Chase Lake WMA,1,1
+STU,Northwestern Lake WPA,STU Northwestern Lake WPA,1,1
+STU,Peterson,STU Peterson,1,1
+TOW,161-066-15,TOW 161-066-15,1,1
+TOW,163-066-21,TOW 163-066-21,1,1
+TOW,163-066-28,TOW 163-066-28,1,1
+TOW,Berg West,TOW Berg West,1,1
+TOW,CC Underwood WMA,TOW CC Underwood WMA,1,1
+TOW,Laturnus,TOW Laturnus,1,1
+TOW,Lindy,TOW Lindy,1,1
+TOW,Nikolaisen WPA,TOW Nikolaisen WPA,1,1
+TOW,Towner WPA,TOW Towner WPA,1,1
+TRA,Elken WPA,TRA Elken WPA,1,1
+TRA,Elliott,TRA Elliott,1,1
+TRA,Erickson WPA,TRA Erickson WPA,1,1
+TRA,Gabrielson,TRA Gabrielson,1,1
+TRA,Groven WPA,TRA Groven WPA,1,1
+TRA,Osland,TRA Osland,1,1
+TRA,Sproule East,TRA Sproule East,1,1
+TRA,Sproule South,TRA Sproule South,1,1
+TRA,Thompson WPA,TRA Thompson WPA,1,1
+WAL,155-058-08,WAL 155-058-08,1,1
+WAL,Ardoch NWR,WAL Ardoch NWR,1,1
+WAL,Bjerke WPA,WAL Bjerke WPA,1,1
+WAL,Charles C. Cook WMA,WAL Charles C. Cook WMA,1,1
+WAL,Fairdale WPA,WAL Fairdale WPA,1,1
+WAL,Greenwing WPA,WAL Greenwing WPA,1,1
+WAL,Joliet Ferry WMA,WAL Joliet Ferry WMA,1,1
+WAL,Old Adelen WPA,WAL Old Adelen WPA,1,1
+WAL,Shirek,WAL Shirek,1,1
+WAR,156-084-16,WAR 156-084-16,1,1
+WAR,Danielson WPA,WAR Danielson WPA,1,1
+WAR,Finken,WAR Finken,1,1
+WAR,Gaines WPA,WAR Gaines WPA,1,1
+WAR,Krueger,WAR Krueger,1,1
+WAR,Minot AFB East,WAR Minot AFB East,1,1
+WAR,Minot AFB West,WAR Minot AFB West,1,1
+WAR,Nelson WPA,WAR Nelson WPA,1,1
+WAR,Upper Souris NWR,WAR Upper Souris NWR,1,1
+WEL,145-073-16,WEL 145-073-16,1,1
+WEL,149-069-36,WEL 149-069-36,1,1
+WEL,150-070-22,WEL 150-070-22,1,1
+WEL,Hoornaert WPA,WEL Hoornaert WPA,1,1
+WEL,Karl T. Frederick WMA,WEL Karl T. Frederick WMA,1,1
+WEL,Lonetree WMA,WEL Lonetree WMA,1,1
+WEL,Pipestone WPA,WEL Pipestone WPA,1,1
+WEL,Weber WPA,WEL Weber WPA,1,1
+WEL,Wells County WMA,WEL Wells County WMA,1,1
+WIL,156-100-16,WIL 156-100-16,1,1
+WIL,156-101-16,WIL 156-101-16,1,1
+WIL,156-102-16,WIL 156-102-16,1,1
+WIL,Hofflund WMA,WIL Hofflund WMA,1,1
+WIL,Kraft,WIL Kraft,1,1
+WIL,Spangrud WPA,WIL Spangrud WPA,1,1
+WIL,Zahn East,WIL Zahn East,1,1
+WIL,Zahn North,WIL Zahn North,1,1
+WIL,Zahn West,WIL Zahn West,1,1

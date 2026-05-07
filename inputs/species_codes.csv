@@ -1,0 +1,422 @@
+Code,Scientific Name,Common Name
+ANALOG,Anatrytone logan,Delaware Skipper
+ANCNUM,Ancyloxypha numitor,Least Skipper
+APOMOR,Apodemia mormo,Mormon Metalmark
+ASTCEL,Asterocampa celtis,Hackberry Emperor
+ATRHIA,Atrytonopsis hianna,Dusted Skipper
+BOLBEL,Boloria bellona,Meadow Fritillary
+BOLSEL,Boloria selene,Silver Bordered Fritillary
+CARPAL,Carterocephalus palaemon,Arctic Skipper
+CELNEG,Celastrina neglecta,Summer Azure
+CERPEG,Cercyonis pegala,Common Wood Nymph
+CHLGOR,Chlosyne gorgone,Gorgone Checkerspot
+COETUL,Coenonympha tullia,Common Ringlet
+COLEUR,Colias eurytheme,Orange Sulphur
+COLPHI,Colias philodice,Clouded Sulphur
+DANPLE,Danaus plexippus,Monarch
+EPACLA,Epargyreus clarus,Silver Spotted Skipper
+EUPCLA,Euptoieta claudia,Variegated Fritillary
+EVECOM,Everes comyntas,Eastern Tailed Blue
+GLALYG,Glaucopsyche lygdamus,Silvery Blue
+HESCOM,Hesperia comma,Common Branded Skipper
+HESDAC,Hesperia dacotae,Dakota Skipper
+HESLEO,Hesperia leonardus,Leonard's/Pawnee Skipper
+JUNCOE,Junonia coenia,Common Buckeye
+LIMARC,Limenitis archippus,Viceroy
+LIMART,Limenitis arthemis,White Admiral
+LYCDIO,Lycaena dione,Gray Copper
+LYCHEL,Lycaena helloides,Purplish Copper
+LYCHYL,Lycaena hyllus,Bronze Copper
+LYCMEL,Lycaeides melissa,Melissa Blue
+MEGSTR,Megathymus streckeri,Strecker's Giant Skipper
+NEORID,Neominois ridingsii,Riding's Satyr
+NYMANT,Nymphalis antiopa,Mourning Cloak
+OARGAR,Oarisma garita,Garita Skipperling
+OENUHL,Oeneis uhleri,Uhler's Arctic
+PAPGLA,Papilio glaucus,Eastern Tiger Swallowtail
+PAPMAC,Papilio machaon,Old World Swallowtail
+PAPPOL,Papilio polyxenes,Black Swallowtail
+PHYBAT,Phyciodes batesii,Tawny Crescent
+PHYCOC,Phyciodes cocyta,Northern Crescent
+PHYTHA,Phyciodes tharos,Pearl Crescent
+PIERAP,Pieris rapae,Cabbage White
+PLEICA,Plebejus icarioides,Boisduval's Blue
+PLESAE,Plebejus saepiolus,Greenish Blue
+POAHOB,Poanes hobomok,Hobomok Skipper
+POLMYS,Polites mystic,Long Dash Skipper
+POLORI,Polites origenes,Crossline Skipper
+POLPEC,Polites peckius,Peck's Skipper
+POLTHE,Polites themistocles,Tawny-edged Skipper
+PONPRO,Pontia protodice,Checkered White
+PYRCOM,Pyrgus communis,Common Checkered Skipper
+SATACA,Satyrium acadica,Acadian Hairstreak
+SATEUR,Satyrodes eurydice,Eyed Brown
+SATTIT,Satyrium titus,Coral Hairstreak
+SPEAPH,Speyeria aphrodite,Aphrodite Fritillary
+SPECAL,Speyeria callippe,Callippe Fritillary
+SPECYB,Speyeria cybele,Great Spangled Fritillary
+SPEIDA,Speyeria idalia,Regal Fritillary
+VANATA,Vanessa atalanta,Red Admiral
+VANCAR,Vanessa cardui,Painted Lady
+VANVIR,Vanessa virginiensis,American Lady
+ACENEG,Acer negundo,Box elder maple
+ACHMIL,Achillea millefolium,Yarrow
+AGAFOE,Agastache foeniculum,Blue giant hyssop
+AGASCR,Agastache scrophulariifolia,Purple giant hyssop
+AGOGLA,Agoseris glauca,False dandelion
+AGRPAR,Agrimonia parviflora,Swamp agrimony
+AGRPUB,Agrimonia pubescens,Downy agrimony
+AGRSTR,Agrimonia striata,Roadside agrimony
+ALITRI,Alisma triviale,Northern water plantain
+ALLSTE,Allium stellatum,Pink prairie onion
+ALLTEX,Allium textile,White textile onion
+AMBPSI,Ambrosia psilostachya,Western ragweed
+AMEALN,Amelanchier alnifolia,Saskatoon serviceberry
+AMOCAN,Amorpha canescens,Lead plant
+AMOFRU,Amorpha fruticosa,False indigo bush
+ANDOCC,Androsace occidentalis,Western rock jasmine
+ANECAN,Anemone canadensis,Canada anemone
+ANECYL,Anemone cylindrica,Thimbleweed
+ANEMUL,Anemone multifida,Pacific anemone
+ANEPAT,Anemone patens,American pasqueflower
+ANEVIR,Anemone virginiana,Tall thimbleweed
+ANTNEG,Antennaria neglecta,Field pussytoes
+ANTPAR,Antennaria parlinii,Parlin's pussytoes
+APOAND,Apocynum androsaemifolium,Spreading dogbane
+APOCAN,Apocynum cannabinum,Hemp dogbane
+APOSIB,Apocynum sibiricum,Clasping dogbane
+ARAPYC,Arabis pycnocarpa,Hairy rock cress
+ARTABS,Artemisia absinthium,Absinthe wormwood
+ARTCAM,Artemisia campestris,Field sagewort
+ARTFRI,Artemisia frigida,Fringed sagewort
+ARTLON,Artemisia longifolia,Longleaf wormwood
+ARTLUD,Artemisia ludoviciana,White sage
+ASCINC,Asclepias incarnata,Swamp milkweed
+ASCOVA,Asclepias ovalifolia,Oval-leaf milkweed
+ASCPUM,Asclepias pumila,Low milkweed
+ASCSPE,Asclepias speciosa,Showy milkweed
+ASCSYR,Asclepias syriaca,Common milkweed
+ASCVER,Asclepias verticillata,Whorled milkweed
+ASCVIR,Asclepias viridiflora,Green milkweed
+ASTADS,Astragalus adsurgens,Prairie milkvetch
+ASTAGR,Astragalus agrestis,Field milkvetch
+ASTBIS,Astragalus bisulcatus,Two-grooved milkvetch
+ASTCAN,Astragalus canadensis,Canada milkvetch
+ASTCIC,Astragalus cicer,Cicer Milkvetch
+ASTCRA,Astragalus crassicarpus,Ground plum
+ASTFLE,Astragalus flexuosus,Slender milkvetch
+ASTMIS,Astragalus missouriensis,Missouri milkvetch
+ASTMUL,Astragalus multiflorus,Loose-flower milk-vetch
+ASTPEC,Astragalus pectinatus,Narrow-leaved milkvetch
+ATRGAR,Atriplex gardneri,Gardner's saltbush
+BERINC,Berteroa incana,Hoary alyssum
+BIDTRI,Bidens trichosperma,Crowned beggarticks
+BLEHIR,Blephilia hirsuta,Hairy woodmint
+BOLAST,Boltonia asteroides,False aster
+BRANIG,Brassica nigra,Black mustard
+BRIEUP,Brickellia eupatorioides,False boneset
+CALNUT,Calochortus nuttallii,Sego-lily
+CALSEP,Calystegia sepium,Hedge bindweed
+CALSER,Calylophus serrulatus,Yellow sundrops
+CAMMIC,Camelina microcarpa,Littlepod false flax
+CAMROT,Campanula rotundifolia,Harebell
+CANMOD,Canadanthus modestus,Modest aster
+CARACA,Carduus acanthoides,Plumeless thistle
+CARARB,Caragana arborescens,Siberian peashrub
+CARNUT,Carduus nutans,Nodding thistle
+CERARV,Cerastium arvense,Field chickweed
+CERBRA,Cerastium brachypodum,Short-stalked chickweed
+CHAERE,Chamaerhodos erecta,Nuttall's groundrose
+CHEALB,Chenopodium album,White goosefoot
+CHEDES,Chenopodium desiccatum,Aridland goosefoot
+CHERUB,Chenopodium rubrum,Red goosefoot
+CICMAC,Cicuta maculata,Water hemlock
+CIRALT,Cirsium altissimum,Tall thistle
+CIRARV,Cirsium arvense,Canada thistle
+CIRFLO,Cirsium flodmanii,Flodman's thistle
+CIRUND,Cirsium undulatum,Wavyleaf thistle
+CIRVUL,Cirsium vulgare,Bull thistle
+COLLIN,Collomia linearis,Tiny trumpet
+COMUMB,Comandra umbellata,Bastard toadflax
+CONARV,Convolvulus arvensis,Field bindweed
+CONCAN,Conyza canadensis,Horseweed
+CORSER,Cornus sericea,Red-osier dogwood
+CORTIN,Coreopsis tinctoria,Golden tickseed
+CORVAR,Coronilla varia,Crown vetch
+CRECAP,Crepis capillaris,Smooth hawksbeard
+CRERUN,Crepis runcinata,Fiddleleaf hawksbeard
+CRETEC,Crepis tectorum,Narrow leaf hawksbeard
+CYNOFF,Cynoglossum officinale,Gypsy flower
+CYPCAN,Cypripedium candidum,Small white lady's slipper
+CYPPARM,Cypripedium parviflorum var. makasin,Small yellow lady's slipper
+CYPPARP,Cypripedium parviflorum var. pubescens,Greater yellow lady's slipper
+DALCAN,Dalea candida,White prairie clover
+DALPUR,Dalea purpurea,Purple prairie clover
+DALVIL,Dalea villosa,Silky prairie clover
+DASFRU,Dasiphora fruticosa,Shrubby cinquefoil
+DELCAR,Delphinium carolinianum,Carolina larkspur
+DESCAN,Desmodium canadense,Showy tick-trefoil
+DESINC,Descurainia incana,Mountain tansymustard
+DESPIN,Descurainia pinnata,Tansy mustard
+DESSOP,Descurainia sophia,Herb sophia
+DRANEM,Draba nemorosa,Yellow Whitlow-grass
+DRYARG,Drymocallis arguta,Tall cinquefoil
+ECHANG,Echinacea angustifolia,Narrow-leaved purple coneflower
+ECHPUR,Echinacea purpurea,Purple Coneflower
+ELACOM,Elaeagnus commutata,Silverberry
+EPICIL,Epilobium ciliatum,Fringed willowherb
+EPILEP,Epilobium leptophyllum,Bog willowherb
+EQULAE,Equisetum laevigatum,Smooth scouring rush
+ERIDIV,Erigeron divergens,Spreading fleabane
+ERIFLA,Eriogonum flavum,Golden buckwheat
+ERIGLA,Erigeron glabellus,Smooth fleabane
+ERIPAU,Eriogonum pauciflorum,Fewflower buckwheat
+ERIPHI,Erigeron philadelphicus,Philadelphia fleabane
+ERIPUM,Erigeron pumilus,Shaggy fleabane
+ERISTR,Erigeron strigosus,Daisy fleabane
+ERUGAL,Erucastrum gallicum,Dog mustard
+ERYASP,Erysimum asperum,Western wallflower
+ERYCHE,Erysimum cheiranthoides,Wormseed wallflower
+ERYINC,Erysimum inconspicuum,Small-flowered wallflower
+ESCVIV,Escobaria vivipara,Pincushion cactus
+EUPCYP,Euphorbia cyparissias,Cypress spurge
+EUPESU,Euphorbia esula,Leafy spurge
+EUTGRA,Euthamia graminifolia,Grass-leaved goldenrod
+EUTGYM,Euthamia gymnospermoides,Great Plains goldenrod
+EUTMAC,Eutrochium maculatum,Spotted Joe-pye weed
+FRAVIR,Fragaria virginiana,Wild strawberry
+GAIARI,Gaillardia aristata,Blanketflower
+GALBOR,Galium boreale,Northern bedstraw
+GAUCOC,Gaura coccinea,Scarlet gaura
+GENAFF,Gentiana affinis,Pleated gentian
+GENAND,Gentiana andrewsii,Bottle gentian
+GEUALE,Geum aleppicum,Yellow avens
+GEUTRI,Geum triflorum,Prairie smoke
+GLYLEP,Glycyrrhiza lepidota,Wild licorice
+GRANEG,Gratiola neglecta,Clammy hedge-hyssop
+GRISQU,Grindelia squarrosa,Curlycup gumweed
+GUTSAR,Gutierrezia sarothrae,Broom snakeweed
+HEDLON,Hedyotis longifolia,Long-leaf bluets
+HELANN,Helianthus annuus,Common sunflower
+HELAUT,Helenium autumnale,Sneezeweed
+HELGIG,Helianthus giganteus,Giant sunflower
+HELGRO,Helianthus grosseserratus,Sawtooth sunflower
+HELHEL,Heliopsis helianthoides,Smooth oxeye
+HELHIR,Helianthus hirsutus,Hairy sunflower
+HELMAX,Helianthus maximilianii,Maximilian sunflower
+HELNUT,Helianthus nuttallii,Nuttall's sunflower
+HELPAU,Helianthus pauciflorus,Stiff sunflower
+HELPET,Helianthus petiolaris,Prairie sunflower
+HELTUB,Helianthus tuberosus,Jerusalem artichoke
+HESMAT,Hesperis matronalis,Dame's rocket
+HETVIL,Heterotheca villosa,Hairy false goldenaster
+HEURIC,Heuchera richardsonii,Prairie alumroot
+HYMFIL,Hymenopappus filifolius,Fineleaf hymenopappus 
+HYMRIC,Hymenoxys richardsonii,Pingue rubberweed
+HYPHIR,Hypoxis hirsuta,Yellow star-grass
+HYPPUN,Hypericum punctatum,Spotted St. John's wort
+JACVUL,Jacobaea vulgaris,Common ragwort
+JUNHOR,Juniperus horizontalis,Creeping juniper
+KRALAN,Krascheninnikovia lanata,Winterfat
+LACLUD,Lactuca ludoviciana,Western wild lettuce
+LACSER,Lactuca serriola,Prickly lettuce
+LACTAT,Lactuca tatarica,Showy blue lettuce
+LAPSQU,Lappula squarrosa,European stickseed
+LATPAL,Lathyrus palustris,Marsh vetchling
+LATVEN,Lathyrus venosus,Veiny pea
+LIAASP,Liatris aspera,Rough blazing star
+LIALIG,Liatris ligulistylis,Northern plains blazing star
+LIAPUN,Liatris punctata,Dotted blazing star
+LIAPYC,Liatris pycnostachya,Prairie blazing star
+LILPHI,Lilium philadelphicum,Wood lily
+LINLEW,Linum lewisii,Blue flax
+LINRIG,Linum rigidum,Stiffstem (large-flowered) yellow flax
+LINSUL,Linum sulcatum,Grooved (small-flowered) yellow flax
+LINVUL,Linaria vulgaris,Butter and eggs
+LITCAN,Lithospermum canescens,Hoary puccoon
+LITINC,Lithospermum incisum,Narrow-leaf fringed puccoon
+LOBSPI,Lobelia spicata,Pale-spike lobelia
+LONBEL,Lonicera bella,Showy honeysuckle
+LONMAA,Lonicera maackii,Amur honeysuckle
+LOTCOR,Lotus corniculatus,Birds-foot trefoil
+LOTPUR,Lotus purshianus,American birds-food trefoil
+LUPARG,Lupinus argenteus,Silvery lupine
+LYCAME,Lycopus americanus,American water horehound
+LYCASP,Lycopus asper,Rough bugleweed
+LYCUNI,Lycopus uniflorus,Northern bugleweed
+LYGJUN,Lygodesmia juncea,Skeletonweed
+LYSCIL,Lysimachia ciliata,Fringed loosestrife
+LYSHYB,Lygodesmia juncea,Skeletonweed
+LYSQUA,Lysimachia quadriflora,Prairie loosestrife
+LYTALA,Lythrum alatum,Winged loosestrife
+MACPIN,Machaeranthera pinnatifida,Cut-leaf ironplant
+MAITRI,Maianthemum trifolium,Three-leaf false lily of the valley
+MATCHA,Matricaria chamomilla,German chamomile
+MEDFAL,Medicago falcata,Yellow alfalfa
+MEDLUP,Medicago lupulina,Black medic
+MEDSAT,Medicago sativa,Alfalfa (purple/blue/white)
+MELALB,Melilotus alba,White sweet clover
+MELOFF,Melilotus officinalis,Yellow sweet clover
+MENARV,Mentha arvensis,Wild mint
+MENDEC,Mentzelia decapetala,Ten petal blazing star
+MERLAN,Mertensia lanceolata,Prairie bluebells
+MEROBL,Mertensia oblongifolia,Oblongleaf bluebells
+MIRALB,Mirabilis albida,Hairy four o-clock
+MIRLIN,Mirabilis linearis,Narrowleaf four o'clock
+MIRNYC,Mirabilis nyctaginea,Wild four o'clock
+MOELAT,Moehringia lateriflora,Bluntleaf sandwort
+MONFIS,Monarda fistulosa,Wild bergamot; Bee balm
+NEPCAT,Nepeta cataria,Catnip
+OENBIE,Oenothera biennis,Common evening primrose
+OENNUT,Oenothera nuttallii,Nuttall's evening primrose
+OENPAL,Oenothera pallida,Pale evening primrose
+OENPAR,Oenothera parviflora,Northern evening primrose
+OENVIL,Oenothera villosa,Hairy evening primrose
+ONOMOL,Onosmodium molle,False gromwell
+OPUFRA,Opuntia fragilis,Fragile prickly pear cactus
+ORTLUT,Orthocarpus luteus,Yellow owl-clover
+OXADIL,Oxalis dillenii,Dillen's yellow wood sorrel
+OXASTR,Oxalis stricta,Yellow wood sorrel
+OXAVIO,Oxalis violacea,Violet wood sorrel
+OXYCAM,Oxytropis campestris,Field locoweed
+OXYLAM,Oxytropis lambertii,Lambert's locoweed
+OXYSPL,Oxytropis splendens,Showy locoweed
+PACCAN,Packera cana,Woolly groundsel
+PACPAU,Packera paupercula,Balsam ragwort
+PACPLA,Packera plattensis,Prairie ragwort
+PACPSE,Packera pseudaurea,Western heart-leaved groundsel
+PEDARG,Pediomelum argophyllum,Silverleaf scurfpea
+PEDESC,Pediomelum esculentum,Prairie turnip
+PENALB,Penstemon albidus,White beardtongue
+PENGRAC,Penstemon gracilis,Slender beardtongue
+PENGRAN,Penstemon grandiflorus,Large beardtongue
+PERAMP,Persicaria amphibia,Swamp smartweed
+PERHYD,Persicaria hydropiperoides,Mild waterpepper
+PERSER,Peritoma serrulata,Rocky mountain bee plant
+PHYARE,Physaria arenosa,Great Plains bladderpod
+PHYLUD,Physaria ludoviciana,Bladderpod
+PHYVIR,Physalis virginiana,Virginia ground cherry
+PLAERI,Plantago eriopoda,Alkali plaintain
+PLAPAT,Plantago patagonica,Woolly plaintain
+POLALB,Polygala alba,White milkwort
+POTANS,Potentilla anserina,Silverweed cinquefoil
+POTARG,Potentilla argentea,Silver cinquefoil
+POTGLA,Potentilla glandulosa,Sticky cinquefoil
+POTHIP,Potentilla hippiana,Woolly cinquefoil
+POTNOR,Potentilla norvegica,Rough cinquefoil
+POTPEN,Potentilla pensylvanica,Pennsylvania cinquefoil
+POTRIV,Potentilla rivalis,Brook cinquefoil
+POTSIM,Potentilla simplex,Common cinquefoil
+PYCVIR,Pycnanthemum virginianum,Virginia mountain mint
+RANCYM,Ranunculus cymbalaria,Alkali buttercup
+RANMAC,Ranunculus macounii,Macoun's buttercup
+RANPEN,Ranunculus pensylvanicus,Pennsylvania buttercup
+RATCOL,Ratibida columnifera,Prairie coneflower
+RATPIN,Ratibida pinnata,Gray-headed coneflower
+ROSACI,Rosa acicularis,Prickly wild rose
+ROSARK,Rosa arkansana,Prairie rose
+ROSBLA,Rosa blanda,Smooth wild rose
+ROSWOO,Rosa woodsii,Wood's wild rose
+RUBPUB,Rubus pubescens,Dwarf raspberry
+RUDHIR,Rudbeckia hirta,Black-eyed Susan
+RUDLAC,Rudbeckia laciniata,Cut-leaf coneflower
+RUMCRI,Rumex crispus,Curly dock
+RUMLON,Rumex longifolius,Dooryard dock
+RUMOBT,Rumex obtusifolius,Bitter dock
+RUMOCC,Rumex occidentalis,Western dock
+RUMSTE,Rumex stenophyllus,Narrowleaf dock
+SALINT,Salix interior,Sandbar willow
+SALPET,Salix petiolaris,Meadow willow
+SCULAT,Scutellaria lateriflora,Mad-dog skullcap
+SENINT,Senecio integerrimus,Lambstongue ragwort
+SILANT,Silene antirrhina,Sleepy catchfly
+SILLAT,Silene latifolia,White campion
+SILPER,Silphium perfoliatum,Cup plant
+SILVUL,Silene vulgaris,Bladder campion
+SINARV,Sinapis arvensis,Charlock
+SISALT,Sisymbrium altissimum,Tall tumble mustard
+SISCAM,Sisyrinchium campestre,Prairie blue eyed grass
+SISLOE,Sisymbrium loeselii,Tall hedge mustard
+SISMON,Sisyrinchium montanum,Mountain blue eyed grass
+SISMUC,Sisyrinchium mucronatum,Needle-pointed blue eyed grass
+SIUSUA,Sium suave,Water parsnip
+SOLCAN,Solidago canadensis,Canada goldenrod
+SOLDUL,Solanum dulcamara,Bittersweet nightshade
+SOLGIG,Solidago gigantea,Giant goldenrod
+SOLMIS,Solidago missouriensis,Missouri goldenrod
+SOLMOL,Solidago mollis,Velvety goldenrod
+SOLNEM,Solidago nemoralis,Gray goldenrod
+SOLPTA,Solidago ptarmicoides,Upland white goldenrod
+SOLPTY,Solanum ptychanthum,Black nightshade
+SOLRIG,Solidago rigida,Stiff goldenrod
+SOLROS,Solanum rostratum,Buffalo bur nightshade
+SOLSPE,Solidago speciosa,Showy goldenrod
+SONARV,Sonchus arvensis,Sowthistle
+SPHCOC,Sphaeralcea coccinea,Scarlet globemallow
+SPIALB,Spiraea alba,White meadowsweet
+STAHIS,Stachys hispida,Hairy hedge nettle
+STAPAL,Stachys palustris,Marsh hedge nettle
+STEGRA,Stellaria graminea,Lesser stitchwort
+STELON,Stellaria longifolia,Long-leaf starwort
+SYMBOR,Symphyotrichum boreale,Northern bog aster
+SYMERI,Symphyotrichum ericoides,White heath aster
+SYMFAL,Symphyotrichum falcatum,White prairie aster
+SYMLAE,Symphyotrichum laeve,Smooth blue aster
+SYMLAN,Symphyotrichum lanceolatum,Panicled aster
+SYMNOV,Symphyotrichum novae-angliae,New England aster
+SYMOBL,Symphyotrichum oblongifolium,Aromatic aster
+SYMOCC,Symphoricarpos occidentalis,Western snowberry
+SYMPIL,Symphyotrichum pilosum,Awl aster
+SYMPUN,Symphyotrichum puniceum,Purple stemmed aster
+SYMSER,Symphyotrichum sericeum,Silky aster
+TANVUL,Tanacetum vulgare,Common tansy
+TARERY,Taraxacum erythrospermum,Red-seeded dandelion
+TAROFF,Taraxacum officinale,Common dandelion
+TEPPAL,Tephroseris palustris,Marsh Ragwort
+TETACA,Tetraneuris acaulis,Stemless four-nerve daisy
+TEUCAN,Teucrium canadense,Germander
+THADAS,Thalictrum dasycarpum,Tall meadow rue
+THADIO,Thalictrum dioicum,Early meadow rue
+THAVEN,Thalictrum venulosum,Veiny meadow rue
+THERHO,Thermopsis rhombifolia,Goldenpea
+THLARV,Thlaspi arvense,Field pennycress
+TOXRAD,Toxicodendron radicans,Eastern poison ivy
+TOXRYD,Toxicodendron rydbergii,Western poison ivy
+TRABRA,Tradescantia bracteata,Long bracted spiderwort
+TRADUB,Tragopogon dubius,Yellow goat's beard
+TRAOCC,Tradescantia occidentalis,Prairie spiderwort
+TRIHYB,Trifolium hybridum,Alsike clover
+TRIINO,Tripleurospermum inodorum,Scentless false mayweed
+TRIPRA,Trifolium pratense,Red clover
+TRIREP,Trifolium repens,White clover
+TYPLAT,Typha latifolia,Common cattail
+URTDIO,Urtica dioica,Stinging nettle
+VERFAS,Vernonia fasciculata,Prairie ironweed
+VERHAS,Verbena hastata,Blue vervain
+VERSTR,Verbena stricta,Hoary vervain
+VERVIR,Veronicastrum virginicum,Culver's root
+VICAME,Vicia americana,American vetch
+VICSAT,Vicia sativa,Common vetch
+VIONEP,Viola nephrophylla,Northern bog violet
+VIOPED,Viola pedatifida,Prairie violet
+XANSPI,Xanthisma spinulosum,Cutleaf ironplant
+YUCGLA,Yucca glauca,Soapweed yucca
+ZIGELE,Zigadenus elegans,Elegant death camas
+ZIZAPT,Zizia aptera,Heart-leaved Alexanders
+ZIZAUR,Zizia aurea,Golden Alexanders
+SPE spp,Speyeria,Greater Fritillaries
+PONOCC,Pontia occidentalis,Western White
+HESDAK,Hesperia dacotae,Dakota Skipper
+HESOTT,Hesperia ottoe,Ottoe skipper
+LIMWEI,Limenitis weidemeyerii,Weidemeyer's admiral
+HESUNC,Hesperia uncas,Uncas skipper
+SPEEDW,Speyeria edwardsii,Edwards' fritillary
+PHY spp,Phyciodes,Crescents
+COlPHI,Colias philodice,Clouded Sulphur
+BOL spp,Boloria,Lesser fritilllaries
+LYCPHL,Lycaena phlaeas,American copper
+PAP spp,Papilio,Swallowtail
+PAPCAN,Papilio canadensis,Canadian tiger swallowtail
+EUPVES,Euphyes vestris,Dun Skipper
+SATLIP,Satyrium liparops,Striped Hairstreak
+STRMEL,Strymon melinus,Gray hairstreak
